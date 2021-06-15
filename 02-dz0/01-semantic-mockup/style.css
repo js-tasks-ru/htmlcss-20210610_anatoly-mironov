@@ -1,0 +1,42 @@
+.body {
+    color: white;
+}
+
+.header {
+    text-align: center;
+}
+
+.header-title {
+    background: red;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.navigation {
+    background: #ff9900;
+    text-decoration: underline;
+}
+
+.navigation-items-container {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.navigation-item {
+    display:inline;
+}
+
+.articles-container {
+    background: #04a142;
+    padding: 5px;
+}
+
+.articles-container .article {
+    background: #1319ff;
+    padding-top: 5px;
+}
+
+.footer {
+    background: #bd00ff;
+    text-align: center;
+}
