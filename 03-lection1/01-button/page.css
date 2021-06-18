@@ -1,0 +1,12 @@
+.page-title {
+    text-transform: uppercase;
+    color: var(--grey-3);
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    padding-left: 40px;
+}
+
+.buttons-container {
+    margin-left: 40px;
+}
