@@ -12,23 +12,38 @@
 
 .navigation {
     background: #ff9900;
+    padding: 5px;
 }
 
 .navigation__item {
     display:inline;
+    text-decoration: underline;
+    padding-inline-end: 5px;
 }
 
 .articles-container {
     background: #04a142;
-    padding: 5px;
+    padding: 7px;
 }
 
-.articles-container__article {
+.article {
     background: #1319ff;
-    padding-top: 5px;
+    padding: 15px;
+    margin: 3px;
+}
+
+.article__title {
+    background: #1319ff;
+    padding-left: 20px;
 }
 
 .footer {
     background: #bd00ff;
+    font-size: 2em;
     text-align: center;
+}
+
+.header__title,
+.article__title {
+    margin: 0;
 }
