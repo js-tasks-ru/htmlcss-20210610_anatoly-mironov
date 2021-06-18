@@ -2,10 +2,6 @@
     color: white;
 }
 
-.header {
-    text-align: center;
-}
-
 .header__title {
     background: red;
 }
@@ -40,10 +36,14 @@
 .footer {
     background: #bd00ff;
     font-size: 2em;
-    text-align: center;
 }
 
 .header__title,
 .article__title {
     margin: 0;
+}
+
+.header,
+.footer {
+    text-align: center;
 }
