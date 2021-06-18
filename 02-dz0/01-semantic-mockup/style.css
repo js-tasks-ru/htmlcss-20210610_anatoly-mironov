@@ -1,0 +1,49 @@
+.body {
+    color: white;
+}
+
+.header__title {
+    background: red;
+}
+
+.navigation {
+    background: #ff9900;
+    padding: 5px;
+}
+
+.navigation__item {
+    display:inline;
+    text-decoration: underline;
+    padding-inline-end: 5px;
+}
+
+.articles-container {
+    background: #04a142;
+    padding: 7px;
+}
+
+.article {
+    background: #1319ff;
+    padding: 15px;
+    margin: 3px;
+}
+
+.article__title {
+    background: #1319ff;
+    padding-left: 20px;
+}
+
+.footer {
+    background: #bd00ff;
+    font-size: 2em;
+}
+
+.header__title,
+.article__title {
+    margin: 0;
+}
+
+.header,
+.footer {
+    text-align: center;
+}
