@@ -6,23 +6,15 @@
     text-align: center;
 }
 
-.header-title {
+.header__title {
     background: red;
-    margin-block-start: 0;
-    margin-block-end: 0;
 }
 
 .navigation {
     background: #ff9900;
-    text-decoration: underline;
 }
 
-.navigation-items-container {
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
-.navigation-item {
+.navigation__item {
     display:inline;
 }
 
@@ -31,7 +23,7 @@
     padding: 5px;
 }
 
-.articles-container .article {
+.articles-container__article {
     background: #1319ff;
     padding-top: 5px;
 }
