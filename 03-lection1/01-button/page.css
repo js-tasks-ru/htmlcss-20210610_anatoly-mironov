@@ -9,4 +9,7 @@
 
 .buttons-container {
     margin-left: 40px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
 }
