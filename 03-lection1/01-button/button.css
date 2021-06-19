@@ -1,16 +1,21 @@
-/* Стилизация кнопки */
 .button {
-    width: 189px;
-    height: 48px;
-    border-radius: 8px;
-    border: 1px solid transparent;
-    color: var(--white);
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
     font-size: 16px;
     font-weight: 500;
+    padding: 15px 15px 14px 15px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    line-height: 19px;
+    transition: opacity 200ms ease-in-out, all 200ms ease-in-out;
 }
 
 .button[disabled] {
     opacity: 0.5;
+    pointer-events: none;
 }
 
 .button:hover:not([disabled]) {
@@ -36,7 +41,7 @@
 .button-alternate {
     background: var(--white);
     color: var(--grey-4);
-    border-color: var(--grey-3);
+    border: 1px solid var(--grey-3);
 }
 
 .button-alternate:hover:not([disabled]) {
