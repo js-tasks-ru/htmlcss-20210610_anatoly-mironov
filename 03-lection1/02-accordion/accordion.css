@@ -1,1 +1,14 @@
-/* Стилизация аккордеона */
+.accordion {
+
+}
+
+.accordion__summary {
+    padding-top: 24px;
+    padding-left: 32px;
+}
+
+.accordion__text {
+    margin: 0;
+    padding-top: 16px;
+    padding-left: 32px;
+}
