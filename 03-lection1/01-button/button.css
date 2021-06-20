@@ -10,7 +10,7 @@
     border: none;
     color: var(--white);
     line-height: 19px;
-    transition: opacity 200ms ease-in-out, all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .button[disabled] {
