@@ -1,0 +1,5 @@
+.main {
+    background: var(--grey-1);
+    /* todo: remove min-height, currently it is only for visibility */
+    min-height: 17rem;
+}
