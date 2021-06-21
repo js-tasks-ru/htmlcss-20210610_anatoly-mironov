@@ -4,6 +4,7 @@
     box-sizing: border-box;
     border-radius: 8px;
     margin-bottom: 8px;
+    padding: 24px 32px 24px 32px;
 }
 
 .accordion-item:last-child {
@@ -13,16 +14,14 @@
 .accordion-item__summary {
     list-style: none;
     color: var(--black);
-    padding-top: 24px;
-    padding-left: 32px;
     cursor: pointer;
 }
 
 .accordion-item__wrapped-text {
     color: var(--grey-4);
-    margin: 0;
     padding-top: 16px;
-    padding-left: 32px;
+    padding-bottom: 8px;
+    margin: 0;
 }
 
 .accordion-item__summary,
