@@ -1,16 +1,26 @@
-.accordion {
+.accordion-item {
     background: var(--white);
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
+    margin-bottom: 8px;
 }
 
-.accordion__summary {
+.accordion-item:last-child {
+    margin-bottom: 0;
+}
+
+.accordion-item__summary {
     padding-top: 24px;
     padding-left: 32px;
+    cursor: pointer;
 }
 
-.accordion__text {
+.accordion-item__summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-item__text {
     margin: 0;
     padding-top: 16px;
     padding-left: 32px;
