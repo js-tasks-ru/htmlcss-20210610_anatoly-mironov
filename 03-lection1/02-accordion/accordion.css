@@ -32,6 +32,6 @@
     margin: 0;
 }
 
-.accordion-item__summary::marker {
+.accordion-item__summary::-webkit-details-marker {
     display: none;
 }
