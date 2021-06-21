@@ -11,17 +11,28 @@
 }
 
 .accordion-item__summary {
+    list-style: none;
+    color: var(--black);
     padding-top: 24px;
     padding-left: 32px;
     cursor: pointer;
 }
 
-.accordion-item__summary::-webkit-details-marker {
-    display: none;
-}
-
-.accordion-item__text {
+.accordion-item__wrapped-text {
+    color: var(--grey-4);
     margin: 0;
     padding-top: 16px;
     padding-left: 32px;
+}
+
+.accordion-item__summary,
+.accordion-item__wrapped-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.accordion-item__summary::marker {
+    display: none;
 }
