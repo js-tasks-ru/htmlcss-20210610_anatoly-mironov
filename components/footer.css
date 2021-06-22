@@ -3,16 +3,20 @@
     color: var(--black);
     max-width: 640px;
     margin: 0 auto;
+    padding-top: 71px;
+    padding-bottom: 136px;
 }
 
 .footer__title {
     font-size: 38px;
     line-height: 48px;
     font-weight: 500;
+    margin: 0;
 }
 
 .footer__description {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
+    margin: 32px 0 0 0;
 }
