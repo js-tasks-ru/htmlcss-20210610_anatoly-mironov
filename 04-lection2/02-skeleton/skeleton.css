@@ -1,0 +1,26 @@
+.skeleton {
+    width: 592px;
+    height: 192px;
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.skeleton__row {
+    height: 10%;
+    width: 50%;
+    background: greenyellow;
+    border: 1px solid black;
+}
+
+.skeleton__row--small {
+
+}
+
+.skeleton__row--medium {
+
+}
+
+.skeleton__row--large {
+
+}
