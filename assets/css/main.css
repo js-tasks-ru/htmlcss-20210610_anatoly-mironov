@@ -22,7 +22,7 @@
     --primary: var(--blue);
     --secondary: var(--purple);
 
-    --page-width: 1110px;
+    --container-width: 1110px;
 }
 
 * {
