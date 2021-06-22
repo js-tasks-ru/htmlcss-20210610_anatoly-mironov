@@ -1,0 +1,4 @@
+.page__box {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
