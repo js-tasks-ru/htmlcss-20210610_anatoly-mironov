@@ -1,0 +1,9 @@
+.histogram {
+    width: 100%;
+    border: 1px solid var(--grey-3);
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 40px 32px 24px;
+}
