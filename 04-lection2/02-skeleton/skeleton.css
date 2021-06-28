@@ -4,8 +4,16 @@
     box-sizing: border-box;
     border-radius: 8px;
     display: flex;
+    flex-direction: column;
     padding: 24px 40px 32px 24px;
-    flex-wrap: wrap;
+}
+
+.skeleton__header {
+    display: flex;
+}
+
+.skeleton__body {
+    margin-top: 16px;
 }
 
 .skeleton__avatar {
@@ -15,22 +23,11 @@
     border-radius: 50%;
 }
 
-.skeleton__upper-rows {
+.skeleton__short-rows {
     display: flex;
     flex-direction: column;
     margin-left: 16px;
     flex-grow: 1;
-}
-
-.skeleton__bottom-rows {
-    width: 100%;
-    margin-top: 16px;
-}
-
-.skeleton__row {
-    height: 20px;
-    margin-top: 8px;
-    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
 .skeleton__row--small {
@@ -39,4 +36,10 @@
 
 .skeleton__row--medium {
     width: 59%;
+}
+
+.skeleton__row {
+    height: 20px;
+    margin-top: 8px;
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
