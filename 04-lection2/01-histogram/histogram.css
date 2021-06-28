@@ -5,5 +5,19 @@
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    padding: 24px 40px 32px 24px;
+    padding: 16px 24px 24px 24px;
+}
+
+.histogram__body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.histogram__column {
+    background: var(--blue);
+    margin: 1px;
+    width: 9px;
+    flex-grow: 1;
 }
