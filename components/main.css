@@ -12,21 +12,22 @@
 }
 
 .card {
-    width: 286px;
-    height: 303px;
+    height: 367px;
     background: var(--white);
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
     display: flex;
+    flex-basis: 350px;
     flex-direction: column;
-    padding: 32px;
 }
 
 .card__preview {
-    flex-grow: 1;
     display: flex;
+    flex-grow: 1;
     justify-content: space-around;
     flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .card__title {
@@ -37,4 +38,5 @@
     line-height: 25px;
     color: var(--black);
     margin: 0;
+    padding-bottom: 32px;
 }
