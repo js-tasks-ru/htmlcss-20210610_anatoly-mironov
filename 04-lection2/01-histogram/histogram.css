@@ -38,6 +38,10 @@
     line-height: 26px;
 }
 
+.histogram__view-all-link-container {
+    padding-top: 3px;
+}
+
 .histogram__view-all-link {
     color: var(--blue);
     font-weight: 400;
@@ -48,12 +52,10 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-between;
     gap: 1px;
 }
 
 .histogram__column {
     background: var(--blue);
-    width: 9px;
     flex-grow: 1;
 }
