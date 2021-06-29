@@ -2,30 +2,3 @@
     max-width: var(--container-width);
     margin: 0 auto;
 }
-
-.cards-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 68px 165px 204px 165px;
-}
-
-.card {
-    width: 350px;
-    height: 367px;
-    border: 1px solid black;
-    background: var(--white);
-    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-}
-
-.card__preview {
-    flex-grow: 1;
-}
-
-.card__title {
-    text-align: center;
-}
