@@ -3,9 +3,6 @@
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 26px;
 }
 
@@ -20,19 +17,39 @@
 
 .calendar__body {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(7, 36px);
 }
 
 .calendar__day {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--grey-5);
+    padding: 24px 0;
+}
+
+.calendar__date {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: var(--black-2);
-    flex-basis: 36px;
+    height: 36px;
 }
 
 .calendar__day,
 .calendar__date {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar__date--active {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.calendar__date--between-active {
+    background: var(--purple-3);
 }
