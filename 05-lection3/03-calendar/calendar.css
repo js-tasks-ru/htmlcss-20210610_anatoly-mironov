@@ -6,9 +6,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 26px;
 }
 
-.calendar__month {
+.calendar__header {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -17,8 +18,9 @@
     text-align: center;
 }
 
-.calendar__day-container {
-    display: flex;
+.calendar__body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
 }
 
 .calendar__day {
@@ -27,15 +29,10 @@
     font-size: 16px;
     line-height: 20px;
     color: var(--black-2);
-    text-align: center;
     flex-basis: 36px;
 }
 
-.calendar__date-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
+.calendar__day,
 .calendar__date {
-    flex-basis: 36px;
+    text-align: center;
 }
