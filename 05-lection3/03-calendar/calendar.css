@@ -15,7 +15,17 @@
     text-align: center;
 }
 
+.calendar__body-wrapper {
+    position: relative;
+    padding-bottom: 100%;
+}
+
 .calendar__body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
@@ -26,7 +36,7 @@
     font-size: 14px;
     line-height: 20px;
     color: var(--grey-5);
-    padding: 24px 0;
+    padding: 16px 0 8px 0;
 }
 
 .calendar__date {
@@ -35,7 +45,6 @@
     font-size: 16px;
     line-height: 20px;
     color: var(--black-2);
-    height: 36px;
 }
 
 .calendar__day,
