@@ -5,8 +5,15 @@
 
 .tooltip__text {
     display: none;
-    justify-content: center;
-    align-items: center;
+
+
+
+
+
+
+
+
+
     width: 129px;
     height: 45px;
     border-radius: 10px;
@@ -32,6 +39,8 @@
 
 .tooltip__icon:hover + .tooltip__text {
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -178%);
