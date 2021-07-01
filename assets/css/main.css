@@ -4,9 +4,11 @@
 :root {
     --white: #ffffff;
     --black: #212429;
+    --black-2: #334D6E;
     --pink: #F784AD;
     --purple: #7048E8;
     --purple-2: #5028C6;
+    --purple-3: #ECEFFD;
     --blue: #4263EB;
     --blue-2: #2342C0;
     --blue-3: #374FC7;
@@ -15,6 +17,7 @@
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-5: #90A0B7;
 
     --error: var(--red);
     --success: var(--blue-3);
