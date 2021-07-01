@@ -1,5 +1,6 @@
 .tooltip {
-
+    position: relative;
+    display: inline-block;
 }
 
 .tooltip__text {
@@ -17,10 +18,22 @@
     line-height: 24px;
 }
 
+.tooltip__text:after {
+    content: '';
+    border: 14px solid transparent;
+    position: absolute;
+    transform: translate(0, 160%);
+    border-top: 6px solid var(--blue);
+}
+
 .tooltip__icon:hover {
     cursor: pointer;
 }
 
 .tooltip__icon:hover + .tooltip__text {
     display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -178%);
+    z-index: -1;
 }
