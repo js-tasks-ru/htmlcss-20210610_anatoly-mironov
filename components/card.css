@@ -3,17 +3,18 @@
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
     display: flex;
+    flex: 1 1;
     flex-direction: column;
-    width: 33%;
+    min-width: 350px;
 }
 
-.card__preview {
-    display: flex;
+.card__body {
     flex-grow: 1;
-    justify-content: space-around;
-    flex-direction: column;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 2rem;
+}
+
+.card__footer {
+    padding-bottom: 2rem;
 }
 
 .card__title {
@@ -24,5 +25,17 @@
     line-height: 25px;
     color: var(--black);
     margin: 0;
-    padding-bottom: 32px;
+}
+
+.card__description {
+    margin: 6px 0 0 0;
+}
+
+.card__description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--grey-4);
+    text-align: center;
 }

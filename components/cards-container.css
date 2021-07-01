@@ -1,14 +1,8 @@
 .cards-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 68px;
     padding-bottom: 204px;
     gap: 30px;
-}
-
-.cards-container__line {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    flex-basis: 367px;
 }
