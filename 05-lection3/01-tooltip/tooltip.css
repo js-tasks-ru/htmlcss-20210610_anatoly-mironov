@@ -20,7 +20,7 @@
     content: '';
     border: 14px solid transparent;
     position: absolute;
-    transform: translate(0, 160%);
+    top: 100%;
     border-top: 6px solid var(--blue);
 }
 
@@ -34,6 +34,8 @@
     align-items: center;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -178%);
+    bottom: 100%;
+    transform: translateX(-50%);
     z-index: -1;
+    margin-bottom: 10px;
 }
