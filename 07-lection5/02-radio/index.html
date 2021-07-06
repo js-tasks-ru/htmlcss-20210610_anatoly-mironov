@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<!-- Страница радио -->
-<html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./radio.css">
-    </head>
-    <body>
-
-    </body>
+<html lang='ru'>
+<head>
+    <title>Radio</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='../../assets/css/main.css'>
+    <link rel='stylesheet' href='./radio.css'>
+    <link rel='stylesheet' href='./page.css'>
+</head>
+<body>
+<header class='title'>Radio</header>
+<main class='container'>
+    <label class='checkbox'>
+        <input type='checkbox' class='checkbox__input'>
+        <div class='checkbox__content'>
+            <div class='checkbox__control'>
+                <img src='../../assets/images/tick-icon.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+            </div>
+            <p class='checkbox__label'>Default</p>
+        </div>
+    </label>
+    <label class='checkbox'>
+        <input type='checkbox' class='checkbox__input' checked>
+        <div class='checkbox__content'>
+            <div class='checkbox__control'>
+                <img src='../../assets/images/tick-icon.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+            </div>
+            <p class='checkbox__label'>Checked</p>
+        </div>
+    </label>
+    <label class='checkbox'>
+        <input type='checkbox' class='checkbox__input' disabled>
+        <div class='checkbox__content'>
+            <div class='checkbox__control'>
+                <img src='../../assets/images/tick-icon.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+            </div>
+            <p class='checkbox__label'>Disabled</p>
+        </div>
+    </label>
+</main>
+</body>
 </html>
