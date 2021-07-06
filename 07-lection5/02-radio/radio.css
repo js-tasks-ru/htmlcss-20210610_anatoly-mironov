@@ -32,6 +32,9 @@
     box-sizing: border-box;
     border-radius: 50%;
     border: 1px solid var(--grey-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .radio__control-tick {
@@ -40,9 +43,6 @@
 
 .radio__input:checked ~ .radio__content .radio__control {
     border: 2px solid var(--blue);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .radio__input:checked ~ .radio__content .radio__control-tick {
@@ -54,7 +54,7 @@
 }
 
 .radio__input:disabled ~ .radio__content {
-    cursor: not-allowed;
+    pointer-events: none;
 }
 
 .radio__input:disabled ~ .radio__content .radio__control {
