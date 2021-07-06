@@ -28,6 +28,7 @@
     line-height: 26px;
     color: var(--grey-4);
     padding-left: 24px;
+    padding-right: 16px;
     outline: none;
 }
 
@@ -44,6 +45,11 @@
 .textbox__input::placeholder {
     color: var(--grey-2);
     opacity: 1; /* Firefox */
+}
+
+.textbox__input--error,
+.textbox__input--success {
+    padding-right: 56px;
 }
 
 .textbox__input--error {
