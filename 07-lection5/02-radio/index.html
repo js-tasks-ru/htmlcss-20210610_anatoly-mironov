@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang='ru'>
 <head>
-    <title>Radio</title>
+    <title>Radio button</title>
     <meta charset='utf-8'>
     <link rel='stylesheet' href='../../assets/css/main.css'>
     <link rel='stylesheet' href='./radio.css'>
     <link rel='stylesheet' href='./page.css'>
 </head>
 <body>
-<header class='title'>Radio</header>
+<header class='title'>Radio button</header>
 <main class='container'>
-    <label class='checkbox'>
-        <input type='checkbox' class='checkbox__input'>
-        <div class='checkbox__content'>
-            <div class='checkbox__control'>
-                <img src='../../assets/images/tick-icon.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+    <label class='radio'>
+        <input name='radio' type='radio' class='radio__input'>
+        <div class='radio__content'>
+            <div class='radio__control'>
+                <div class='radio__control-tick'></div>
             </div>
-            <p class='checkbox__label'>Default</p>
+            <p class='radio__label'>Default</p>
         </div>
     </label>
-    <label class='checkbox'>
-        <input type='checkbox' class='checkbox__input' checked>
-        <div class='checkbox__content'>
-            <div class='checkbox__control'>
-                <img src='../../assets/images/tick-icon.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+    <label class='radio'>
+        <input name='radio' type='radio' class='radio__input' checked>
+        <div class='radio__content'>
+            <div class='radio__control'>
+                <div class='radio__control-tick'></div>
             </div>
-            <p class='checkbox__label'>Checked</p>
+            <p class='radio__label'>Selected</p>
         </div>
     </label>
-    <label class='checkbox'>
-        <input type='checkbox' class='checkbox__input' disabled>
-        <div class='checkbox__content'>
-            <div class='checkbox__control'>
-                <img src='../../assets/images/tick-icon.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+    <label class='radio'>
+        <input name='radio' type='radio' class='radio__input' disabled>
+        <div class='radio__content'>
+            <div class='radio__control'>
+                <div class='radio__control-tick'></div>
             </div>
-            <p class='checkbox__label'>Disabled</p>
+            <p class='radio__label'>Disabled</p>
         </div>
     </label>
 </main>
