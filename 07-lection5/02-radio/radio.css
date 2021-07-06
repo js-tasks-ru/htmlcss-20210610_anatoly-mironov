@@ -65,10 +65,19 @@
     color: var(--grey-2);
 }
 
+.radio__input:disabled:checked ~ .radio__content .radio__control {
+    background: var(--white);
+    border: 2px solid var(--grey-2);
+}
+
+.radio__input:disabled:checked ~ .radio__content .radio__control-tick {
+    background: var(--grey-2);
+}
+
 .radio__input:focus-visible ~ .radio__content .radio__label {
     text-decoration: underline;
 }
 
 .radio__input:focus-visible ~ .radio__content .radio__control {
-    border: 1px solid var(--black);
+    border: 2px solid var(--black);
 }
