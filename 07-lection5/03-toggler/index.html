@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang='ru'>
 <head>
-    <title>Toggle</title>
+    <title>Toggle button</title>
     <meta charset='utf-8'>
     <link rel='stylesheet' href='../../assets/css/main.css'>
     <link rel='stylesheet' href='./toggler.css'>
     <link rel='stylesheet' href='./page.css'>
 </head>
 <body>
-<header class='title'>Toggle</header>
+<header class='title'>Toggle button</header>
 <main class='container'>
-    <label class='checkbox'>
-        <input type='checkbox' class='checkbox__input'>
-        <div class='checkbox__content'>
-            <div class='checkbox__control'></div>
-            <p class='checkbox__label'>Default</p>
+    <label class='toggle'>
+        <input type='checkbox' class='toggle__input'>
+        <div class='toggle__content'>
+            <div class='toggle__control'>
+                <div class='toggle__control-tick'></div>
+            </div>
+            <p class='toggle__label'>Off</p>
         </div>
     </label>
-    <label class='checkbox'>
-        <input type='checkbox' class='checkbox__input' checked>
-        <div class='checkbox__content'>
-            <div class='checkbox__control'></div>
-            <p class='checkbox__label'>Checked</p>
+    <label class='toggle'>
+        <input type='checkbox' class='toggle__input' checked>
+        <div class='toggle__content'>
+            <div class='toggle__control'>
+                <div class='toggle__control-tick'></div>
+            </div>
+            <p class='toggle__label'>On</p>
         </div>
     </label>
-    <label class='checkbox'>
-        <input type='checkbox' class='checkbox__input' disabled>
-        <div class='checkbox__content'>
-            <div class='checkbox__control'></div>
-            <p class='checkbox__label'>Disabled</p>
+    <label class='toggle'>
+        <input type='checkbox' class='toggle__input' disabled>
+        <div class='toggle__content'>
+            <div class='toggle__control'>
+                <div class='toggle__control-tick'></div>
+            </div>
+            <p class='toggle__label'>Disabled</p>
         </div>
     </label>
 </main>
