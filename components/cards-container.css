@@ -1,6 +1,6 @@
 .cards-container {
     display: grid;
-    padding: 24px 15px;
+    padding: 24px 16px;
     grid-template-columns: 100%;
     grid-row-gap: 16px;
 }
