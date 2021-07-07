@@ -13,6 +13,10 @@
   <link rel='stylesheet' href='./components/cards-container.css'>
   <link rel='stylesheet' href='./04-lection2/01-histogram/histogram.css'>
   <link rel='stylesheet' href='./05-lection3/03-calendar/calendar.css'>
+  <link rel='stylesheet' href='./06-lection4/01-avatar/avatar.css'>
+  <link rel='stylesheet' href='./05-lection3/01-tooltip/tooltip.css'>
+  <link rel='stylesheet' href='./07-lection5/01-checkbox/checkbox.css'>
+  <link rel='stylesheet' href='./07-lection5/02-radio/radio.css'>
 </head>
 <body class='page'>
 <header class='header'>
@@ -24,14 +28,78 @@
   <div class='page__box'>
     <div class='cards-container'>
       <div class='card'>
-        <div class='card__body'></div>
+        <div class='card__body'>
+          <div class='tooltip'>
+            <img class='tooltip__icon' src='assets/images/help-icon.svg' alt='Tooltip'>
+            <div class='tooltip__text tooltip__text--card'>Helper Text</div>
+          </div>
+        </div>
         <div class='card__footer'>
           <h3 class='card__title'>Tooltip</h3>
           <p class='card__description'>Atom</p>
         </div>
       </div>
       <div class='card'>
-        <div class='card__body'></div>
+        <div class='card__body card__body--checkbox-collection'>
+          <div class='card__checkbox-container'>
+            <label class='checkbox'>
+              <input type='checkbox' class='checkbox__input'>
+              <div class='checkbox__content'>
+                <div class='checkbox__control'>
+                  <img src='assets/images/tick-icon.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+                </div>
+                <p class='checkbox__label'>Default</p>
+              </div>
+            </label>
+            <label class='checkbox'>
+              <input type='checkbox' class='checkbox__input' checked>
+              <div class='checkbox__content'>
+                <div class='checkbox__control'>
+                  <img src='assets/images/tick-icon.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+                </div>
+                <p class='checkbox__label'>Checked</p>
+              </div>
+            </label>
+            <label class='checkbox'>
+              <input type='checkbox' class='checkbox__input' disabled>
+              <div class='checkbox__content'>
+                <div class='checkbox__control'>
+                  <img src='assets/images/tick-icon.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+                </div>
+                <p class='checkbox__label'>Disabled</p>
+              </div>
+            </label>
+          </div>
+          <div class='card__checkbox-container'>
+            <label class='radio'>
+              <input name='radio' type='radio' class='radio__input'>
+              <div class='radio__content'>
+                <div class='radio__control'>
+                  <div class='radio__control-tick'></div>
+                </div>
+                <p class='radio__label'>Default</p>
+              </div>
+            </label>
+            <label class='radio'>
+              <input name='radio' type='radio' class='radio__input' checked>
+              <div class='radio__content'>
+                <div class='radio__control'>
+                  <div class='radio__control-tick'></div>
+                </div>
+                <p class='radio__label'>Selected</p>
+              </div>
+            </label>
+            <label class='radio'>
+              <input name='radio' type='radio' class='radio__input' disabled>
+              <div class='radio__content'>
+                <div class='radio__control'>
+                  <div class='radio__control-tick'></div>
+                </div>
+                <p class='radio__label'>Disabled</p>
+              </div>
+            </label>
+          </div>
+        </div>
         <div class='card__footer'>
           <h3 class='card__title'>Custom form elements</h3>
           <p class='card__description'>Molecules</p>
@@ -153,7 +221,11 @@
         </div>
       </div>
       <div class='card'>
-        <div class='card__body'></div>
+        <div class='card__body'>
+          <div class='avatar avatar--card'>
+            <img class='avatar__image' src='06-lection4/01-avatar/public/avatar-200.jpg' alt='Avatar'>
+          </div>
+        </div>
         <div class='card__footer'>
           <h3 class='card__title'>Avatar</h3>
           <p class='card__description'>Atom</p>
