@@ -1,3 +1,7 @@
+@import '../components/header.css';
+@import '../components/main.css';
+@import '../components/footer.css';
+
 .page__box {
     max-width: var(--container-width);
     margin: 0 auto;

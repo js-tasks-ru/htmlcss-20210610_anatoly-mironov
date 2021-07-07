@@ -1,3 +1,5 @@
+@import "card.css";
+
 .cards-container {
     display: grid;
     padding: 24px 16px;
