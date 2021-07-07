@@ -17,6 +17,7 @@
   <link rel='stylesheet' href='./05-lection3/01-tooltip/tooltip.css'>
   <link rel='stylesheet' href='./07-lection5/01-checkbox/checkbox.css'>
   <link rel='stylesheet' href='./07-lection5/02-radio/radio.css'>
+  <link rel='stylesheet' href='./05-lection3/02-modal/modal.css'>
 </head>
 <body class='page'>
 <header class='header'>
@@ -29,7 +30,7 @@
     <div class='cards-container'>
       <div class='card'>
         <div class='card__body'>
-          <div class='tooltip'>
+          <div class='tooltip tooltip--card'>
             <img class='tooltip__icon' src='assets/images/help-icon.svg' alt='Tooltip'>
             <div class='tooltip__text tooltip__text--card'>Helper Text</div>
           </div>
@@ -163,7 +164,21 @@
         </div>
       </div>
       <div class='card'>
-        <div class='card__body'></div>
+        <div class='card__body'>
+          <div id='modal' class='modal modal--card'>
+            <div class='modal__window modal__window--card'>
+              <div class='modal__header'>
+                <a href='#' id='modal-close' class='modal__close-button modal__close-button--card'>
+                  <img src='assets/images/x-icon.svg' alt='Close'>
+                </a>
+              </div>
+              <div class='modal__body modal__body--card'>
+                <h4 class='modal__title'>Modal title</h4>
+                <p class='modal__description'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class='card__footer'>
           <h3 class='card__title'>Modal dialog</h3>
           <p class='card__description'>Organism</p>

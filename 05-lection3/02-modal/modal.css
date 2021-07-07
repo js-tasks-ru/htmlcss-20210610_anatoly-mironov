@@ -8,6 +8,14 @@
     background: var(--grey-6);
 }
 
+.modal--card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
 .modal__window {
     max-width: 428px;
     background: var(--white);
@@ -20,8 +28,20 @@
     z-index: 1;
 }
 
+.modal__window--card {
+    position: relative;
+    width: 90%;
+    top: unset;
+    left: unset;
+    transform: none;
+}
+
 .modal__close-button {
     text-align: right;
+}
+
+.modal__close-button--card {
+    pointer-events: none;
 }
 
 .modal__header {
@@ -33,6 +53,10 @@
 
 .modal__body {
     padding: 0 40px 30px 40px;
+}
+
+.modal__body--card {
+    padding: 0 30px 20px 30px;
 }
 
 .modal__title {

@@ -3,6 +3,11 @@
     display: inline-block;
 }
 
+.tooltip--card {
+    margin-top: 60px;
+    pointer-events: none;
+}
+
 .tooltip__text {
     display: none;
     width: 129px;
