@@ -1,8 +1,22 @@
 .cards-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 68px;
-    padding-bottom: 204px;
-    gap: 30px;
+    display: grid;
+    padding: 21px 16px;
+    grid-template-columns: 100%;
+    grid-row-gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .cards-container {
+        grid-template-columns: calc(50% - 12px) calc(50% - 12px);
+        grid-column-gap: 24px;
+        grid-row-gap: 16px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .cards-container {
+        padding: 68px 0;
+        grid-template-columns: calc(33.3% - 10px) calc(33.3% - 10px) calc(33.3% - 10px);
+        grid-gap: 30px;
+    }
 }

@@ -5,12 +5,16 @@
     display: flex;
     flex: 1 1;
     flex-direction: column;
-    min-width: 350px;
 }
 
 .card__body {
     flex-grow: 1;
-    padding: 2rem;
+}
+
+@media screen and (min-width: 1280px) {
+    .card__body {
+        padding: 2rem;
+    }
 }
 
 .card__footer {
