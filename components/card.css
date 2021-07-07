@@ -9,10 +9,16 @@
 
 .card__body {
     flex-grow: 1;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width: 1280px) {
+    .card__body {
+        padding: 2rem;
+    }
 }
 
 .card__body--checkbox-collection {
