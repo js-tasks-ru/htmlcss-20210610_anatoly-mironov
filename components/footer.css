@@ -1,17 +1,30 @@
 .footer {
     text-align: center;
-    color: var(--black);
+    color: var(--grey-4);
     max-width: 640px;
     margin: 0 auto;
-    padding-top: 71px;
-    padding-bottom: 136px;
+    padding: 32px 16px;
+}
+
+@media screen and (min-width: 1280px) {
+    .footer {
+        color: var(--black);
+        padding: 71px 0 136px 0;
+    }
 }
 
 .footer__title {
-    font-size: 38px;
-    line-height: 48px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 400;
     margin: 0;
+}
+
+@media screen and (min-width: 1280px) {
+    .footer__title {
+        font-size: 38px;
+        line-height: 48px;
+        font-weight: 500;
+    }
 }
 
 .footer__description {
