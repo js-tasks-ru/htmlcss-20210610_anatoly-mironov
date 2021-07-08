@@ -48,6 +48,7 @@
 @media screen and (min-width: 1280px) {
     .card__footer {
         padding-top: 0;
+        border-top: none;
     }
 }
 

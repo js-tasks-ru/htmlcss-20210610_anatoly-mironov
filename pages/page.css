@@ -3,6 +3,12 @@
 @import '../components/footer.css';
 
 .page__box {
-    max-width: var(--container-width);
-    margin: 0 auto;
+    margin: 0 16px;
+}
+
+@media screen and (min-width: 1280px) {
+    .page__box {
+        max-width: var(--container-width);
+        margin: 0 auto;
+    }
 }
