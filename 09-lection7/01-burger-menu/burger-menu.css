@@ -14,6 +14,10 @@
     .menu-control-button {
         display: none;
     }
+
+    .burger-menu {
+        display: none;
+    }
 }
 
 .menu-control-button--close {
