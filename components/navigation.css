@@ -2,8 +2,15 @@
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 24px;
     margin: 0;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .navigation {
+        gap: 40px;
+    }
 }
 
 .navigation__item {
@@ -12,6 +19,7 @@
     font-weight: 400;
     line-height: 24px;
     color: var(--grey-3);
+    white-space: nowrap;
 }
 
 .navigation__item--active {

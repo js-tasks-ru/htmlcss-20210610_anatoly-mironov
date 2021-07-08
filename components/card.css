@@ -40,7 +40,15 @@
 }
 
 .card__footer {
+    padding-top: 12px;
+    border-top: 1px solid var(--grey-2);
     padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 1280px) {
+    .card__footer {
+        padding-top: 0;
+    }
 }
 
 .card__title {
