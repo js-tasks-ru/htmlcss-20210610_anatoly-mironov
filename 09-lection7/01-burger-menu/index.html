@@ -3,46 +3,49 @@
 <head>
   <title>Burger menu</title>
   <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' href='../../assets/css/main.css'>
   <link rel='stylesheet' href='./burger-menu.css'>
   <link rel='stylesheet' href='../../07-lection5/03-toggler/toggler.css'>
   <script defer src='./burger-menu.js'></script>
 </head>
 <body>
-  <div class='burger-menu'>
-    <a href='#mobile-menu'>Open</a>
-    <div id='mobile-menu' class='burger-menu__content'>
-      <div class='burger-menu__header'>
-        <span>Logo</span>
-      </div>
-      <div class='burger-menu__main'>
-        <div class='burger-menu__color-switch'>
-          <label class='toggle'>
-            <input type='checkbox' class='toggle__input'>
-            <div class='toggle__content'>
-              <div class='toggle__control'>
-                <div class='toggle__control-tick'></div>
-              </div>
-              <p class='toggle__label'>Dark mode</p>
+<div class='burger-menu'>
+  <a href='#mobile-menu'>Close</a>
+  <div id='mobile-menu' class='burger-menu__content'>
+    <div class='burger-menu__header'>
+      <span>Logo</span>
+    </div>
+    <div class='burger-menu__main'>
+      <div class='burger-menu__section burger-menu__color-switch'>
+        <label class='toggle'>
+          <input type='checkbox' class='toggle__input'>
+          <div class='toggle__content'>
+            <div class='toggle__control'>
+              <div class='toggle__control-tick'></div>
             </div>
-          </label>
-        </div>
-        <div>
-          <h4>Components</h4>
-          <ul>
-            <li>Modal</li>
-            <li>Tooltip</li>
-            <li>Avatar</li>
-            <li>Calendar</li>
-            <li>Histogram</li>
-            <li>Custom form elements</li>
-          </ul>
-        </div>
+            <p class='toggle__label'>Dark mode</p>
+          </div>
+        </label>
       </div>
-      <div class='burger-menu__footer'>
-        <div>Main page</div>
+      <div class='burger-menu__section'>
+        <h4 class='burger-menu__section-title'>Components</h4>
+        <nav>
+          <ul class='burger-menu__section-items'>
+            <li><a class='burger-menu__item' href='#'>Modal</a></li>
+            <li><a class='burger-menu__item burger-menu__item--active' href='#'>Tooltip</a></li>
+            <li><a class='burger-menu__item' href='#'>Avatar</a></li>
+            <li><a class='burger-menu__item' href='#'>Calendar</a></li>
+            <li><a class='burger-menu__item' href='#'>Histogram</a></li>
+            <li><a class='burger-menu__item' href='#'>Custom form elements</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
+    <div class='burger-menu__footer'>
+      <div>Main page</div>
+    </div>
   </div>
+</div>
 </body>
 </html>
