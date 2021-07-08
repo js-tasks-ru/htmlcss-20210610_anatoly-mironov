@@ -1,7 +1,3 @@
-@import '../components/header.css';
-@import '../components/main.css';
-@import '../components/footer.css';
-
 .page__box {
     margin: 0 16px;
 }
