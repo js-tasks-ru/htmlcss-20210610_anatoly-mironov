@@ -3,20 +3,260 @@
 <head>
   <title>Reusable component library</title>
   <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' href='./assets/css/main.css'>
   <link rel='stylesheet' href='./pages/page.css'>
   <link rel='stylesheet' href='./components/header.css'>
   <link rel='stylesheet' href='./components/main.css'>
+  <link rel='stylesheet' href='./components/navigation.css'>
   <link rel='stylesheet' href='./components/footer.css'>
+  <link rel='stylesheet' href='./components/card.css'>
+  <link rel='stylesheet' href='./components/cards-container.css'>
+  <link rel='stylesheet' href='./04-lection2/01-histogram/histogram.css'>
+  <link rel='stylesheet' href='./05-lection3/03-calendar/calendar.css'>
+  <link rel='stylesheet' href='./06-lection4/01-avatar/avatar.css'>
+  <link rel='stylesheet' href='./05-lection3/01-tooltip/tooltip.css'>
+  <link rel='stylesheet' href='./07-lection5/01-checkbox/checkbox.css'>
+  <link rel='stylesheet' href='./07-lection5/02-radio/radio.css'>
+  <link rel='stylesheet' href='./05-lection3/02-modal/modal.css'>
 </head>
 <body class='page'>
 <header class='header'>
   <div class='page__box'>
     <h1 class='header__title'>Reusable component library</h1>
+    <nav>
+      <ul class='navigation'>
+        <li class='navigation__item navigation__item--active'>All components</li>
+        <li class='navigation__item'>Atoms</li>
+        <li class='navigation__item'>Molecules</li>
+        <li class='navigation__item'>Organisms</li>
+      </ul>
+    </nav>
   </div>
 </header>
 <main class='main'>
-  <div class='page__box'></div>
+  <div class='page__box'>
+    <div class='cards-container'>
+      <div class='card'>
+        <div class='card__body'>
+          <div class='tooltip tooltip--card'>
+            <img class='tooltip__icon' src='assets/images/help-icon.svg' alt='Tooltip'>
+            <div class='tooltip__text tooltip__text--card'>Helper Text</div>
+          </div>
+        </div>
+        <div class='card__footer'>
+          <h3 class='card__title'>Tooltip</h3>
+          <p class='card__description'>Atom</p>
+        </div>
+      </div>
+      <div class='card'>
+        <div class='card__body card__body--checkbox-collection'>
+          <div class='card__checkbox-container'>
+            <label class='checkbox'>
+              <input type='checkbox' class='checkbox__input'>
+              <div class='checkbox__content'>
+                <div class='checkbox__control'>
+                  <img src='assets/images/tick-icon.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+                </div>
+                <p class='checkbox__label'>Default</p>
+              </div>
+            </label>
+            <label class='checkbox'>
+              <input type='checkbox' class='checkbox__input' checked>
+              <div class='checkbox__content'>
+                <div class='checkbox__control'>
+                  <img src='assets/images/tick-icon.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+                </div>
+                <p class='checkbox__label'>Checked</p>
+              </div>
+            </label>
+            <label class='checkbox'>
+              <input type='checkbox' class='checkbox__input' disabled>
+              <div class='checkbox__content'>
+                <div class='checkbox__control'>
+                  <img src='assets/images/tick-icon.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+                </div>
+                <p class='checkbox__label'>Disabled</p>
+              </div>
+            </label>
+          </div>
+          <div class='card__checkbox-container'>
+            <label class='radio'>
+              <input name='radio' type='radio' class='radio__input'>
+              <div class='radio__content'>
+                <div class='radio__control'>
+                  <div class='radio__control-tick'></div>
+                </div>
+                <p class='radio__label'>Default</p>
+              </div>
+            </label>
+            <label class='radio'>
+              <input name='radio' type='radio' class='radio__input' checked>
+              <div class='radio__content'>
+                <div class='radio__control'>
+                  <div class='radio__control-tick'></div>
+                </div>
+                <p class='radio__label'>Selected</p>
+              </div>
+            </label>
+            <label class='radio'>
+              <input name='radio' type='radio' class='radio__input' disabled>
+              <div class='radio__content'>
+                <div class='radio__control'>
+                  <div class='radio__control-tick'></div>
+                </div>
+                <p class='radio__label'>Disabled</p>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class='card__footer'>
+          <h3 class='card__title'>Custom form elements</h3>
+          <p class='card__description'>Molecules</p>
+        </div>
+      </div>
+      <div class='card'>
+        <div class='card__body'>
+          <div class='calendar'>
+            <div class='calendar__header'>October 2019</div>
+            <div class='calendar__body-wrapper'>
+              <div class='calendar__body'>
+                <span class='calendar__day'>Mon</span>
+                <span class='calendar__day'>Tue</span>
+                <span class='calendar__day'>Wed</span>
+                <span class='calendar__day'>Thu</span>
+                <span class='calendar__day'>Fri</span>
+                <span class='calendar__day'>Sat</span>
+                <span class='calendar__day'>Sun</span>
+                <span class='calendar__date'></span>
+                <span class='calendar__date'></span>
+                <span class='calendar__date'></span>
+                <span class='calendar__date'></span>
+                <span class='calendar__date'>1</span>
+                <span class='calendar__date'>2</span>
+                <span class='calendar__date'>3</span>
+                <span class='calendar__date'>4</span>
+                <span class='calendar__date'>5</span>
+                <span class='calendar__date'>6</span>
+                <span class='calendar__date'>7</span>
+                <span class='calendar__date'>8</span>
+                <span class='calendar__date'>9</span>
+                <span class='calendar__date'>10</span>
+                <span class='calendar__date'>11</span>
+                <span class='calendar__date'>12</span>
+                <span class='calendar__date'>13</span>
+                <span class='calendar__date'>14</span>
+                <span class='calendar__date'>15</span>
+                <span class='calendar__date'>16</span>
+                <span class='calendar__date'>17</span>
+                <span class='calendar__date calendar__date--active'>18</span>
+                <span class='calendar__date calendar__date--between-active'>19</span>
+                <span class='calendar__date calendar__date--between-active'>20</span>
+                <span class='calendar__date calendar__date--between-active'>21</span>
+                <span class='calendar__date calendar__date--between-active'>22</span>
+                <span class='calendar__date calendar__date--active'>23</span>
+                <span class='calendar__date'>24</span>
+                <span class='calendar__date'>25</span>
+                <span class='calendar__date'>26</span>
+                <span class='calendar__date'>27</span>
+                <span class='calendar__date'>28</span>
+                <span class='calendar__date'>29</span>
+                <span class='calendar__date'>30</span>
+                <span class='calendar__date'>31</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='card__footer'>
+          <h3 class='card__title'>Calendar</h3>
+          <p class='card__description'>Molecule</p>
+        </div>
+      </div>
+      <div class='card'>
+        <div class='card__body'>
+          <div id='modal' class='modal modal--card'>
+            <div class='modal__window modal__window--card'>
+              <div class='modal__header'>
+                <a href='#' id='modal-close' class='modal__close-button modal__close-button--card'>
+                  <img src='assets/images/x-icon.svg' alt='Close'>
+                </a>
+              </div>
+              <div class='modal__body modal__body--card'>
+                <h4 class='modal__title'>Modal title</h4>
+                <p class='modal__description'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='card__footer'>
+          <h3 class='card__title'>Modal dialog</h3>
+          <p class='card__description'>Organism</p>
+        </div>
+      </div>
+      <div class='card'>
+        <div class='card__body'>
+          <div class='histogram'>
+            <div class='histogram__header'>
+              <div class='histogram__total-orders-container'>
+                <p class='histogram__total-orders-name'>Total orders</p>
+                <h4 class='histogram__total-orders-value'>50254</h4>
+              </div>
+              <div class='histogram__view-all-link-container'>
+                <a href='#' target='_self' class='histogram__view-all-link'>View all</a>
+              </div>
+            </div>
+            <div class='histogram__body'>
+              <div class='histogram__column' style='height: 50px'></div>
+              <div class='histogram__column' style='height: 35px'></div>
+              <div class='histogram__column' style='height: 22px'></div>
+              <div class='histogram__column' style='height: 39px'></div>
+              <div class='histogram__column' style='height: 22px'></div>
+              <div class='histogram__column' style='height: 30px'></div>
+              <div class='histogram__column' style='height: 39px'></div>
+              <div class='histogram__column' style='height: 50px'></div>
+              <div class='histogram__column' style='height: 11px'></div>
+              <div class='histogram__column' style='height: 22px'></div>
+              <div class='histogram__column' style='height: 30px'></div>
+              <div class='histogram__column' style='height: 35px'></div>
+              <div class='histogram__column' style='height: 11px'></div>
+              <div class='histogram__column' style='height: 50px'></div>
+              <div class='histogram__column' style='height: 11px'></div>
+              <div class='histogram__column' style='height: 39px'></div>
+              <div class='histogram__column' style='height: 30px'></div>
+              <div class='histogram__column' style='height: 22px'></div>
+              <div class='histogram__column' style='height: 35px'></div>
+              <div class='histogram__column' style='height: 30px'></div>
+              <div class='histogram__column' style='height: 11px'></div>
+              <div class='histogram__column' style='height: 39px'></div>
+              <div class='histogram__column' style='height: 35px'></div>
+              <div class='histogram__column' style='height: 45px'></div>
+              <div class='histogram__column' style='height: 30px'></div>
+              <div class='histogram__column' style='height: 11px'></div>
+              <div class='histogram__column' style='height: 30px'></div>
+              <div class='histogram__column' style='height: 11px'></div>
+              <div class='histogram__column' style='height: 35px'></div>
+              <div class='histogram__column' style='height: 17px'></div>
+            </div>
+          </div>
+        </div>
+        <div class='card__footer'>
+          <h3 class='card__title'>Histogram</h3>
+          <p class='card__description'>Organism</p>
+        </div>
+      </div>
+      <div class='card'>
+        <div class='card__body'>
+          <div class='avatar avatar--card'>
+            <img class='avatar__image' src='06-lection4/01-avatar/public/avatar-200.jpg' alt='Avatar'>
+          </div>
+        </div>
+        <div class='card__footer'>
+          <h3 class='card__title'>Avatar</h3>
+          <p class='card__description'>Atom</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 <footer class='footer'>
   <h2 class='footer__title'>About</h2>

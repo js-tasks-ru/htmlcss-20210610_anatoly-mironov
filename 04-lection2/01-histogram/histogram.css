@@ -1,13 +1,18 @@
 .histogram {
     width: 100%;
-    border: 1px solid var(--grey-3);
-    box-sizing: border-box;
-    border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 39px;
-    padding: 16px 24px 24px 24px;
     color: var(--black);
+}
+
+@media screen and (min-width: 1280px) {
+    .histogram {
+        border: 1px solid var(--grey-3);
+        border-radius: 8px;
+        box-sizing: border-box;
+        padding: 16px 24px 24px 24px;
+    }
 }
 
 .histogram__header {
