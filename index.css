@@ -12,40 +12,32 @@
   line-height: 19px;
   transition: all 200ms ease-in-out;
 }
-
 .button[disabled] {
   opacity: 0.5;
   pointer-events: none;
 }
-
 .button:hover:not([disabled]) {
   cursor: pointer;
 }
-
 .button-primary {
   background: var(--primary);
 }
-
 .button-primary:hover:not([disabled]) {
   background: var(--blue-2);
 }
-
 .button-secondary {
   background: var(--secondary);
 }
-
 .button-secondary:hover:not([disabled]) {
   background: var(--purple-2);
 }
-
 .button-alternate {
   background: var(--white);
   color: var(--grey-4);
   border: 1px solid var(--grey-3);
 }
-
 .button-alternate:hover:not([disabled]) {
   border-color: var(--black);
 }
 
-/*# sourceMappingURL=button.css.map */
+/*# sourceMappingURL=index.css.map */

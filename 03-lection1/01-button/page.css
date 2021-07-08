@@ -1,15 +1,17 @@
-.page-title {
-    text-transform: uppercase;
-    color: var(--grey-3);
-    font-family: 'Inter', sans-serif;
-    font-size: 28px;
-    font-weight: 400;
-    padding-left: 40px;
+.title {
+  text-transform: uppercase;
+  color: var(--grey-3);
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  padding: 10px 40px;
 }
 
 .buttons-container {
-    margin-left: 40px;
-    width: 800px;
-    display: flex;
-    justify-content: space-between;
+  margin-left: 40px;
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
 }
+
+/*# sourceMappingURL=page.css.map */
