@@ -4,12 +4,16 @@
     left: 16px;
     width: 32px;
     height: 32px;
-    background: var(--grey-2);
-    border-radius: 50%;
     z-index: 999;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.menu-control-button--close {
+    display: none;
+    background: var(--grey-2);
+    border-radius: 50%;
 }
 
 .menu-control-button__icon {
@@ -26,6 +30,7 @@
 }
 
 .burger-menu__container {
+    display: none;
     position: absolute;
     padding: 16px;
     width: calc(100% - 32px);
@@ -33,6 +38,14 @@
     z-index: 3;
     background: var(--white);
     height: 100%;
+}
+
+.burger-menu__container[data-open] {
+    display: block;
+}
+
+.burger-menu__container[data-open] ~ .menu-control-button--close {
+    display: flex;
 }
 
 .burger-menu__header {

@@ -10,13 +10,9 @@
   <script defer src='./burger-menu.js'></script>
 </head>
 <body>
-<div class='menu-control-button'>
-  <img class='menu-control-button__icon' src='../../assets/images/x-icon.svg' alt='Logo'>
-</div>
-
 <div class='burger-menu'>
-  <div class='burger-menu__container'>
-    <div id='mobile-menu' class='burger-menu__content'>
+  <div id='burger-menu' class='burger-menu__container'>
+    <div class='burger-menu__content'>
       <div class='burger-menu__header'>
         <img class='burger-menu__logo' src='../../assets/images/logo.svg' alt='Logo'>
       </div>
@@ -50,6 +46,12 @@
         <a class='burger-menu__item' href='#'>Main page</a>
       </div>
     </div>
+  </div>
+  <div id='burger-menu-open' class='menu-control-button'>
+    <img class='menu-control-button__icon' src='../../assets/images/menu.svg' alt='Open menu'>
+  </div>
+  <div id='burger-menu-close' class='menu-control-button menu-control-button--close'>
+    <img class='menu-control-button__icon' src='../../assets/images/x-icon.svg' alt='Close menu'>
   </div>
 </div>
 </body>
