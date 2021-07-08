@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<!-- Страница бургер-меню -->
-<html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
-
-    </body>
+<html lang='ru'>
+<head>
+  <title>Burger menu</title>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='../../assets/css/main.css'>
+  <link rel='stylesheet' href='./burger-menu.css'>
+  <link rel='stylesheet' href='../../07-lection5/03-toggler/toggler.css'>
+  <script defer src='./burger-menu.js'></script>
+</head>
+<body>
+  <div class='burger-menu'>
+    <a href='#mobile-menu'>Open</a>
+    <div id='mobile-menu' class='burger-menu__content'>
+      <div class='burger-menu__header'>
+        <span>Logo</span>
+      </div>
+      <div class='burger-menu__main'>
+        <div class='burger-menu__color-switch'>
+          <label class='toggle'>
+            <input type='checkbox' class='toggle__input'>
+            <div class='toggle__content'>
+              <div class='toggle__control'>
+                <div class='toggle__control-tick'></div>
+              </div>
+              <p class='toggle__label'>Dark mode</p>
+            </div>
+          </label>
+        </div>
+        <div>
+          <h4>Components</h4>
+          <ul>
+            <li>Modal</li>
+            <li>Tooltip</li>
+            <li>Avatar</li>
+            <li>Calendar</li>
+            <li>Histogram</li>
+            <li>Custom form elements</li>
+          </ul>
+        </div>
+      </div>
+      <div class='burger-menu__footer'>
+        <div>Main page</div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
