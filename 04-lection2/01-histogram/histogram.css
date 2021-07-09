@@ -5,6 +5,14 @@
   gap: 39px;
   color: var(--black);
 }
+@media screen and (min-width: 1280px) {
+  .histogram {
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 16px 24px 24px 24px;
+  }
+}
 .histogram__header {
   display: flex;
   flex-direction: row;
@@ -46,15 +54,6 @@
 .histogram__column {
   background: var(--blue);
   flex-grow: 1;
-}
-
-@media screen and (min-width: 1280px) {
-  .histogram {
-    border: 1px solid var(--grey-3);
-    border-radius: 8px;
-    box-sizing: border-box;
-    padding: 16px 24px 24px 24px;
-  }
 }
 
 /*# sourceMappingURL=histogram.css.map */
