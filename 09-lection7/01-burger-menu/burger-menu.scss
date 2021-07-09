@@ -1,0 +1,126 @@
+%font-shared {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.menu-control-button {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 32px;
+    height: 32px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background: none;
+
+    &--close {
+        display: none;
+        background: var(--grey-2);
+        border-radius: 50%;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .menu-control-button {
+        display: none;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+.burger-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--grey-6);
+    z-index: 2;
+    transition: all 200ms ease-in-out;
+
+    &__container {
+        position: absolute;
+        padding: 16px;
+        width: calc(100% - 32px);
+        max-width: 375px;
+        z-index: 3;
+        background: var(--white);
+        height: 100%;
+    }
+
+    &[data-open] {
+        visibility: visible;
+        opacity: 1;
+
+        ~ .menu-control-button--close {
+            display: flex;
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 32px;
+    }
+
+    &__section {
+        padding: 24px 0;
+        border-top: 1px solid var(--grey-2);
+    }
+
+    &__section-items {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__section-title {
+        @extend %font-shared;
+        font-size: 20px;
+        line-height: 26px;
+        color: var(--grey-3);
+        margin: 0;
+    }
+
+    &__color-switch .toggle__content{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    &__item {
+        @extend %font-shared;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--black);
+        text-decoration: none;
+        display: flex;
+        flex-grow: 1;
+
+        &--active {
+            color: var(--orange);
+        }
+    }
+
+    &__footer {
+        padding-top: 56px;
+    }
+}
+
+
