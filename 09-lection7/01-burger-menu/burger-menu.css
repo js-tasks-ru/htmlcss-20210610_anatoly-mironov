@@ -26,16 +26,14 @@
   width: 24px;
   height: 24px;
 }
-
 @media screen and (min-width: 1280px) {
   .menu-control-button {
-    display: none;
-  }
-
-  .burger-menu {
+    visibility: hidden;
+    opacity: 0;
     display: none;
   }
 }
+
 .burger-menu {
   visibility: hidden;
   opacity: 0;
@@ -47,6 +45,11 @@
   background: var(--grey-6);
   z-index: 2;
   transition: all 200ms ease-in-out;
+}
+@media screen and (min-width: 1280px) {
+  .burger-menu {
+    display: none;
+  }
 }
 .burger-menu__container {
   position: absolute;
