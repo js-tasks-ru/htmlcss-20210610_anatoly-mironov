@@ -1,0 +1,17 @@
+@import '../../config/_variables';
+
+@mixin background-image($min-width, $url) {
+  @media screen and (min-width: $min-width) {
+    background-image: url($url);
+  }
+}
+
+.image-container {
+  background-image: url('public/forest_400.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include background-image($breakpoint-tablet, 'public/forest_768.jpg');
+  @include background-image(1024px, 'public/forest_1024.jpg');
+  @include background-image(2560px, 'public/forest_2560.jpg');
+}
