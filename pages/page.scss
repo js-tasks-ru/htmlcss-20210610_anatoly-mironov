@@ -1,11 +1,10 @@
+@import "../config/_variables";
+
 .page__box {
   margin: 0 16px;
-}
-@media screen and (min-width: 1280px) {
-  .page__box {
+
+  @media screen and (min-width: $breakpoint-desktop) {
     max-width: var(--container-width);
     margin: 0 auto;
   }
 }
-
-/*# sourceMappingURL=page.css.map */

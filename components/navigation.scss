@@ -1,0 +1,27 @@
+@import "../config/_variables";
+@import "../config/_mixins";
+
+.navigation {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin: 0;
+  overflow: hidden;
+  padding-left: 0;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    gap: 40px;
+  }
+
+  &__item {
+    @include font(('Inter', sans-serif), 16px, 24px, 400, var(--grey-3));
+    white-space: nowrap;
+
+    &--active {
+      color: var(--black);
+      padding-bottom: 8px;
+      border-bottom: 5px solid var(--black);
+    }
+  }
+}
