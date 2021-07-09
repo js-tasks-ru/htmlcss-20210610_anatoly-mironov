@@ -1,0 +1,9 @@
+@import "../../assets/css/fragments/_base-homework";
+
+.container {
+    width: 200px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

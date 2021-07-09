@@ -1,16 +1,18 @@
 .title {
-    text-transform: uppercase;
-    color: var(--grey-3);
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    padding: 13px 40px;
+  text-transform: uppercase;
+  color: var(--grey-3);
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  padding: 10px 40px;
 }
 
 .container {
-    padding-left: 40px;
-    display: grid;
-    grid-template-columns: 350px 350px;
-    grid-column-gap: 30px;
-    grid-row-gap: 16px;
+  padding-left: 40px;
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-column-gap: 30px;
+  grid-row-gap: 16px;
 }
+
+/*# sourceMappingURL=page.css.map */
