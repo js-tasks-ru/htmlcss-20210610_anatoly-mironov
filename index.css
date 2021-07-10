@@ -591,4 +591,9 @@
   }
 }
 
+.menu {
+  min-width: 285px;
+  height: 100%;
+}
+
 /*# sourceMappingURL=index.css.map */
