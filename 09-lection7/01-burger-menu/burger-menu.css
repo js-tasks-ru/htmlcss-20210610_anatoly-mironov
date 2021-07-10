@@ -4,7 +4,7 @@
 }
 
 .menu-control-button {
-  position: absolute;
+  position: fixed;
   top: 16px;
   left: 16px;
   width: 32px;
@@ -44,6 +44,7 @@
   height: 100%;
   background: var(--grey-6);
   z-index: 2;
+  overflow-y: hidden;
 }
 @media screen and (max-width: 768px) {
   .burger-menu {
