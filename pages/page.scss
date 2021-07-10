@@ -17,4 +17,14 @@
   &--component {
     background: var(--grey-1);
   }
+
+  &__menu {
+    @media screen and (min-width: $breakpoint-desktop) {
+      display: none;
+    }
+
+    &--component {
+      display: inline-block;
+    }
+  }
 }

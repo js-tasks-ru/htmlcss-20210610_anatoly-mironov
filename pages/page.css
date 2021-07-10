@@ -13,5 +13,13 @@
 .page--component {
   background: var(--grey-1);
 }
+@media screen and (min-width: 1280px) {
+  .page__menu {
+    display: none;
+  }
+}
+.page__menu--component {
+  display: inline-block;
+}
 
 /*# sourceMappingURL=page.css.map */

@@ -988,10 +988,15 @@
 .page--component {
   background: var(--grey-1);
 }
-
-.component__menu {
+@media screen and (min-width: 1280px) {
+  .page__menu {
+    display: none;
+  }
+}
+.page__menu--component {
   display: inline-block;
 }
+
 .component__content {
   display: block;
   padding: 16px;

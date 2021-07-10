@@ -2,10 +2,6 @@
 @import "../config/_variables";
 
 .component {
-  &__menu {
-    display: inline-block;
-  }
-
   &__content {
     display: block;
     padding: 16px;
