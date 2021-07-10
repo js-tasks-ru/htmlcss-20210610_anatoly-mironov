@@ -5,7 +5,7 @@
 
 .menu-control-button {
   position: absolute;
-  top: 25px;
+  top: 16px;
   left: 16px;
   width: 32px;
   height: 32px;
@@ -104,7 +104,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 9px 0 32px 0;
+  padding-bottom: 32px;
 }
 .burger-menu__section {
   padding: 24px 0;

@@ -15,12 +15,13 @@
   }
 }
 .header--component {
-  padding: 25px 0 60px 0;
   display: flex;
   justify-content: center;
+  padding: 16px 0;
 }
 @media screen and (min-width: 1280px) {
   .header--component {
+    padding: 25px 0 60px 0;
     justify-content: space-between;
   }
 }
