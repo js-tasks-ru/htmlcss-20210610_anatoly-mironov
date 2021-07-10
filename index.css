@@ -631,7 +631,7 @@
 }
 
 .menu-control-button {
-  position: fixed;
+  position: absolute;
   top: 16px;
   left: 16px;
   width: 32px;
@@ -645,6 +645,7 @@
   background: none;
 }
 .menu-control-button--close {
+  position: fixed;
   display: none;
   background: var(--grey-2);
   border-radius: 50%;
