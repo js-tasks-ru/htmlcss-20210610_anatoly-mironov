@@ -1,6 +1,26 @@
-.menu {
-  min-width: 285px;
-  height: 100%;
+.component__menu {
+  display: inline-block;
+}
+.component__content {
+  display: block;
+  padding: 32px 48px;
+  width: calc(100% - 32px - 48px * 2);
+  background: var(--white);
+  flex-grow: 1;
+}
+.component__title {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--grey-4);
+  line-height: 38px;
+  margin: 0;
+}
+.component__example {
+  padding: 64px 0;
+}
+.component__code {
+  overflow-x: auto;
 }
 
 /*# sourceMappingURL=template.css.map */

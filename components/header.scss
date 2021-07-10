@@ -1,18 +1,40 @@
 @import "../config/_variables";
 
-.header__title {
-  color: var(--grey-4);
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 38px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+.header {
+  &__title {
+    color: var(--grey-4);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 
-  @media screen and (min-width: $breakpoint-desktop) {
-    color: var(--black);
-    font-weight: 500;
-    font-size: 50px;
-    line-height: 64px;
+    @media screen and (min-width: $breakpoint-desktop) {
+      color: var(--black);
+      font-weight: 500;
+      font-size: 50px;
+      line-height: 64px;
+    }
+  }
+
+  &--component {
+    padding: 25px 0 60px 0;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+      justify-content: space-between;
+    }
+
+    .header__theme-switch {
+      display: none;
+
+      @media screen and (min-width: $breakpoint-desktop) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+      }
+    }
   }
 }
-

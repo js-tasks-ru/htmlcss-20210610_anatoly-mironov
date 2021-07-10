@@ -1,4 +1,5 @@
 @import "../config/_variables";
+@import "../config/_mixins";
 
 .footer {
   text-align: center;
@@ -29,5 +30,19 @@
     line-height: 24px;
     font-weight: 400;
     margin: 32px 0 0 0;
+  }
+
+  &--component {
+    height: 130px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .footer__title {
+      @include font(('Inter', sans-serif), 12px, 18px, 500, var(--grey-3));
+      text-transform: uppercase;
+    }
   }
 }

@@ -5,22 +5,100 @@
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' href='../index.css'>
+  <script defer src='../09-lection7/01-burger-menu/burger-menu.js'></script>
 </head>
-<body class='page'>
-<header class='header'>
-  <div class='page__box'>
-    <h1 class='header__title'>Reusable component library</h1>
+<body class='page page--component'>
+<header>
+  <div class='header header--component page__box'>
+    <a class='header__logo' href='/'>
+      <img src='../assets/images/logo.svg' alt='Logo'>
+    </a>
+    <div class='header__theme-switch'>
+      <img src='../assets/images/sun.svg' alt='Light theme'>
+      <label class='toggle'>
+        <input type='checkbox' class='toggle__input'>
+        <div class='toggle__content'>
+          <div class='toggle__control'>
+            <div class='toggle__control-tick'></div>
+          </div>
+        </div>
+      </label>
+      <img src='../assets/images/moon.svg' alt='Dark theme'>
+    </div>
   </div>
 </header>
 <main class='main'>
-  <div class='page__box'>
-    <aside class='menu'>
-
+  <div class='page__box page__box--component'>
+    <aside class='component__menu'>
+      <div id='burger-menu' class='burger-menu burger-menu--template'>
+        <div class='burger-menu__container'>
+          <div class='burger-menu__content'>
+            <div class='burger-menu__header'>
+              <img class='burger-menu__logo' src='../assets/images/logo.svg' alt='Logo'>
+            </div>
+            <div class='burger-menu__main'>
+              <div class='burger-menu__section burger-menu__color-switch'>
+                <label class='toggle'>
+                  <input type='checkbox' class='toggle__input'>
+                  <div class='toggle__content'>
+                    <div class='toggle__control'>
+                      <div class='toggle__control-tick'></div>
+                    </div>
+                    <p class='toggle__label'>Dark mode</p>
+                  </div>
+                </label>
+              </div>
+              <div class='burger-menu__section'>
+                <h4 class='burger-menu__section-title'>Components</h4>
+                <nav>
+                  <ul class='burger-menu__section-items'>
+                    <li><a class='burger-menu__item' href='#'>Modal</a></li>
+                    <li><a class='burger-menu__item' href='#'>Tooltip</a></li>
+                    <li><a class='burger-menu__item burger-menu__item--active' href='#'>Avatar</a></li>
+                    <li><a class='burger-menu__item' href='#'>Calendar</a></li>
+                    <li><a class='burger-menu__item' href='#'>Histogram</a></li>
+                    <li><a class='burger-menu__item' href='#'>Custom form elements</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id='burger-menu-open' class='menu-control-button'>
+        <img class='menu-control-button__icon' src='../assets/images/menu.svg' alt='Open menu'>
+      </button>
+      <button id='burger-menu-close' class='menu-control-button menu-control-button--close'>
+        <img class='menu-control-button__icon' src='../assets/images/x-icon.svg' alt='Close menu'>
+      </button>
     </aside>
+    <article class='component__content'>
+      <h2 class='component__title'>Avatar</h2>
+      <div class='component__example'>
+        <div class='avatar'>
+          <img class='avatar__image' src='../06-lection4/01-avatar/public/avatar-200.jpg' alt='Avatar'>
+        </div>
+      </div>
+      <div>
+        <nav>
+          <ul class='navigation navigation--component'>
+            <li class='navigation__item navigation__item--active'>HTML</li>
+            <li class='navigation__item'>CSS</li>
+          </ul>
+        </nav>
+        <pre class='component__code'>
+          <code>
+&ltdiv class='avatar'&gt
+  &ltimg class='avatar__image' src='../06-lection4/01-avatar/public/avatar-200.jpg' alt='Avatar'&gt
+&lt/div&gt
+          </code>
+        </pre>
+      </div>
+    </article>
   </div>
 </main>
-<footer class='footer'>
-  <h2 class='footer__title'>Reusable component library</h2>
+<footer class='footer footer--component'>
+  <h3 class='footer__title'>Reusable component library</h3>
 </footer>
 </body>
 </html>

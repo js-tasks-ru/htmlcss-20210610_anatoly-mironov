@@ -25,5 +25,9 @@
   padding-bottom: 8px;
   border-bottom: 5px solid var(--black);
 }
+.navigation--component {
+  padding-top: 13px;
+  border-bottom: 1px solid var(--grey-2);
+}
 
 /*# sourceMappingURL=navigation.css.map */

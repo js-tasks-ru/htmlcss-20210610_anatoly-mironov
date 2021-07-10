@@ -47,10 +47,48 @@
   height: 100%;
   background: var(--grey-6);
   z-index: 2;
-  transition: all 200ms ease-in-out;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    transition: all 200ms ease-in-out;
+  }
 
   @media screen and (min-width: $breakpoint-desktop) {
     display: none;
+    transition: none;
+
+    &--template {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      position: static;
+      z-index: 1;
+
+      .burger-menu__container {
+        position: static;
+        padding: 0;
+        background: var(--grey-1);
+        min-width: 285px;
+
+        .burger-menu__header,
+        .burger-menu__color-switch {
+          display: none;
+        }
+
+        .burger-menu__section {
+          border-top: none;
+          padding: 0;
+
+          &-title {
+            color: var(--black);
+          }
+        }
+
+        .burger-menu__item {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
   }
 
   &__container {
@@ -124,5 +162,3 @@
     padding-top: 56px;
   }
 }
-
-

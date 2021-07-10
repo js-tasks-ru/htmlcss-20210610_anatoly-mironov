@@ -14,5 +14,26 @@
     line-height: 64px;
   }
 }
+.header--component {
+  padding: 25px 0 60px 0;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1280px) {
+  .header--component {
+    justify-content: space-between;
+  }
+}
+.header--component .header__theme-switch {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .header--component .header__theme-switch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+}
 
 /*# sourceMappingURL=header.css.map */

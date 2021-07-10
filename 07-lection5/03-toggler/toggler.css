@@ -1,82 +1,71 @@
 .toggle {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: var(--grey-4);
-    display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--grey-4);
+  line-height: 24px;
+  display: inline-block;
 }
-
 .toggle__content {
-    display: flex;
-    gap: 12px;
-    cursor: pointer;
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
 }
-
 .toggle__input {
-    opacity: 0;
-    width: 1px;
-    height: 1px;
-    pointer-events: none;
-    position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+  position: absolute;
 }
-
-.toggle__label {
-    margin: 0;
-}
-
-.toggle__control {
-    height: 28px;
-    width: 52px;
-    background: var(--white);
-    box-sizing: border-box;
-    border-radius: 16px;
-    border: 1px solid var(--grey-2);
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 2px;
-}
-
-.toggle__control-tick {
-    width: 24px;
-    height: 24px;
-    background: var(--grey-2);
-    border-radius: 50%;
-}
-
 .toggle__input:checked ~ .toggle__content .toggle__control {
-    background: var(--blue);
-    border: 1px solid var(--blue);
-    justify-content: flex-end;
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  justify-content: flex-end;
 }
-
 .toggle__input:checked ~ .toggle__content .toggle__control-tick {
-    background: var(--white);
+  background: var(--white);
 }
-
 .toggle__input:disabled ~ .toggle__content {
-    pointer-events: none;
+  pointer-events: none;
 }
-
 .toggle__input:disabled ~ .toggle__content .toggle__control {
-    background: var(--grey-2);
-    border: 1px solid var(--grey-2);
+  background: var(--grey-2);
+  border: 1px solid var(--grey-2);
 }
-
 .toggle__input:disabled ~ .toggle__content .toggle__control-tick {
-    background: var(--grey-3);
-    opacity: 0.25;
+  background: var(--grey-3);
+  opacity: 0.25;
 }
-
 .toggle__input:disabled ~ .toggle__content .toggle__label {
-    color: var(--grey-2);
+  color: var(--grey-2);
 }
-
 .toggle__input:focus-visible ~ .toggle__content .toggle__label {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+.toggle__input:focus-visible ~ .toggle__content .toggle__control {
+  border: 1px solid var(--black);
+}
+.toggle__label {
+  margin: 0;
+}
+.toggle__control {
+  height: 28px;
+  width: 52px;
+  background: var(--white);
+  box-sizing: border-box;
+  border-radius: 16px;
+  border: 1px solid var(--grey-2);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2px;
+}
+.toggle__control-tick {
+  width: 24px;
+  height: 24px;
+  background: var(--grey-2);
+  border-radius: 50%;
 }
 
-.toggle__input:focus-visible ~ .toggle__content .toggle__control {
-    border: 1px solid var(--black);
-}
+/*# sourceMappingURL=toggler.css.map */
