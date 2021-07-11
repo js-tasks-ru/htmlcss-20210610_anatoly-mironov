@@ -10,6 +10,7 @@
   display: flex;
   gap: 12px;
   cursor: pointer;
+  white-space: nowrap;
 }
 .radio__input {
   opacity: 0;

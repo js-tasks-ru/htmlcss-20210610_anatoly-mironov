@@ -1,5 +1,7 @@
 .main {
   background: var(--grey-1);
+}
+.main--component {
   padding-left: calc(100vw - 100%);
 }
 

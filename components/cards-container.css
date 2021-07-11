@@ -14,7 +14,7 @@
 @media screen and (min-width: 1280px) {
   .cards-container {
     padding: 68px 0;
-    grid-template-columns: calc(33.3% - 10px) calc(33.3% - 10px) calc(33.3% - 10px);
+    grid-template-columns: 350px 350px 350px;
     grid-gap: 30px;
   }
 }

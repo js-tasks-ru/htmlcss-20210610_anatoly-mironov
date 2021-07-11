@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 38px;
-  margin: 0;
+  margin: 0 0 32px 0;
 }
 @media screen and (min-width: 1280px) {
   .header__title {
@@ -20,9 +20,12 @@
 }
 @media screen and (min-width: 1280px) {
   .header__top-section {
-    padding: 25px 0 25px calc(100vw - 100%);
+    padding: 25px 0;
     justify-content: space-between;
   }
+}
+.header__top-section--component {
+  padding-left: calc(100vw - 100%);
 }
 .header__top-section .header__theme-switch {
   display: none;

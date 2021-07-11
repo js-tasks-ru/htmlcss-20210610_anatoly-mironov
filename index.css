@@ -435,6 +435,7 @@
   display: flex;
   gap: 12px;
   cursor: pointer;
+  white-space: nowrap;
 }
 .radio__input {
   opacity: 0;
@@ -676,7 +677,6 @@
   height: 100%;
   background: var(--grey-6);
   z-index: 2;
-  overflow-y: hidden;
 }
 @media screen and (max-width: 768px) {
   .burger-menu {
@@ -792,7 +792,7 @@
 @media screen and (min-width: 1280px) {
   .cards-container {
     padding: 68px 0;
-    grid-template-columns: calc(33.3% - 10px) calc(33.3% - 10px) calc(33.3% - 10px);
+    grid-template-columns: 350px 350px 350px;
     grid-gap: 30px;
   }
 }
@@ -904,6 +904,9 @@
   text-transform: uppercase;
 }
 
+.tab {
+  background: var(--white);
+}
 .tab__navigation {
   list-style-type: none;
   display: flex;
@@ -921,14 +924,15 @@
 }
 .tab__content {
   display: none;
-  overflow-x: auto;
 }
 .tab__content[active=true] {
-  display: block;
+  display: grid;
 }
 
 .main {
   background: var(--grey-1);
+}
+.main--component {
   padding-left: calc(100vw - 100%);
 }
 
@@ -937,7 +941,7 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 38px;
-  margin: 0;
+  margin: 0 0 32px 0;
 }
 @media screen and (min-width: 1280px) {
   .header__title {
@@ -954,9 +958,12 @@
 }
 @media screen and (min-width: 1280px) {
   .header__top-section {
-    padding: 25px 0 25px calc(100vw - 100%);
+    padding: 25px 0;
     justify-content: space-between;
   }
+}
+.header__top-section--component {
+  padding-left: calc(100vw - 100%);
 }
 .header__top-section .header__theme-switch {
   display: none;
@@ -1017,6 +1024,9 @@
 }
 .component__example {
   padding: 64px 0;
+}
+.component__code {
+  overflow-x: auto;
 }
 
 /*# sourceMappingURL=index.css.map */

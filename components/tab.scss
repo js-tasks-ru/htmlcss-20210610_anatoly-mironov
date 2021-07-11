@@ -2,6 +2,8 @@
 @import "../config/_mixins";
 
 .tab {
+  background: var(--white);
+
   &__navigation {
     list-style-type: none;
     display: flex;
@@ -19,10 +21,9 @@
 
   &__content {
     display: none;
-    overflow-x: auto;
 
     &[active=true] {
-      display: block;
+      display: grid;
     }
   }
 }

@@ -6,6 +6,7 @@ if (menuOpen) {
     menuOpen.addEventListener('click', function() {
         if (menu) {
             menu.setAttribute('data-open', '');
+            document.body.style.overflowY = 'hidden';
         }
     });
 }
@@ -14,6 +15,7 @@ if (menuClose) {
     menuClose.addEventListener('click', function() {
         if (menu) {
             menu.removeAttribute('data-open');
+            document.body.style.overflowY = 'auto';
         }
     });
 }

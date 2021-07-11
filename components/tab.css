@@ -1,3 +1,6 @@
+.tab {
+  background: var(--white);
+}
 .tab__navigation {
   list-style-type: none;
   display: flex;
@@ -15,10 +18,9 @@
 }
 .tab__content {
   display: none;
-  overflow-x: auto;
 }
 .tab__content[active=true] {
-  display: block;
+  display: grid;
 }
 
 /*# sourceMappingURL=tab.css.map */
