@@ -28,12 +28,40 @@
       </div>
     </div>
     <h1 class='header__title'>Reusable component library</h1>
-    <nav>
-      <ul class='navigation'>
-        <li class='navigation__item navigation__item--active'>All components</li>
-        <li class='navigation__item'>Atoms</li>
-        <li class='navigation__item'>Molecules</li>
-        <li class='navigation__item'>Organisms</li>
+    <nav class='tab'>
+      <ul class='tab__navigation'>
+        <li>
+          <label class='radio'>
+            <input id='all' name='component-code' type='radio' class='radio__input' checked>
+            <div class='radio__content radio__content--component'>
+              <p class='radio__label'>All components</p>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label class='radio'>
+            <input id='atoms' name='components-groups' type='radio' class='radio__input'>
+            <div class='radio__content radio__content--component'>
+              <p class='radio__label'>Atoms</p>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label class='radio'>
+            <input id='molecules' name='components-groups' type='radio' class='radio__input'>
+            <div class='radio__content radio__content--component'>
+              <p class='radio__label'>Molecules</p>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label class='radio'>
+            <input id='organisms' name='components-groups' type='radio' class='radio__input'>
+            <div class='radio__content radio__content--component'>
+              <p class='radio__label'>Organisms</p>
+            </div>
+          </label>
+        </li>
       </ul>
     </nav>
   </div>

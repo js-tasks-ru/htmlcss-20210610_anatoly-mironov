@@ -6,6 +6,7 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' href='../index.css'>
   <script defer src='../09-lection7/01-burger-menu/burger-menu.js'></script>
+  <script defer src='../assets/js/navigation.js'></script>
 </head>
 <body class='page page--component'>
 <header class='header header__top-section page__box'>
@@ -77,18 +78,52 @@
           <img class='avatar__image' src='../06-lection4/01-avatar/public/avatar-200.jpg' alt='Avatar'>
         </div>
       </div>
-      <div>
+      <div class='tab'>
         <nav>
-          <ul class='navigation navigation--component'>
-            <li class='navigation__item navigation__item--active'>HTML</li>
-            <li class='navigation__item'>CSS</li>
+          <ul class='tab__navigation'>
+            <li>
+              <label class='radio'>
+                <input id='html' name='component-code' type='radio' class='radio__input' checked>
+                <div class='radio__content radio__content--component'>
+                  <p class='radio__label'>HTML</p>
+                </div>
+              </label>
+            </li>
+            <li>
+              <label class='radio'>
+                <input id='css' name='component-code' type='radio' class='radio__input'>
+                <div class='radio__content radio__content--component'>
+                  <p class='radio__label'>SASS</p>
+                </div>
+              </label>
+            </li>
           </ul>
         </nav>
-        <pre class='component__code'>
+        <pre class='tab__content' data-tab='html' active='true'>
           <code>
 &ltdiv class='avatar'&gt
-  &ltimg class='avatar__image' src='../06-lection4/01-avatar/public/avatar-200.jpg' alt='Avatar'&gt
+  &ltimg class='avatar__image' src='avatar-200.jpg' alt='Avatar'&gt
 &lt/div&gt
+          </code>
+        </pre>
+        <pre class='tab__content' data-tab='css'>
+          <code>
+.avatar {
+  width: 102px;
+  height: 102px;
+
+  &--card {
+    width: 160px;
+    height: 160px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
           </code>
         </pre>
       </div>

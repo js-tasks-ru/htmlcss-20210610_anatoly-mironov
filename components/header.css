@@ -20,7 +20,7 @@
 }
 @media screen and (min-width: 1280px) {
   .header__top-section {
-    padding: 25px 0;
+    padding: 25px 0 25px calc(100vw - 100%);
     justify-content: space-between;
   }
 }

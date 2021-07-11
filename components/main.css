@@ -1,5 +1,6 @@
 .main {
   background: var(--grey-1);
+  padding-left: calc(100vw - 100%);
 }
 
 /*# sourceMappingURL=main.css.map */

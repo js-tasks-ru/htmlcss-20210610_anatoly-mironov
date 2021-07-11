@@ -1,0 +1,30 @@
+@import "../config/_variables";
+@import "../config/_mixins";
+
+.tab {
+  &__navigation {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid var(--grey-2);
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      gap: 40px;
+    }
+  }
+
+  &__content {
+    display: none;
+    overflow-x: auto;
+
+    &[active=true] {
+      display: block;
+    }
+  }
+}
+
+

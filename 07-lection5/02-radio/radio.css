@@ -28,6 +28,10 @@
   background: var(--blue);
   border-radius: 50%;
 }
+.radio__input:checked ~ .radio__content--component {
+  padding-bottom: 8px;
+  border-bottom: 5px solid var(--black);
+}
 .radio__input:disabled ~ .radio__content {
   pointer-events: none;
 }
