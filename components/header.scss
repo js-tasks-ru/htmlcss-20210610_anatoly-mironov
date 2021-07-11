@@ -1,6 +1,8 @@
 @import "../config/_variables";
 
 .header {
+    padding-left: calc(100vw - 100%);
+
   &__title {
     color: var(--grey-4);
     font-weight: 400;
@@ -19,15 +21,10 @@
   &__top-section {
     display: flex;
     justify-content: center;
-    padding: 16px 0;
 
     @media screen and (min-width: $breakpoint-desktop) {
       padding: 25px 0;
       justify-content: space-between;
-    }
-
-    &--component {
-      padding-left: calc(100vw - 100%);
     }
 
     .header__theme-switch {

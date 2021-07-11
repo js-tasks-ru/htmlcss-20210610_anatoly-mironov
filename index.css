@@ -931,11 +931,12 @@
 
 .main {
   background: var(--grey-1);
-}
-.main--component {
   padding-left: calc(100vw - 100%);
 }
 
+.header {
+  padding-left: calc(100vw - 100%);
+}
 .header__title {
   color: var(--grey-4);
   font-weight: 400;
@@ -954,16 +955,12 @@
 .header__top-section {
   display: flex;
   justify-content: center;
-  padding: 16px 0;
 }
 @media screen and (min-width: 1280px) {
   .header__top-section {
     padding: 25px 0;
     justify-content: space-between;
   }
-}
-.header__top-section--component {
-  padding-left: calc(100vw - 100%);
 }
 .header__top-section .header__theme-switch {
   display: none;
