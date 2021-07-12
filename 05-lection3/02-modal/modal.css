@@ -14,6 +14,7 @@
   align-items: center;
   height: 90%;
   padding: 20px 0;
+  background: none;
 }
 .modal__window {
   max-width: 428px;
@@ -33,7 +34,7 @@
 }
 .modal__window--card {
   position: relative;
-  width: 90%;
+  border: 1px solid var(--grey-3);
   top: unset;
   left: unset;
   transform: none;

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+  <title>Custom form elements</title>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='../index.css'>
+  <script defer src='../09-lection7/01-burger-menu/burger-menu.js'></script>
+  <script defer src='../assets/js/navigation.js'></script>
+</head>
+<body class='page page--component'>
+<header class='header header__top-section header__top-section--component page__box'>
+  <a class='header__logo' href='../index.html'>
+    <img src='../assets/images/logo.svg' alt='Logo'>
+  </a>
+  <div class='header__theme-switch'>
+    <img src='../assets/images/sun.svg' alt='Light theme'>
+    <label class='toggle'>
+      <input type='checkbox' class='toggle__input'>
+      <div class='toggle__content'>
+        <div class='toggle__control'>
+          <div class='toggle__control-tick'></div>
+        </div>
+      </div>
+    </label>
+    <img src='../assets/images/moon.svg' alt='Dark theme'>
+  </div>
+</header>
+<main class='main main--component'>
+  <div class='page__box page__box--component'>
+    <aside class='page__menu--component'>
+      <div id='burger-menu' class='burger-menu burger-menu--template'>
+        <div class='burger-menu__container'>
+          <div class='burger-menu__content'>
+            <div class='burger-menu__header'>
+              <a href='../index.html'>
+                <img class='burger-menu__logo' src='../assets/images/logo.svg' alt='Logo'>
+              </a>
+            </div>
+            <div class='burger-menu__main'>
+              <div class='burger-menu__section burger-menu__color-switch'>
+                <label class='toggle'>
+                  <input type='checkbox' class='toggle__input'>
+                  <div class='toggle__content'>
+                    <div class='toggle__control'>
+                      <div class='toggle__control-tick'></div>
+                    </div>
+                    <p class='toggle__label'>Dark mode</p>
+                  </div>
+                </label>
+              </div>
+              <div class='burger-menu__section'>
+                <h4 class='burger-menu__section-title'>Components</h4>
+                <nav>
+                  <ul class='burger-menu__section-items'>
+                    <li><a class='burger-menu__item' href='tooltip.html'>Tooltip</a></li>
+                    <li><a class='burger-menu__item burger-menu__item--active' href='elements.html'>Custom form elements</a></li>
+                    <li><a class='burger-menu__item' href='calendar.html'>Calendar</a></li>
+                    <li><a class='burger-menu__item' href='modal.html'>Modal dialog</a></li>
+                    <li><a class='burger-menu__item' href='histogram.html'>Histogram</a></li>
+                    <li><a class='burger-menu__item' href='avatar.html'>Avatar</a></li>
+                    <li><a class='burger-menu__item' href='accordion.html'>Accordion</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id='burger-menu-open' class='menu-control-button'>
+        <img class='menu-control-button__icon' src='../assets/images/menu.svg' alt='Open menu'>
+      </button>
+      <button id='burger-menu-close' class='menu-control-button menu-control-button--close'>
+        <img class='menu-control-button__icon' src='../assets/images/x-icon.svg' alt='Close menu'>
+      </button>
+    </aside>
+    <article class='component__content'>
+      <h2 class='component__title'>Custom form elements</h2>
+      <div class='component__example component__example--elements'>
+        <div class='component__example-section'>
+          <label class='checkbox'>
+            <input type='checkbox' class='checkbox__input'>
+            <div class='checkbox__content'>
+              <div class='checkbox__control'>
+                <img src='../assets/images/tick.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+              </div>
+              <p class='checkbox__label'>Default</p>
+            </div>
+          </label>
+          <label class='checkbox'>
+            <input type='checkbox' class='checkbox__input' checked>
+            <div class='checkbox__content'>
+              <div class='checkbox__control'>
+                <img src='../assets/images/tick.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+              </div>
+              <p class='checkbox__label'>Checked</p>
+            </div>
+          </label>
+          <label class='checkbox'>
+            <input type='checkbox' class='checkbox__input' disabled>
+            <div class='checkbox__content'>
+              <div class='checkbox__control'>
+                <img src='../assets/images/tick.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+              </div>
+              <p class='checkbox__label'>Disabled</p>
+            </div>
+          </label>
+        </div>
+        <div class='component__example-section'>
+          <label class='radio'>
+            <input name='radio' type='radio' class='radio__input'>
+            <div class='radio__content'>
+              <div class='radio__control'>
+                <div class='radio__control-tick'></div>
+              </div>
+              <p class='radio__label'>Default</p>
+            </div>
+          </label>
+          <label class='radio'>
+            <input name='radio' type='radio' class='radio__input' checked>
+            <div class='radio__content'>
+              <div class='radio__control'>
+                <div class='radio__control-tick'></div>
+              </div>
+              <p class='radio__label'>Selected</p>
+            </div>
+          </label>
+          <label class='radio'>
+            <input name='radio' type='radio' class='radio__input' disabled>
+            <div class='radio__content'>
+              <div class='radio__control'>
+                <div class='radio__control-tick'></div>
+              </div>
+              <p class='radio__label'>Disabled</p>
+            </div>
+          </label>
+        </div>
+        <div class='component__example-section'>
+          <label class='toggle'>
+            <input type='checkbox' class='toggle__input'>
+            <div class='toggle__content'>
+              <div class='toggle__control'>
+                <div class='toggle__control-tick'></div>
+              </div>
+              <p class='toggle__label'>Off</p>
+            </div>
+          </label>
+          <label class='toggle'>
+            <input type='checkbox' class='toggle__input' checked>
+            <div class='toggle__content'>
+              <div class='toggle__control'>
+                <div class='toggle__control-tick'></div>
+              </div>
+              <p class='toggle__label'>On</p>
+            </div>
+          </label>
+          <label class='toggle'>
+            <input type='checkbox' class='toggle__input' disabled>
+            <div class='toggle__content'>
+              <div class='toggle__control'>
+                <div class='toggle__control-tick'></div>
+              </div>
+              <p class='toggle__label'>Disabled</p>
+            </div>
+          </label>
+        </div>
+        <div class='component__example-section component__example-section--input'>
+          <label class='textbox'> Label
+            <div class='textbox__content'>
+              <input type='text' class='textbox__input' placeholder='Placeholder'>
+              <img class='textbox__icon-error' src='../assets/images/alert-triangle.svg' alt='Error'>
+              <img class='textbox__icon-success' src='../assets/images/check-circle.svg' alt='Success'>
+            </div>
+          </label>
+          <label class='textbox'> Focus
+            <div class='textbox__content'>
+              <input type='text' class='textbox__input' value='Filled input'>
+              <img class='textbox__icon-error' src='../assets/images/alert-triangle.svg' alt='Error'>
+              <img class='textbox__icon-success' src='../assets/images/check-circle.svg' alt='Success'>
+            </div>
+          </label>
+          <label class='textbox'> Success
+            <div class='textbox__content'>
+              <input type='text' class='textbox__input textbox__input--success' value='Success'>
+              <img class='textbox__icon-error' src='../assets/images/alert-triangle.svg' alt='Error'>
+              <img class='textbox__icon-success' src='../assets/images/check-circle.svg' alt='Success'>
+            </div>
+          </label>
+          <label class='textbox'> Error
+            <div class='textbox__content'>
+              <input type='text' class='textbox__input textbox__input--error' value='Error'>
+              <img class='textbox__icon-error' src='../assets/images/alert-triangle.svg' alt='Error'>
+              <img class='textbox__icon-success' src='../assets/images/check-circle.svg' alt='Success'>
+            </div>
+          </label>
+          <label class='textbox'> Disabled
+            <div class='textbox__content'>
+              <input type='text' class='textbox__input' value='Disabled' disabled>
+              <img class='textbox__icon-error' src='../assets/images/alert-triangle.svg' alt='Error'>
+              <img class='textbox__icon-success' src='../assets/images/check-circle.svg' alt='Success'>
+            </div>
+          </label>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class='footer footer--component'>
+  <h3 class='footer__title'>Reusable component library</h3>
+</footer>
+</body>
+</html>

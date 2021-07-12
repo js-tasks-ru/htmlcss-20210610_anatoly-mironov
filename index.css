@@ -244,6 +244,7 @@
   align-items: center;
   height: 90%;
   padding: 20px 0;
+  background: none;
 }
 .modal__window {
   max-width: 428px;
@@ -263,7 +264,7 @@
 }
 .modal__window--card {
   position: relative;
-  width: 90%;
+  border: 1px solid var(--grey-3);
   top: unset;
   left: unset;
   transform: none;
@@ -599,7 +600,7 @@
   position: relative;
 }
 .textbox__input {
-  width: 350px;
+  width: 100%;
   height: 56px;
   border-radius: 8px;
   box-sizing: border-box;
@@ -794,12 +795,12 @@
 .cards-container {
   display: grid;
   padding: 24px 0;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
   grid-row-gap: 16px;
 }
 @media screen and (min-width: 768px) {
   .cards-container {
-    grid-template-columns: calc(50% - 12px) calc(50% - 12px);
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 24px;
     grid-row-gap: 16px;
   }
@@ -807,7 +808,7 @@
 @media screen and (min-width: 1280px) {
   .cards-container {
     padding: 68px 0;
-    grid-template-columns: 350px 350px 350px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
   }
 }
@@ -1049,6 +1050,33 @@
 @media screen and (min-width: 768px) {
   .component__example--calendar {
     padding-right: 60%;
+  }
+}
+.component__example--elements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "a b" "c c" "d d";
+  row-gap: 32px;
+}
+@media screen and (min-width: 768px) {
+  .component__example--elements {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "a b c" "d d d";
+  }
+}
+.component__example-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.component__example-section--input {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-area: d;
+}
+@media screen and (min-width: 768px) {
+  .component__example-section--input {
+    grid-template-columns: 1fr 1fr;
   }
 }
 .component__code {
