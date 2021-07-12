@@ -22,6 +22,9 @@
 .component__example {
   padding: 64px 0;
 }
+.component__example--tooltip {
+  padding: 64px 56px;
+}
 .component__code {
   overflow-x: auto;
 }

@@ -25,6 +25,9 @@
     padding: 25px 0;
     justify-content: space-between;
   }
+  .header__top-section--component {
+    padding: 25px 0 25px calc(100vw - 100%);
+  }
 }
 .header__top-section .header__theme-switch {
   display: none;

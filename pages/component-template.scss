@@ -22,6 +22,10 @@
 
   &__example {
     padding: 64px 0;
+
+    &--tooltip {
+      padding: 64px 56px;
+    }
   }
 
   &__code {
