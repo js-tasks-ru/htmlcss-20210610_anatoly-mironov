@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang='ru'>
 <head>
-  <title>Reusable component template</title>
+  <title>Modal dialog</title>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' href='../index.css'>
   <script defer src='../09-lection7/01-burger-menu/burger-menu.js'></script>
   <script defer src='../assets/js/navigation.js'></script>
+  <script defer src='../05-lection3/02-modal/index.js'></script>
 </head>
 <body class='page page--component'>
 <header class='header header__top-section header__top-section--component page__box'>
@@ -54,9 +55,9 @@
                 <nav>
                   <ul class='burger-menu__section-items'>
                     <li><a class='burger-menu__item' href='tooltip.html'>Tooltip</a></li>
-                    <li><a class='burger-menu__item burger-menu__item--active' href='elements.html'>Custom form elements</a></li>
+                    <li><a class='burger-menu__item' href='elements.html'>Custom form elements</a></li>
                     <li><a class='burger-menu__item' href='calendar.html'>Calendar</a></li>
-                    <li><a class='burger-menu__item' href='modal.html'>Modal dialog</a></li>
+                    <li><a class='burger-menu__item burger-menu__item--active' href='modal.html'>Modal dialog</a></li>
                     <li><a class='burger-menu__item' href='histogram.html'>Histogram</a></li>
                     <li><a class='burger-menu__item' href='avatar.html'>Avatar</a></li>
                   </ul>
@@ -74,9 +75,24 @@
       </button>
     </aside>
     <article class='component__content'>
-      <h2 class='component__title'>Component name</h2>
+      <h2 class='component__title'>Modal dialog</h2>
       <div class='component__example'>
-        <!--Put component here-->
+        <button id='modal-open' class='button button-primary'>Open modal</button>
+        <div id='modal' class='modal'>
+          <div class='modal__window'>
+            <div class='modal__header'>
+              <a href='#' id='modal-close' class='modal__close-button'>
+                <img src='../assets/images/x-icon.svg' alt='Close'>
+              </a>
+            </div>
+            <div class='modal__body'>
+              <h4 class='modal__title'>Modal title</h4>
+              <p class='modal__description'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class='tab'>
         <nav>
@@ -101,12 +117,109 @@
         </nav>
         <pre class='tab__content' data-tab='html' active='true'>
           <code class='component__code'>
-            <!--Put component HTML here-->
+  &ltdiv id='modal' class='modal'&gt
+    &ltdiv class='modal__window'&gt
+      &ltdiv class='modal__header'&gt
+        &lta href='#' id='modal-close' class='modal__close-button'&gt
+          &ltimg src='../../assets/images/x-icon.svg' alt='Close'&gt
+        &lt/a&gt
+      &lt/div&gt
+      &ltdiv class='modal__body'&gt
+        &lth4 class='modal__title'&gtModal title&lt/h4&gt
+        &ltp class='modal__description'&gt
+            Amet minim mollit non deserunt ullamco
+            est sit aliqua dolor do amet sint.
+        &lt/p&gt
+      &lt/div&gt
+    &lt/div&gt
+  &lt/div&gt
           </code>
         </pre>
         <pre class='tab__content' data-tab='css'>
           <code class='component__code'>
-            <!--Put component CSS here-->
+@mixin font($font-family, $font-size, $line-height, $font-weight, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color;
+  line-height: $line-height;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--grey-6);
+
+    &--card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        padding: 20px 0;
+    }
+
+    &__window {
+        max-width: 428px;
+        background: var(--white);
+        border-radius: 8px;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+
+        @media screen and (min-width: $breakpoint-tablet){
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &--card {
+            position: relative;
+            width: 90%;
+            top: unset;
+            left: unset;
+            transform: none;
+        }
+    }
+
+    &__close-button {
+        text-align: right;
+
+        &--card {
+            pointer-events: none;
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 12px;
+        margin-right: 12px;
+    }
+
+    &__body {
+        padding: 0 40px 30px 40px;
+
+        &--card {
+            padding: 0 30px 20px 30px;
+        }
+    }
+
+    &__title {
+        @include font(('Inter', sans-serif), 20px, 24px, 600, var(--black-2));
+        margin: 5px 0 14px 0;
+    }
+
+    &__description {
+        @include font(('Inter', sans-serif), 16px, 24px, 400, var(--grey-4));
+        margin: 0;
+    }
+}
           </code>
         </pre>
       </div>

@@ -245,9 +245,14 @@
   flex-direction: column;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .modal__window {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 .modal__window--card {
   position: relative;
@@ -300,7 +305,7 @@
 .calendar {
   width: 100%;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 768px) {
   .calendar {
     border: 1px solid var(--grey-3);
     border-radius: 8px;
@@ -938,7 +943,7 @@
 }
 
 .header {
-  padding-left: calc(100vw - 100%);
+  padding: 17px 0 17px calc(100vw - 100%);
 }
 .header__title {
   color: var(--grey-4);
@@ -961,11 +966,10 @@
 }
 @media screen and (min-width: 1280px) {
   .header__top-section {
-    padding: 25px 0;
     justify-content: space-between;
   }
   .header__top-section--component {
-    padding: 25px 0 25px calc(100vw - 100%);
+    padding: 17px 0 17px calc(100vw - 100%);
   }
 }
 .header__top-section .header__theme-switch {
@@ -1031,8 +1035,10 @@
 .component__example--tooltip {
   padding: 64px 56px;
 }
-.component__example--calendar {
-  padding-right: 60%;
+@media screen and (min-width: 768px) {
+  .component__example--calendar {
+    padding-right: 60%;
+  }
 }
 .component__code {
   overflow-x: auto;

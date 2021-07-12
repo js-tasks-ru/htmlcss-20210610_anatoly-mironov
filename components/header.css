@@ -1,5 +1,5 @@
 .header {
-  padding-left: calc(100vw - 100%);
+  padding: 17px 0 17px calc(100vw - 100%);
 }
 .header__title {
   color: var(--grey-4);
@@ -22,11 +22,10 @@
 }
 @media screen and (min-width: 1280px) {
   .header__top-section {
-    padding: 25px 0;
     justify-content: space-between;
   }
   .header__top-section--component {
-    padding: 25px 0 25px calc(100vw - 100%);
+    padding: 17px 0 17px calc(100vw - 100%);
   }
 }
 .header__top-section .header__theme-switch {

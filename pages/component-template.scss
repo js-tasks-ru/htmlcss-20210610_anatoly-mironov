@@ -28,7 +28,9 @@
     }
 
     &--calendar {
-      padding-right: 60%;
+      @media screen and (min-width: $breakpoint-tablet){
+        padding-right: 60%;
+      }
     }
   }
 

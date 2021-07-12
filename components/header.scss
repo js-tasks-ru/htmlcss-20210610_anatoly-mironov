@@ -1,7 +1,7 @@
 @import "../config/_variables";
 
 .header {
-  padding-left: calc(100vw - 100%);
+  padding: 17px 0 17px calc(100vw - 100%);
 
   &__title {
     color: var(--grey-4);
@@ -23,11 +23,10 @@
     justify-content: center;
 
     @media screen and (min-width: $breakpoint-desktop) {
-      padding: 25px 0;
       justify-content: space-between;
 
       &--component {
-        padding: 25px 0 25px calc(100vw - 100%);
+        padding: 17px 0 17px calc(100vw - 100%);
       }
     }
 
