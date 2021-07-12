@@ -9,12 +9,13 @@
     display: flex;
     flex-direction: row;
     gap: 24px;
-    overflow: hidden;
+    overflow: scroll;
     padding: 0;
     margin: 0;
     border-bottom: 1px solid var(--grey-2);
 
     @media screen and (min-width: $breakpoint-tablet) {
+      overflow: hidden;
       gap: 40px;
     }
   }

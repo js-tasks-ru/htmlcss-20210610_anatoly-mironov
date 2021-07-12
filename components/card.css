@@ -22,6 +22,9 @@
 .card__body--checkbox-collection {
   gap: 37px;
 }
+.card__body--accordion {
+  flex-direction: column;
+}
 .card__checkbox-container {
   display: flex;
   flex-direction: column;

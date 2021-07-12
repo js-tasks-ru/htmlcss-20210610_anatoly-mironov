@@ -41,33 +41,40 @@
   border-color: var(--black);
 }
 
-.burger-menu__item, .burger-menu__section-title, .accordion-item__content, .accordion-item__summary {
+.burger-menu__item, .burger-menu__section-title, .accordion__content, .accordion__summary {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.accordion-item {
+.accordion {
   background: var(--white);
   border: 1px solid var(--grey-3);
   box-sizing: border-box;
   border-radius: 8px;
   margin-bottom: 8px;
   padding: 24px 32px;
+  width: 100%;
 }
-.accordion-item:last-child {
+.accordion[open] .accordion__icon {
+  transform: rotate(180deg);
+}
+.accordion:last-child {
   margin-bottom: 0;
 }
-.accordion-item__summary {
+.accordion__summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   list-style: none;
   color: var(--black);
   cursor: pointer;
 }
-.accordion-item__summary::-webkit-details-marker {
+.accordion__summary::-webkit-details-marker {
   display: none;
 }
-.accordion-item__content {
+.accordion__content {
   color: var(--grey-4);
   padding-top: 16px;
   padding-bottom: 8px;
@@ -638,7 +645,7 @@
   pointer-events: none;
 }
 
-.burger-menu__item, .burger-menu__section-title, .accordion-item__summary, .accordion-item__content {
+.burger-menu__item, .burger-menu__section-title, .accordion__summary, .accordion__content {
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
@@ -829,6 +836,9 @@
 .card__body--checkbox-collection {
   gap: 37px;
 }
+.card__body--accordion {
+  flex-direction: column;
+}
 .card__checkbox-container {
   display: flex;
   flex-direction: column;
@@ -920,13 +930,14 @@
   display: flex;
   flex-direction: row;
   gap: 24px;
-  overflow: hidden;
+  overflow: scroll;
   padding: 0;
   margin: 0;
   border-bottom: 1px solid var(--grey-2);
 }
 @media screen and (min-width: 768px) {
   .tab__navigation {
+    overflow: hidden;
     gap: 40px;
   }
 }

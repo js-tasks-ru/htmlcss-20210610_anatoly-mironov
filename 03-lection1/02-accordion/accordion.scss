@@ -5,19 +5,27 @@
   line-height: 24px;
 }
 
-.accordion-item {
+.accordion {
   background: var(--white);
   border: 1px solid var(--grey-3);
   box-sizing: border-box;
   border-radius: 8px;
   margin-bottom: 8px;
   padding: 24px 32px;
+  width: 100%;
+
+  &[open] .accordion__icon {
+    transform: rotate(180deg);
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
 
   &__summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     list-style: none;
     color: var(--black);
     cursor: pointer;

@@ -24,6 +24,10 @@
     &--checkbox-collection {
       gap: 37px;
     }
+
+    &--accordion {
+      flex-direction: column;
+    }
   }
 
   &__checkbox-container {

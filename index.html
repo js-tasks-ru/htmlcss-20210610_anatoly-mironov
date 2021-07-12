@@ -92,12 +92,13 @@
                 <h4 class='burger-menu__section-title'>Components</h4>
                 <nav>
                   <ul class='burger-menu__section-items'>
-                    <li><a class='burger-menu__item' href='#'>Modal</a></li>
-                    <li><a class='burger-menu__item' href='#'>Tooltip</a></li>
-                    <li><a class='burger-menu__item burger-menu__item--active' href='pages/avatar.html'>Avatar</a></li>
-                    <li><a class='burger-menu__item' href='#'>Calendar</a></li>
-                    <li><a class='burger-menu__item' href='#'>Histogram</a></li>
-                    <li><a class='burger-menu__item' href='#'>Custom form elements</a></li>
+                    <li><a class='burger-menu__item' href='pages/tooltip.html'>Tooltip</a></li>
+                    <li><a class='burger-menu__item' href='pages/elements.html'>Custom form elements</a></li>
+                    <li><a class='burger-menu__item' href='pages/calendar.html'>Calendar</a></li>
+                    <li><a class='burger-menu__item' href='pages/modal.html'>Modal dialog</a></li>
+                    <li><a class='burger-menu__item' href='pages/histogram.html'>Histogram</a></li>
+                    <li><a class='burger-menu__item' href='pages/avatar.html'>Avatar</a></li>
+                    <li><a class='burger-menu__item' href='pages/accordion.html'>Accordion</a></li>
                   </ul>
                 </nav>
               </div>
@@ -116,7 +117,7 @@
       <a class='card' href='pages/tooltip.html'>
         <div class='card__body'>
           <div class='tooltip tooltip--card'>
-            <img class='tooltip__icon' src='assets/images/help-icon.svg' alt='Tooltip'>
+            <img class='tooltip__icon' src='assets/images/help.svg' alt='Tooltip'>
             <div class='tooltip__text tooltip__text--card'>Helper Text</div>
           </div>
         </div>
@@ -132,7 +133,7 @@
               <input type='checkbox' class='checkbox__input'>
               <div class='checkbox__content'>
                 <div class='checkbox__control'>
-                  <img src='assets/images/tick-icon.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+                  <img src='assets/images/tick.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
                 </div>
                 <p class='checkbox__label'>Default</p>
               </div>
@@ -141,7 +142,7 @@
               <input type='checkbox' class='checkbox__input' checked>
               <div class='checkbox__content'>
                 <div class='checkbox__control'>
-                  <img src='assets/images/tick-icon.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+                  <img src='assets/images/tick.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
                 </div>
                 <p class='checkbox__label'>Checked</p>
               </div>
@@ -150,7 +151,7 @@
               <input type='checkbox' class='checkbox__input' disabled>
               <div class='checkbox__content'>
                 <div class='checkbox__control'>
-                  <img src='assets/images/tick-icon.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
+                  <img src='assets/images/tick.svg' alt='Checkbox tick' class='checkbox__tick-icon'>
                 </div>
                 <p class='checkbox__label'>Disabled</p>
               </div>
@@ -250,7 +251,7 @@
       </a>
       <a class='card' href='pages/modal.html'>
         <div class='card__body'>
-          <div id='modal' class='modal modal--card'>
+          <div class='modal modal--card'>
             <div class='modal__window modal__window--card'>
               <div class='modal__header'>
                 <img src='assets/images/x-icon.svg' alt='Close'>
@@ -333,7 +334,99 @@
     </div>
     <div class='tab__content cards-container' data-tab='atoms'></div>
     <div class='tab__content cards-container' data-tab='molecules'></div>
-    <div class='tab__content cards-container' data-tab='organisms'></div>
+    <div class='tab__content cards-container' data-tab='organisms'>
+      <a class='card' href='pages/modal.html'>
+        <div class='card__body'>
+          <div class='modal modal--card'>
+            <div class='modal__window modal__window--card'>
+              <div class='modal__header'>
+                <img src='assets/images/x-icon.svg' alt='Close'>
+              </div>
+              <div class='modal__body modal__body--card'>
+                <h4 class='modal__title'>Modal title</h4>
+                <p class='modal__description'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                  sint.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='card__footer'>
+          <h3 class='card__title'>Modal dialog</h3>
+          <p class='card__description'>Organism</p>
+        </div>
+      </a>
+      <a class='card' href='pages/histogram.html'>
+        <div class='card__body'>
+          <div class='histogram'>
+            <div class='histogram__header'>
+              <div class='histogram__total-orders-container'>
+                <p class='histogram__total-orders-name'>Total orders</p>
+                <h4 class='histogram__total-orders-value'>50254</h4>
+              </div>
+              <div class='histogram__view-all-link-container'>
+                <p class='histogram__view-all-link'>View all</p>
+              </div>
+            </div>
+            <div class='histogram__body'>
+              <div class='histogram__column' style='height: 50px'></div>
+              <div class='histogram__column' style='height: 35px'></div>
+              <div class='histogram__column' style='height: 22px'></div>
+              <div class='histogram__column' style='height: 39px'></div>
+              <div class='histogram__column' style='height: 22px'></div>
+              <div class='histogram__column' style='height: 30px'></div>
+              <div class='histogram__column' style='height: 39px'></div>
+              <div class='histogram__column' style='height: 50px'></div>
+              <div class='histogram__column' style='height: 11px'></div>
+              <div class='histogram__column' style='height: 22px'></div>
+              <div class='histogram__column' style='height: 30px'></div>
+              <div class='histogram__column' style='height: 35px'></div>
+              <div class='histogram__column' style='height: 11px'></div>
+              <div class='histogram__column' style='height: 50px'></div>
+              <div class='histogram__column' style='height: 11px'></div>
+              <div class='histogram__column' style='height: 39px'></div>
+              <div class='histogram__column' style='height: 30px'></div>
+              <div class='histogram__column' style='height: 22px'></div>
+              <div class='histogram__column' style='height: 35px'></div>
+              <div class='histogram__column' style='height: 30px'></div>
+              <div class='histogram__column' style='height: 11px'></div>
+              <div class='histogram__column' style='height: 39px'></div>
+              <div class='histogram__column' style='height: 35px'></div>
+              <div class='histogram__column' style='height: 45px'></div>
+              <div class='histogram__column' style='height: 30px'></div>
+              <div class='histogram__column' style='height: 11px'></div>
+              <div class='histogram__column' style='height: 30px'></div>
+              <div class='histogram__column' style='height: 11px'></div>
+              <div class='histogram__column' style='height: 35px'></div>
+              <div class='histogram__column' style='height: 17px'></div>
+            </div>
+          </div>
+        </div>
+        <div class='card__footer'>
+          <h3 class='card__title'>Histogram</h3>
+          <p class='card__description'>Organism</p>
+        </div>
+      </a>
+      <a class='card' href='pages/accordion.html'>
+        <div class='card__body card__body--accordion'>
+          <details class='accordion' open>
+            <summary class='accordion__summary'>Accordion item 1
+              <img class='accordion__icon' src='assets/images/v-icon.svg' alt='Show content'>
+            </summary>
+            <p class='accordion__content'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+          </details>
+          <details class='accordion'>
+            <summary class='accordion__summary'>Accordion item 2
+              <img class='accordion__icon' src='assets/images/v-icon.svg' alt='Show content'>
+            </summary>
+            <p class='accordion__content'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+          </details>
+        </div>
+        <div class='card__footer'>
+          <h3 class='card__title'>Accordion</h3>
+          <p class='card__description'>Organism</p>
+        </div>
+      </a>
+    </div>
   </div>
 </main>
 <footer class='footer'>
