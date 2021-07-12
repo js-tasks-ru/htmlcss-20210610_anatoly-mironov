@@ -74,10 +74,50 @@
       </button>
     </aside>
     <article class='component__content'>
-      <h2 class='component__title'>Avatar</h2>
+      <h2 class='component__title'>Histogram</h2>
       <div class='component__example'>
-        <div class='avatar'>
-          <img class='avatar__image' src='../06-lection4/01-avatar/public/avatar-200.jpg' alt='Avatar'>
+        <div class='histogram'>
+          <div class='histogram__header'>
+            <div class='histogram__total-orders-container'>
+              <p class='histogram__total-orders-name'>Total orders</p>
+              <h4 class='histogram__total-orders-value'>50254</h4>
+            </div>
+            <div class='histogram__view-all-link-container'>
+              <a href='#' target='_self' class='histogram__view-all-link'>View all</a>
+            </div>
+          </div>
+          <div class='histogram__body'>
+            <div class='histogram__column' style='height: 50px'></div>
+            <div class='histogram__column' style='height: 35px'></div>
+            <div class='histogram__column' style='height: 22px'></div>
+            <div class='histogram__column' style='height: 39px'></div>
+            <div class='histogram__column' style='height: 22px'></div>
+            <div class='histogram__column' style='height: 30px'></div>
+            <div class='histogram__column' style='height: 39px'></div>
+            <div class='histogram__column' style='height: 50px'></div>
+            <div class='histogram__column' style='height: 11px'></div>
+            <div class='histogram__column' style='height: 22px'></div>
+            <div class='histogram__column' style='height: 30px'></div>
+            <div class='histogram__column' style='height: 35px'></div>
+            <div class='histogram__column' style='height: 11px'></div>
+            <div class='histogram__column' style='height: 50px'></div>
+            <div class='histogram__column' style='height: 11px'></div>
+            <div class='histogram__column' style='height: 39px'></div>
+            <div class='histogram__column' style='height: 30px'></div>
+            <div class='histogram__column' style='height: 22px'></div>
+            <div class='histogram__column' style='height: 35px'></div>
+            <div class='histogram__column' style='height: 30px'></div>
+            <div class='histogram__column' style='height: 11px'></div>
+            <div class='histogram__column' style='height: 39px'></div>
+            <div class='histogram__column' style='height: 35px'></div>
+            <div class='histogram__column' style='height: 45px'></div>
+            <div class='histogram__column' style='height: 30px'></div>
+            <div class='histogram__column' style='height: 11px'></div>
+            <div class='histogram__column' style='height: 30px'></div>
+            <div class='histogram__column' style='height: 11px'></div>
+            <div class='histogram__column' style='height: 35px'></div>
+            <div class='histogram__column' style='height: 17px'></div>
+          </div>
         </div>
       </div>
       <div class='tab'>
@@ -103,27 +143,93 @@
         </nav>
         <pre class='tab__content' data-tab='html' active='true'>
           <code class='component__code'>
-&ltdiv class='avatar'&gt
-  &ltimg class='avatar__image' src='avatar-200.jpg' alt='Avatar'&gt
+&ltdiv class='histogram'&gt
+  &ltdiv class='histogram__header'&gt
+    &ltdiv class='histogram__total-orders-container'&gt
+      &ltp class='histogram__total-orders-name'&gtTotal orders&lt/p&gt
+      &lth4 class='histogram__total-orders-value'&gt50254&lt/h4&gt
+    &lt/div&gt
+    &ltdiv class='histogram__view-all-link-container'&gt
+      &lta href='#' target='_self' class='histogram__view-all-link'&gtAll&lt/a&gt
+    &lt/div&gt
+  &lt/div&gt
+  &ltdiv class='histogram__body'&gt
+    &ltdiv class='histogram__column' style='height: 50px'&gt&lt/div&gt
+    &ltdiv class='histogram__column' style='height: 35px'&gt&lt/div&gt
+    &ltdiv class='histogram__column' style='height: 22px'&gt&lt/div&gt
+    &ltdiv class='histogram__column' style='height: 39px'&gt&lt/div&gt
+    &ltdiv class='histogram__column' style='height: 22px'&gt&lt/div&gt
+  &lt/div&gt
 &lt/div&gt
           </code>
         </pre>
         <pre class='tab__content' data-tab='css'>
           <code>
-.avatar {
-  width: 102px;
-  height: 102px;
+.histogram {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  color: var(--black);
 
-  &--card {
-    width: 160px;
-    height: 160px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 16px 24px 24px 24px;
   }
 
-  &__image {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__total-orders-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6px;
+  }
+
+  &__total-orders-name {
+    margin: 0;
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__total-orders-value {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  &__view-all-link-container {
+    padding-top: 3px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__view-all-link {
+    color: var(--blue);
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1px;
+  }
+
+  &__column {
+    background: var(--blue);
+    flex-grow: 1;
   }
 }
           </code>

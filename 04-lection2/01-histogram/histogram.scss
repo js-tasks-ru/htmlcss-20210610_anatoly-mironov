@@ -44,12 +44,15 @@
 
   &__view-all-link-container {
     padding-top: 3px;
+    display: flex;
+    align-items: flex-start;
   }
 
   &__view-all-link {
     color: var(--blue);
     font-weight: 400;
     text-decoration: none;
+    margin: 0;
   }
 
   &__body {
