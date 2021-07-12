@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='ru'>
 <head>
-  <title>Reusable component library</title>
+  <title>Reusable component template</title>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' href='../index.css'>
@@ -53,12 +53,12 @@
                 <h4 class='burger-menu__section-title'>Components</h4>
                 <nav>
                   <ul class='burger-menu__section-items'>
-                    <li><a class='burger-menu__item' href='#'>Tooltip</a></li>
-                    <li><a class='burger-menu__item' href='#'>Custom form elements</a></li>
-                    <li><a class='burger-menu__item' href='#'>Calendar</a></li>
-                    <li><a class='burger-menu__item' href='#'>Modal</a></li>
-                    <li><a class='burger-menu__item' href='#'>Histogram</a></li>
-                    <li><a class='burger-menu__item burger-menu__item--active' href='avatar.html'>Avatar</a></li>
+                    <li><a class='burger-menu__item' href='tooltip.html'>Tooltip</a></li>
+                    <li><a class='burger-menu__item burger-menu__item--active' href='elements.html'>Custom form elements</a></li>
+                    <li><a class='burger-menu__item' href='calendar.html'>Calendar</a></li>
+                    <li><a class='burger-menu__item' href='modal.html'>Modal</a></li>
+                    <li><a class='burger-menu__item' href='histogram.html'>Histogram</a></li>
+                    <li><a class='burger-menu__item' href='avatar.html'>Avatar</a></li>
                   </ul>
                 </nav>
               </div>
@@ -74,11 +74,9 @@
       </button>
     </aside>
     <article class='component__content'>
-      <h2 class='component__title'>Avatar</h2>
+      <h2 class='component__title'>Component name</h2>
       <div class='component__example'>
-        <div class='avatar'>
-          <img class='avatar__image' src='../06-lection4/01-avatar/public/avatar-200.jpg' alt='Avatar'>
-        </div>
+        <!--Put component here-->
       </div>
       <div class='tab'>
         <nav>
@@ -103,29 +101,12 @@
         </nav>
         <pre class='tab__content' data-tab='html' active='true'>
           <code class='component__code'>
-&ltdiv class='avatar'&gt
-  &ltimg class='avatar__image' src='avatar-200.jpg' alt='Avatar'&gt
-&lt/div&gt
+            <!--Put component HTML here-->
           </code>
         </pre>
         <pre class='tab__content' data-tab='css'>
-          <code>
-.avatar {
-  width: 102px;
-  height: 102px;
-
-  &--card {
-    width: 160px;
-    height: 160px;
-  }
-
-  &__image {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-}
+          <code class='component__code'>
+            <!--Put component CSS here-->
           </code>
         </pre>
       </div>

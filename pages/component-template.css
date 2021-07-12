@@ -25,6 +25,9 @@
 .component__example--tooltip {
   padding: 64px 56px;
 }
+.component__example--calendar {
+  padding-right: 60%;
+}
 .component__code {
   overflow-x: auto;
 }

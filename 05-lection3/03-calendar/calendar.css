@@ -55,7 +55,7 @@
   background: var(--blue);
   color: var(--white);
 }
-.calendar__date--between-active {
+.calendar__date--between {
   background: var(--purple-3);
 }
 

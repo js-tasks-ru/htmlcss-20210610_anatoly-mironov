@@ -348,7 +348,7 @@
   background: var(--blue);
   color: var(--white);
 }
-.calendar__date--between-active {
+.calendar__date--between {
   background: var(--purple-3);
 }
 
@@ -1030,6 +1030,9 @@
 }
 .component__example--tooltip {
   padding: 64px 56px;
+}
+.component__example--calendar {
+  padding-right: 60%;
 }
 .component__code {
   overflow-x: auto;
