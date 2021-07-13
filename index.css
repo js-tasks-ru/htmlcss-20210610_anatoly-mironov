@@ -7,7 +7,7 @@
   line-height: 19px;
   display: inline-block;
   font-style: normal;
-  padding: 15px 15px 14px 15px;
+  padding: 0 8px;
   height: 48px;
   border-radius: 8px;
   border: none;
@@ -843,6 +843,14 @@
 .card__body--accordion {
   flex-direction: column;
 }
+.card__body--button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+}
+.card__body--calendar {
+  padding: 24px 48px;
+}
 .card__checkbox-container {
   display: flex;
   flex-direction: column;
@@ -1047,6 +1055,11 @@
 }
 .component__example--tooltip {
   padding: 64px 56px;
+}
+.component__example--button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 @media screen and (min-width: 768px) {
   .component__example--calendar {

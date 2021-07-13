@@ -28,6 +28,16 @@
     &--accordion {
       flex-direction: column;
     }
+
+    &--button {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 16px;
+    }
+
+    &--calendar {
+      padding: 24px 48px;
+    }
   }
 
   &__checkbox-container {

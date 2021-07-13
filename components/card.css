@@ -25,6 +25,14 @@
 .card__body--accordion {
   flex-direction: column;
 }
+.card__body--button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 16px;
+}
+.card__body--calendar {
+  padding: 24px 48px;
+}
 .card__checkbox-container {
   display: flex;
   flex-direction: column;

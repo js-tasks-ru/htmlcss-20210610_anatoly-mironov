@@ -27,6 +27,12 @@
       padding: 64px 56px;
     }
 
+    &--button {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
     &--calendar {
       @media screen and (min-width: $breakpoint-tablet){
         padding-right: 60%;

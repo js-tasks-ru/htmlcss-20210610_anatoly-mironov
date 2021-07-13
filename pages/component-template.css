@@ -25,6 +25,11 @@
 .component__example--tooltip {
   padding: 64px 56px;
 }
+.component__example--button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
 @media screen and (min-width: 768px) {
   .component__example--calendar {
     padding-right: 60%;
