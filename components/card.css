@@ -9,15 +9,10 @@
 }
 .card__body {
   flex-grow: 1;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media screen and (min-width: 1280px) {
-  .card__body {
-    padding: 2rem;
-  }
 }
 .card__body--checkbox-collection {
   gap: 37px;
@@ -28,7 +23,7 @@
 .card__body--button {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 16px;
+  gap: 16px;
 }
 .card__body--calendar {
   padding: 24px 48px;

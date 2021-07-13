@@ -124,10 +124,14 @@
   color: var(--grey-3);
   margin: 0;
 }
+.burger-menu__color-switch .toggle {
+  width: 100%;
+}
 .burger-menu__color-switch .toggle__content {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  align-items: center;
 }
 .burger-menu__item {
   font-size: 16px;
