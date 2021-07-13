@@ -1,5 +1,5 @@
 .header {
-  padding: 17px 0 0 calc(100vw - 100%);
+  padding: 16px 0 0 calc(100vw - 100%);
 }
 .header__title {
   color: var(--grey-4);
@@ -20,13 +20,14 @@
 .header__top-section {
   display: flex;
   justify-content: center;
+  padding-bottom: 16px;
 }
 @media screen and (min-width: 1280px) {
   .header__top-section {
     justify-content: space-between;
   }
   .header__top-section--component {
-    padding: 17px 0 17px calc(100vw - 100%);
+    padding: 16px 0 16px calc(100vw - 100%);
   }
 }
 .header__top-section .header__theme-switch {
@@ -37,7 +38,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 16px;
   }
 }
 
