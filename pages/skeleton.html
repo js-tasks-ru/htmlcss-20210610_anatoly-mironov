@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='ru'>
 <head>
-  <title>Histogram</title>
+  <title>Skeleton</title>
   <meta charset='utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' href='../index.css'>
@@ -57,10 +57,10 @@
                     <li><a class='burger-menu__item' href='elements.html'>Custom form elements</a></li>
                     <li><a class='burger-menu__item' href='calendar.html'>Calendar</a></li>
                     <li><a class='burger-menu__item' href='modal.html'>Modal dialog</a></li>
-                    <li><a class='burger-menu__item burger-menu__item--active' href='histogram.html'>Histogram</a></li>
+                    <li><a class='burger-menu__item' href='histogram.html'>Histogram</a></li>
                     <li><a class='burger-menu__item' href='avatar.html'>Avatar</a></li>
                     <li><a class='burger-menu__item' href='accordion.html'>Accordion</a></li>
-                    <li><a class='burger-menu__item' href='skeleton.html'>Skeleton</a></li>
+                    <li><a class='burger-menu__item burger-menu__item--active' href='skeleton.html'>Skeleton</a></li>
                   </ul>
                 </nav>
               </div>
@@ -76,49 +76,19 @@
       </button>
     </aside>
     <article class='component__content'>
-      <h2 class='component__title'>Histogram</h2>
+      <h2 class='component__title'>Skeleton</h2>
       <div class='component__example'>
-        <div class='histogram'>
-          <div class='histogram__header'>
-            <div class='histogram__total-orders-container'>
-              <p class='histogram__total-orders-name'>Total orders</p>
-              <h4 class='histogram__total-orders-value'>50254</h4>
-            </div>
-            <div class='histogram__view-all-link-container'>
-              <a href='#' target='_self' class='histogram__view-all-link'>View all</a>
+        <div class='skeleton'>
+          <div class='skeleton__header'>
+            <div class='skeleton__avatar'></div>
+            <div class='skeleton__short-rows'>
+              <div class='skeleton__row skeleton__row--small'></div>
+              <div class='skeleton__row skeleton__row--medium'></div>
             </div>
           </div>
-          <div class='histogram__body'>
-            <div class='histogram__column' style='height: 50px'></div>
-            <div class='histogram__column' style='height: 35px'></div>
-            <div class='histogram__column' style='height: 22px'></div>
-            <div class='histogram__column' style='height: 39px'></div>
-            <div class='histogram__column' style='height: 22px'></div>
-            <div class='histogram__column' style='height: 30px'></div>
-            <div class='histogram__column' style='height: 39px'></div>
-            <div class='histogram__column' style='height: 50px'></div>
-            <div class='histogram__column' style='height: 11px'></div>
-            <div class='histogram__column' style='height: 22px'></div>
-            <div class='histogram__column' style='height: 30px'></div>
-            <div class='histogram__column' style='height: 35px'></div>
-            <div class='histogram__column' style='height: 11px'></div>
-            <div class='histogram__column' style='height: 50px'></div>
-            <div class='histogram__column' style='height: 11px'></div>
-            <div class='histogram__column' style='height: 39px'></div>
-            <div class='histogram__column' style='height: 30px'></div>
-            <div class='histogram__column' style='height: 22px'></div>
-            <div class='histogram__column' style='height: 35px'></div>
-            <div class='histogram__column' style='height: 30px'></div>
-            <div class='histogram__column' style='height: 11px'></div>
-            <div class='histogram__column' style='height: 39px'></div>
-            <div class='histogram__column' style='height: 35px'></div>
-            <div class='histogram__column' style='height: 45px'></div>
-            <div class='histogram__column' style='height: 30px'></div>
-            <div class='histogram__column' style='height: 11px'></div>
-            <div class='histogram__column' style='height: 30px'></div>
-            <div class='histogram__column' style='height: 11px'></div>
-            <div class='histogram__column' style='height: 35px'></div>
-            <div class='histogram__column' style='height: 17px'></div>
+          <div class='skeleton__body'>
+            <div class='skeleton__row'></div>
+            <div class='skeleton__row'></div>
           </div>
         </div>
       </div>
@@ -145,94 +115,67 @@
         </nav>
         <pre class='tab__content' data-tab='html' active='true'>
           <code class='component__code'>
-&ltdiv class='histogram'&gt
-  &ltdiv class='histogram__header'&gt
-    &ltdiv class='histogram__total-orders-container'&gt
-      &ltp class='histogram__total-orders-name'&gtTotal orders&lt/p&gt
-      &lth4 class='histogram__total-orders-value'&gt50254&lt/h4&gt
+  &ltdiv class='skeleton'&gt
+    &ltdiv class='skeleton__header'&gt
+      &ltdiv class='skeleton__avatar'&gt&lt/div&gt
+      &ltdiv class='skeleton__short-rows'&gt
+        &ltdiv class='skeleton__row skeleton__row--small'&gt&lt/div&gt
+        &ltdiv class='skeleton__row skeleton__row--medium'&gt&lt/div&gt
+      &lt/div&gt
     &lt/div&gt
-    &ltdiv class='histogram__view-all-link-container'&gt
-      &lta href='#' target='_self' class='histogram__view-all-link'&gtAll&lt/a&gt
+    &ltdiv class='skeleton__body'&gt
+      &ltdiv class='skeleton__row'&gt&lt/div&gt
+      &ltdiv class='skeleton__row'&gt&lt/div&gt
     &lt/div&gt
   &lt/div&gt
-  &ltdiv class='histogram__body'&gt
-    &ltdiv class='histogram__column' style='height: 50px'&gt&lt/div&gt
-    &ltdiv class='histogram__column' style='height: 35px'&gt&lt/div&gt
-    &ltdiv class='histogram__column' style='height: 22px'&gt&lt/div&gt
-    &ltdiv class='histogram__column' style='height: 39px'&gt&lt/div&gt
-    &ltdiv class='histogram__column' style='height: 22px'&gt&lt/div&gt
-  &lt/div&gt
-&lt/div&gt
           </code>
         </pre>
         <pre class='tab__content' data-tab='css'>
           <code class='component__code'>
-.histogram {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 39px;
-  color: var(--black);
-
-  @media screen and (min-width: $breakpoint-desktop) {
+.skeleton {
+    width: 100%;
     border: 1px solid var(--grey-3);
-    border-radius: 8px;
     box-sizing: border-box;
-    padding: 16px 24px 24px 24px;
-  }
-
-  &__header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  &__total-orders-container {
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 6px;
-  }
+    padding: 24px 40px 32px 24px;
 
-  &__total-orders-name {
-    margin: 0;
-    opacity: 0.8;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-  }
+    &__header {
+        display: flex;
+    }
 
-  &__total-orders-value {
-    margin: 0;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-  }
+    &__body {
+        margin-top: 16px;
+    }
 
-  &__view-all-link-container {
-    padding-top: 3px;
-    display: flex;
-    align-items: flex-start;
-  }
+    &__avatar {
+        height: 64px;
+        width: 64px;
+        background: var(--grey-2);
+        border-radius: 50%;
+    }
 
-  &__view-all-link {
-    color: var(--blue);
-    font-weight: 400;
-    text-decoration: none;
-    margin: 0;
-  }
+    &__short-rows {
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+        flex-grow: 1;
+    }
 
-  &__body {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 1px;
-  }
+    &__row {
+        height: 20px;
+        margin-top: 8px;
+        background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 
-  &__column {
-    background: var(--blue);
-    flex-grow: 1;
-  }
+        &--small {
+            width: 39%;
+        }
+
+        &--medium {
+            width: 59%;
+        }
+    }
 }
           </code>
         </pre>

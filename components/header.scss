@@ -1,20 +1,21 @@
 @import "../config/_variables";
 
 .header {
-  padding: 17px 0 17px calc(100vw - 100%);
+  padding: 17px 0 0 calc(100vw - 100%);
 
   &__title {
     color: var(--grey-4);
     font-weight: 400;
     font-size: 28px;
     line-height: 38px;
-    margin: 0 0 32px 0;
+    margin: 32px 0;
 
     @media screen and (min-width: $breakpoint-desktop) {
       color: var(--black);
       font-weight: 500;
       font-size: 50px;
       line-height: 64px;
+      margin: 40px 0;
     }
   }
 

@@ -798,6 +798,9 @@
   grid-template-columns: 1fr;
   grid-row-gap: 16px;
 }
+.cards-container[data-type=all] .card, .cards-container[data-type=atom] .card[data-type=atom], .cards-container[data-type=molecule] .card[data-type=molecule], .cards-container[data-type=organism] .card[data-type=organism] {
+  display: flex;
+}
 @media screen and (min-width: 768px) {
   .cards-container {
     grid-template-columns: 1fr 1fr;
@@ -817,7 +820,7 @@
   background: var(--white);
   box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
   border-radius: 12px;
-  display: flex;
+  display: none;
   flex: 1 1;
   flex-direction: column;
   text-decoration: none;
@@ -923,9 +926,6 @@
   text-transform: uppercase;
 }
 
-.tab {
-  background: var(--white);
-}
 .tab__navigation {
   list-style-type: none;
   display: flex;
@@ -955,14 +955,14 @@
 }
 
 .header {
-  padding: 17px 0 17px calc(100vw - 100%);
+  padding: 17px 0 0 calc(100vw - 100%);
 }
 .header__title {
   color: var(--grey-4);
   font-weight: 400;
   font-size: 28px;
   line-height: 38px;
-  margin: 0 0 32px 0;
+  margin: 32px 0;
 }
 @media screen and (min-width: 1280px) {
   .header__title {
@@ -970,6 +970,7 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
+    margin: 40px 0;
   }
 }
 .header__top-section {

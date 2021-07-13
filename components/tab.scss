@@ -2,8 +2,6 @@
 @import "../config/_mixins";
 
 .tab {
-  background: var(--white);
-
   &__navigation {
     list-style-type: none;
     display: flex;

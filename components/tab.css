@@ -1,6 +1,3 @@
-.tab {
-  background: var(--white);
-}
 .tab__navigation {
   list-style-type: none;
   display: flex;

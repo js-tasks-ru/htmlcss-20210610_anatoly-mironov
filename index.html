@@ -6,7 +6,7 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' href='index.css'>
   <script defer src='09-lection7/01-burger-menu/burger-menu.js'></script>
-  <script defer src='assets/js/navigation.js'></script>
+  <script defer src='assets/js/cards.js'></script>
 </head>
 <body class='page'>
 <header class='header'>
@@ -29,11 +29,11 @@
       </div>
     </div>
     <h1 class='header__title'>Reusable component library</h1>
-    <nav class='tab'>
+    <nav>
       <ul class='tab__navigation'>
         <li>
           <label class='radio'>
-            <input id='all' name='components-group' type='radio' class='radio__input' checked>
+            <input id='all' name='components-group' type='radio' class='radio__input'>
             <div class='radio__content radio__content--component'>
               <p class='radio__label'>All components</p>
             </div>
@@ -41,7 +41,7 @@
         </li>
         <li>
           <label class='radio'>
-            <input id='atoms' name='components-group' type='radio' class='radio__input'>
+            <input id='atom' name='components-group' type='radio' class='radio__input'>
             <div class='radio__content radio__content--component'>
               <p class='radio__label'>Atoms</p>
             </div>
@@ -49,7 +49,7 @@
         </li>
         <li>
           <label class='radio'>
-            <input id='molecules' name='components-group' type='radio' class='radio__input'>
+            <input id='molecule' name='components-group' type='radio' class='radio__input'>
             <div class='radio__content radio__content--component'>
               <p class='radio__label'>Molecules</p>
             </div>
@@ -57,7 +57,7 @@
         </li>
         <li>
           <label class='radio'>
-            <input id='organisms' name='components-group' type='radio' class='radio__input'>
+            <input id='organism' name='components-group' type='radio' class='radio__input'>
             <div class='radio__content radio__content--component'>
               <p class='radio__label'>Organisms</p>
             </div>
@@ -113,8 +113,8 @@
         <img class='menu-control-button__icon' src='assets/images/x-icon.svg' alt='Close menu'>
       </button>
     </aside>
-    <div class='tab__content cards-container' data-tab='all' active='true'>
-      <a class='card' href='pages/tooltip.html'>
+    <div class='cards-container' data-type='all'>
+      <a class='card' data-type='atom' href='pages/tooltip.html'>
         <div class='card__body'>
           <div class='tooltip tooltip--card'>
             <img class='tooltip__icon' src='assets/images/help.svg' alt='Tooltip'>
@@ -126,7 +126,7 @@
           <p class='card__description'>Atom</p>
         </div>
       </a>
-      <a class='card' href='pages/elements.html'>
+      <a class='card' data-type='molecule' href='pages/elements.html'>
         <div class='card__body card__body--checkbox-collection'>
           <div class='card__checkbox-container'>
             <label class='checkbox'>
@@ -192,7 +192,7 @@
           <p class='card__description'>Molecules</p>
         </div>
       </a>
-      <a class='card' href='pages/calendar.html'>
+      <a class='card' data-type='molecule' href='pages/calendar.html'>
         <div class='card__body'>
           <div class='calendar'>
             <div class='calendar__header'>October 2019</div>
@@ -249,7 +249,7 @@
           <p class='card__description'>Molecule</p>
         </div>
       </a>
-      <a class='card' href='pages/modal.html'>
+      <a class='card' data-type='organism' href='pages/modal.html'>
         <div class='card__body'>
           <div class='modal modal--card'>
             <div class='modal__window modal__window--card'>
@@ -268,7 +268,7 @@
           <p class='card__description'>Organism</p>
         </div>
       </a>
-      <a class='card' href='pages/histogram.html'>
+      <a class='card' data-type='organism' href='pages/histogram.html'>
         <div class='card__body'>
           <div class='histogram'>
             <div class='histogram__header'>
@@ -319,7 +319,7 @@
           <p class='card__description'>Organism</p>
         </div>
       </a>
-      <a class='card' href='pages/avatar.html'>
+      <a class='card' data-type='atom' href='pages/avatar.html'>
         <div class='card__body'>
           <div class='avatar avatar--card'>
             <img class='avatar__image' src='06-lection4/01-avatar/public/avatar-200.jpg' alt='Avatar'>
@@ -330,7 +330,7 @@
           <p class='card__description'>Atom</p>
         </div>
       </a>
-      <a class='card' href='pages/accordion.html'>
+      <a class='card' data-type='organism' href='pages/accordion.html'>
         <div class='card__body card__body--accordion'>
           <details class='accordion' open>
             <summary class='accordion__summary'>Accordion item 1
@@ -350,7 +350,7 @@
           <p class='card__description'>Organism</p>
         </div>
       </a>
-      <a class='card' href='pages/skeleton.html'>
+      <a class='card' data-type='molecule' href='pages/skeleton.html'>
         <div class='card__body'>
           <div class='skeleton'>
             <div class='skeleton__header'>
@@ -369,124 +369,6 @@
         <div class='card__footer'>
           <h3 class='card__title'>Skeleton</h3>
           <p class='card__description'>Molecule</p>
-        </div>
-      </a>
-    </div>
-    <div class='tab__content cards-container' data-tab='atoms'>
-      <a class='card' href='pages/tooltip.html'>
-        <div class='card__body'>
-          <div class='tooltip tooltip--card'>
-            <img class='tooltip__icon' src='assets/images/help.svg' alt='Tooltip'>
-            <div class='tooltip__text tooltip__text--card'>Helper Text</div>
-          </div>
-        </div>
-        <div class='card__footer'>
-          <h3 class='card__title'>Tooltip</h3>
-          <p class='card__description'>Atom</p>
-        </div>
-      </a>
-      <a class='card' href='pages/avatar.html'>
-        <div class='card__body'>
-          <div class='avatar avatar--card'>
-            <img class='avatar__image' src='06-lection4/01-avatar/public/avatar-200.jpg' alt='Avatar'>
-          </div>
-        </div>
-        <div class='card__footer'>
-          <h3 class='card__title'>Avatar</h3>
-          <p class='card__description'>Atom</p>
-        </div>
-      </a>
-    </div>
-    <div class='tab__content cards-container' data-tab='molecules'></div>
-    <div class='tab__content cards-container' data-tab='organisms'>
-      <a class='card' href='pages/modal.html'>
-        <div class='card__body'>
-          <div class='modal modal--card'>
-            <div class='modal__window modal__window--card'>
-              <div class='modal__header'>
-                <img src='assets/images/x-icon.svg' alt='Close'>
-              </div>
-              <div class='modal__body modal__body--card'>
-                <h4 class='modal__title'>Modal title</h4>
-                <p class='modal__description'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet unro perta sint.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class='card__footer'>
-          <h3 class='card__title'>Modal dialog</h3>
-          <p class='card__description'>Organism</p>
-        </div>
-      </a>
-      <a class='card' href='pages/histogram.html'>
-        <div class='card__body'>
-          <div class='histogram'>
-            <div class='histogram__header'>
-              <div class='histogram__total-orders-container'>
-                <p class='histogram__total-orders-name'>Total orders</p>
-                <h4 class='histogram__total-orders-value'>50254</h4>
-              </div>
-              <div class='histogram__view-all-link-container'>
-                <p class='histogram__view-all-link'>View all</p>
-              </div>
-            </div>
-            <div class='histogram__body'>
-              <div class='histogram__column' style='height: 50px'></div>
-              <div class='histogram__column' style='height: 35px'></div>
-              <div class='histogram__column' style='height: 22px'></div>
-              <div class='histogram__column' style='height: 39px'></div>
-              <div class='histogram__column' style='height: 22px'></div>
-              <div class='histogram__column' style='height: 30px'></div>
-              <div class='histogram__column' style='height: 39px'></div>
-              <div class='histogram__column' style='height: 50px'></div>
-              <div class='histogram__column' style='height: 11px'></div>
-              <div class='histogram__column' style='height: 22px'></div>
-              <div class='histogram__column' style='height: 30px'></div>
-              <div class='histogram__column' style='height: 35px'></div>
-              <div class='histogram__column' style='height: 11px'></div>
-              <div class='histogram__column' style='height: 50px'></div>
-              <div class='histogram__column' style='height: 11px'></div>
-              <div class='histogram__column' style='height: 39px'></div>
-              <div class='histogram__column' style='height: 30px'></div>
-              <div class='histogram__column' style='height: 22px'></div>
-              <div class='histogram__column' style='height: 35px'></div>
-              <div class='histogram__column' style='height: 30px'></div>
-              <div class='histogram__column' style='height: 11px'></div>
-              <div class='histogram__column' style='height: 39px'></div>
-              <div class='histogram__column' style='height: 35px'></div>
-              <div class='histogram__column' style='height: 45px'></div>
-              <div class='histogram__column' style='height: 30px'></div>
-              <div class='histogram__column' style='height: 11px'></div>
-              <div class='histogram__column' style='height: 30px'></div>
-              <div class='histogram__column' style='height: 11px'></div>
-              <div class='histogram__column' style='height: 35px'></div>
-              <div class='histogram__column' style='height: 17px'></div>
-            </div>
-          </div>
-        </div>
-        <div class='card__footer'>
-          <h3 class='card__title'>Histogram</h3>
-          <p class='card__description'>Organism</p>
-        </div>
-      </a>
-      <a class='card' href='pages/accordion.html'>
-        <div class='card__body card__body--accordion'>
-          <details class='accordion' open>
-            <summary class='accordion__summary'>Accordion item 1
-              <img class='accordion__icon' src='assets/images/v-icon.svg' alt='Show content'>
-            </summary>
-            <p class='accordion__content'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
-          </details>
-          <details class='accordion'>
-            <summary class='accordion__summary'>Accordion item 2
-              <img class='accordion__icon' src='assets/images/v-icon.svg' alt='Show content'>
-            </summary>
-            <p class='accordion__content'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
-          </details>
-        </div>
-        <div class='card__footer'>
-          <h3 class='card__title'>Accordion</h3>
-          <p class='card__description'>Organism</p>
         </div>
       </a>
     </div>
