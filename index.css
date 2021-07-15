@@ -764,6 +764,11 @@
   justify-content: center;
   padding-bottom: 32px;
 }
+.burger-menu__logo {
+  color: black;
+  width: 130px;
+  height: 32px;
+}
 .burger-menu__section {
   padding: 24px 0;
   border-top: 1px solid var(--grey-2);

@@ -147,5 +147,10 @@
 .burger-menu__footer {
   padding-top: 56px;
 }
+.burger-menu__logo {
+  color: black;
+  width: 130px;
+  height: 32px;
+}
 
 /*# sourceMappingURL=burger-menu.css.map */
