@@ -1,4 +1,4 @@
-@import "../../config/_mixins";
+@import "../../config/mixins";
 
 .textbox {
     @include font(('Inter', sans-serif), 12px, 18px, 500, var(--grey-3));

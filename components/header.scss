@@ -5,6 +5,12 @@
   border-bottom: 1px solid var(--grey-2);
   background: var(--white);
 
+  &__logo {
+    color: var(--black);
+    width: 110px;
+    height: 32px;
+  }
+
   &__title {
     color: var(--grey-4);
     font-weight: 400;
