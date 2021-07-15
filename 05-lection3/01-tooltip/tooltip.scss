@@ -38,13 +38,19 @@
     }
   }
 
-  &__icon:hover {
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
+  &__icon {
+    color: var(--black);
+    width: 24px;
+    height: 24px;
 
-    & + .tooltip__text {
-      display: flex;
+    &:hover {
+      cursor: pointer;
+      position: relative;
+      z-index: 2;
+
+      & + .tooltip__text {
+        display: flex;
+      }
     }
   }
 }
