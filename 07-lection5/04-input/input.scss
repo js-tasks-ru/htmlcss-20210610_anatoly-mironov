@@ -30,6 +30,7 @@
         }
 
         &:focus:not(.textbox__input--error) {
+            border: none;
             box-shadow: 0 0 0 1px var(--blue);
         }
 
@@ -45,6 +46,10 @@
 
         &--error {
             border: 1px solid var(--red);
+        }
+
+        &--success {
+            border: 1px solid var(--blue);
         }
 
         &--success ~ .textbox__icon-success,

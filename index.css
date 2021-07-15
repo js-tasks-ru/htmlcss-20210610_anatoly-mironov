@@ -620,6 +620,7 @@
   color: var(--grey-4);
 }
 .textbox__input:focus:not(.textbox__input--error) {
+  border: none;
   box-shadow: 0 0 0 1px var(--blue);
 }
 .textbox__input::placeholder {
@@ -632,6 +633,9 @@
 }
 .textbox__input--error {
   border: 1px solid var(--red);
+}
+.textbox__input--success {
+  border: 1px solid var(--blue);
 }
 .textbox__input--success ~ .textbox__icon-success, .textbox__input--error ~ .textbox__icon-error {
   display: block;
