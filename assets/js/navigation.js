@@ -8,4 +8,7 @@ const onClick = ({ target }) => {
 
 const navigation = document.querySelector('.tab');
 const tabs = document.querySelectorAll('.tab__content');
-navigation.addEventListener('click', onClick);
+
+if (navigation) {
+    navigation.addEventListener('click', onClick);
+}

@@ -886,16 +886,18 @@
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   color: var(--grey-4);
-  max-width: 640px;
-  margin: 0 auto;
   padding: 32px 16px;
+  background: var(--white);
 }
 @media screen and (min-width: 1280px) {
   .footer {
     color: var(--black);
-    padding: 71px 0 136px 0;
+    padding: 71px 25% 136px 25%;
   }
 }
 .footer__title {
@@ -923,6 +925,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background: none;
 }
 .footer--component .footer__title {
   font-family: "Inter", sans-serif;
@@ -941,6 +944,8 @@
   overflow: scroll;
   padding: 0;
   margin: 0;
+}
+.tab__navigation--component {
   border-bottom: 1px solid var(--grey-2);
 }
 @media screen and (min-width: 768px) {
@@ -963,6 +968,8 @@
 
 .header {
   padding: 16px 0 0 calc(100vw - 100%);
+  border-bottom: 1px solid var(--grey-2);
+  background: var(--white);
 }
 .header__title {
   color: var(--grey-4);
@@ -984,6 +991,8 @@
   display: flex;
   justify-content: center;
   padding-bottom: 16px;
+  border-bottom: none;
+  background: none;
 }
 @media screen and (min-width: 1280px) {
   .header__top-section {
@@ -1029,12 +1038,34 @@
   display: inline-block;
 }
 
+html[data-theme-dark] {
+  --white: #212429;
+  --black: #87888b;
+  --grey-4: #DDE2E5;
+  --grey-1: #495057;
+  --black-2: #334D6E;
+  --pink: #F784AD;
+  --purple: #7048E8;
+  --purple-2: #5028C6;
+  --purple-3: #ECEFFD;
+  --blue: #4263EB;
+  --blue-2: #2342C0;
+  --blue-3: #374FC7;
+  --red: #F03D3E;
+  --orange: #D84910;
+  --grey-2: #DDE2E5;
+  --grey-3: #ACB5BD;
+  --grey-5: #90A0B7;
+  --grey-6: rgba(196, 196, 196, 0.5);
+}
+
 .component__content {
   display: block;
   padding: 16px;
   width: calc(100% - 16px * 2);
   background: var(--white);
   flex-grow: 1;
+  border-radius: 12px;
 }
 @media screen and (min-width: 1280px) {
   .component__content {
@@ -1095,6 +1126,7 @@
 }
 .component__code {
   overflow-x: auto;
+  color: var(--black);
 }
 
 /*# sourceMappingURL=index.css.map */

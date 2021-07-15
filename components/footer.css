@@ -1,14 +1,15 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   color: var(--grey-4);
-  max-width: 640px;
-  margin: 0 auto;
   padding: 32px 16px;
 }
 @media screen and (min-width: 1280px) {
   .footer {
     color: var(--black);
-    padding: 71px 0 136px 0;
+    padding: 71px 25% 136px 25%;
   }
 }
 .footer__title {

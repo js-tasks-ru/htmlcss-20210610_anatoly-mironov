@@ -1,5 +1,6 @@
 .header {
   padding: 16px 0 0 calc(100vw - 100%);
+  border-bottom: 1px solid var(--grey-2);
 }
 .header__title {
   color: var(--grey-4);
@@ -21,6 +22,7 @@
   display: flex;
   justify-content: center;
   padding-bottom: 16px;
+  border-bottom: none;
 }
 @media screen and (min-width: 1280px) {
   .header__top-section {
