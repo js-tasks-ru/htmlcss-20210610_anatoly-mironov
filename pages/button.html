@@ -7,6 +7,7 @@
   <link rel='stylesheet' href='../index.css'>
   <script defer src='../09-lection7/01-burger-menu/burger-menu.js'></script>
   <script defer src='../assets/js/navigation.js'></script>
+  <script defer src='../10-lection8/01-theme-changer/theme-changer.js'></script>
 </head>
 <body class='page page--component'>
 <header class='header header__top-section header__top-section--component page__box'>
@@ -16,7 +17,7 @@
   <div class='header__theme-switch'>
     <img src='../assets/images/sun.svg' alt='Light theme'>
     <label class='toggle'>
-      <input type='checkbox' class='toggle__input'>
+      <input id="theme-changer" type='checkbox' class='toggle__input'>
       <div class='toggle__content'>
         <div class='toggle__control'>
           <div class='toggle__control-tick'></div>
@@ -88,7 +89,7 @@
       </div>
       <div class='tab'>
         <nav>
-          <ul class='tab__navigation'>
+          <ul class='tab__navigation tab__navigation--component'>
             <li>
               <label class='radio'>
                 <input id='html' name='component-code' type='radio' class='radio__input' checked>
