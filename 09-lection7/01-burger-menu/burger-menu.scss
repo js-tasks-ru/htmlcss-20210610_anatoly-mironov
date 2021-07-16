@@ -1,180 +1,180 @@
-@import "../../config/_variables";
+@import '../../config/_variables';
 
 %font-shared {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
 }
 
 .menu-control-button {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  width: 32px;
-  height: 32px;
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border: none;
-  background: none;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 32px;
+    height: 32px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background: none;
 
-  &--close {
-    position: fixed;
-    display: none;
-    background: var(--grey-2);
-    border-radius: 50%;
-  }
+    &--close {
+        position: fixed;
+        display: none;
+        background: var(--grey-2);
+        border-radius: 50%;
+    }
 
-  &__icon {
-    width: 24px;
-    height: 24px;
-    transform: translate(-2px);
-    color: var(--black);
-  }
+    &__icon {
+        width: 24px;
+        height: 24px;
+        transform: translate(-2px);
+        color: var(--black);
+    }
 
-  @media screen and (min-width: $breakpoint-desktop) {
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-  }
+    @media screen and (min-width: $breakpoint-desktop) {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
 }
 
 .burger-menu {
-  visibility: hidden;
-  opacity: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--grey-6);
-  z-index: 2;
-
-  @media screen and (max-width: $breakpoint-tablet) {
-    transition: all 200ms ease-in-out;
-  }
-
-  @media screen and (min-width: $breakpoint-desktop) {
-    display: none;
-    transition: none;
-
-    &--template {
-      display: block;
-      visibility: visible;
-      opacity: 1;
-      position: static;
-      z-index: 1;
-
-      .burger-menu__container {
-        position: static;
-        padding: 0;
-        background: var(--grey-1);
-        min-width: 285px;
-
-        .burger-menu__header,
-        .burger-menu__color-switch {
-          display: none;
-        }
-
-        .burger-menu__section {
-          border-top: none;
-          padding: 0;
-
-          &-title {
-            color: var(--black);
-          }
-        }
-
-        .burger-menu__item {
-          font-size: 14px;
-          line-height: 22px;
-        }
-      }
-    }
-  }
-
-  &__container {
-    position: absolute;
-    padding: 16px;
-    width: calc(100% - 32px);
-    max-width: 375px;
-    z-index: 3;
-    background: var(--white);
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-  }
+    background: var(--grey-6);
+    z-index: 2;
 
-  &[data-open] {
-    visibility: visible;
-    opacity: 1;
-
-    ~ .menu-control-button--close {
-      display: flex;
-    }
-  }
-
-  &__header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 32px;
-  }
-
-  &__logo {
-    color: black;
-    width: 130px;
-    height: 32px;
-  }
-
-  &__section {
-    padding: 24px 0;
-    border-top: 1px solid var(--grey-2);
-  }
-
-  &__section-items {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  &__section-title {
-    @extend %font-shared;
-    font-size: 20px;
-    line-height: 26px;
-    color: var(--grey-3);
-    margin-bottom: 16px;
-  }
-
-  &__color-switch {
-    .toggle {
-      width: 100%;
+    @media screen and (max-width: $breakpoint-tablet) {
+        transition: all 200ms ease-in-out;
     }
 
-    .toggle__content {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: center;
+    @media screen and (min-width: $breakpoint-desktop) {
+        display: none;
+        transition: none;
+
+        &--template {
+            display: block;
+            visibility: visible;
+            opacity: 1;
+            position: static;
+            z-index: 1;
+
+            .burger-menu__container {
+                position: static;
+                padding: 0;
+                background: var(--grey-1);
+                min-width: 285px;
+
+                .burger-menu__header,
+                .burger-menu__color-switch {
+                    display: none;
+                }
+
+                .burger-menu__section {
+                    border-top: none;
+                    padding: 0;
+
+                    &-title {
+                        color: var(--black);
+                    }
+                }
+
+                .burger-menu__item {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
     }
-  }
 
-  &__item {
-    @extend %font-shared;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--black);
-    text-decoration: none;
-    display: flex;
-    flex-grow: 1;
-
-    &--active {
-      color: var(--orange);
+    &__container {
+        position: absolute;
+        padding: 16px;
+        width: calc(100% - 32px);
+        max-width: 375px;
+        z-index: 3;
+        background: var(--white);
+        height: 100%;
     }
-  }
 
-  &__footer {
-    padding-top: 56px;
-  }
+    &[data-open] {
+        visibility: visible;
+        opacity: 1;
+
+        ~ .menu-control-button--close {
+            display: flex;
+        }
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 32px;
+    }
+
+    &__logo {
+        color: black;
+        width: 130px;
+        height: 32px;
+    }
+
+    &__section {
+        padding: 24px 0;
+        border-top: 1px solid var(--grey-2);
+    }
+
+    &__section-items {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__section-title {
+        @extend %font-shared;
+        font-size: 20px;
+        line-height: 26px;
+        color: var(--grey-3);
+        margin-bottom: 16px;
+    }
+
+    &__color-switch {
+        .toggle {
+            width: 100%;
+        }
+
+        .toggle__content {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        @extend %font-shared;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--black);
+        text-decoration: none;
+        display: flex;
+        flex-grow: 1;
+
+        &--active {
+            color: var(--orange);
+        }
+    }
+
+    &__footer {
+        padding-top: 56px;
+    }
 }

@@ -1,33 +1,33 @@
-@import "../config/_variables";
-@import "../config/_mixins";
+@import '../config/_variables';
+@import '../config/_mixins';
 
 .tab {
-  &__navigation {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    overflow: scroll;
-    padding: 0;
-    margin: 0;
+    &__navigation {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        overflow: scroll;
+        padding: 0;
+        margin: 0;
 
-    &--component {
-      border-bottom: 1px solid var(--grey-2);
+        &--component {
+            border-bottom: 1px solid var(--grey-2);
+        }
+
+        @media screen and (min-width: $breakpoint-tablet) {
+            overflow: hidden;
+            gap: 40px;
+        }
     }
 
-    @media screen and (min-width: $breakpoint-tablet) {
-      overflow: hidden;
-      gap: 40px;
-    }
-  }
+    &__content {
+        display: none;
 
-  &__content {
-    display: none;
-
-    &[active=true] {
-      display: grid;
+        &[active=true] {
+            display: grid;
+        }
     }
-  }
 }
 
 

@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../assets/css/fragments/_base-homework.scss","../../config/_mixins.scss","page.scss"],"names":[],"mappings":"AAEA;EACE;ECFA,aDGc;ECFd,WDEqC;ECDrC,aDCiD;ECAjD;EACA,aDD2C;EAC3C;;;AEHF;EACE;EACA;EACA;EACA;EACA","file":"page.css"}
+{"version":3,"sourceRoot":"","sources":["../../assets/css/fragments/_base-homework.scss","../../config/_mixins.scss","page.scss"],"names":[],"mappings":"AAEA;EACE;ECFE,aDGY;ECFZ,WDEmC;ECDnC,aDC+C;ECA/C;EACA,aDDyC;EAC3C;;;AEHF;EACE;EACA;EACA;EACA;EACA","file":"page.css"}
