@@ -143,6 +143,7 @@
   flex-direction: row;
   align-items: flex-end;
   gap: 1px;
+  animation: appear 0.6s ease-out;
 }
 .histogram__column {
   background: var(--blue);
@@ -566,6 +567,7 @@
 }
 .toggle__input:disabled ~ .toggle__content {
   pointer-events: none;
+  transition: background-color 200ms ease-in-out;
 }
 .toggle__input:disabled ~ .toggle__content .toggle__control {
   background: var(--grey-2);

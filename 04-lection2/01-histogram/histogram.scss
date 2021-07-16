@@ -60,6 +60,7 @@
         flex-direction: row;
         align-items: flex-end;
         gap: 1px;
+        animation: appear .6s ease-out;
     }
 
     &__column {

@@ -32,6 +32,7 @@
 
         &:disabled ~ .toggle__content {
             pointer-events: none;
+            transition: background-color 200ms ease-in-out;
 
             .toggle__control {
                 background: var(--grey-2);
