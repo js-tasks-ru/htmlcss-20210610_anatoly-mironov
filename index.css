@@ -1032,9 +1032,9 @@
     align-items: center;
     gap: 16px;
   }
-  .header__top-section .header__theme-switch-moon-icon {
-    width: 20px;
-    height: 20px;
+  .header__top-section .header__theme-switch-moon-icon, .header__top-section .header__theme-switch-sun-icon {
+    width: 24px;
+    height: 24px;
   }
 }
 
