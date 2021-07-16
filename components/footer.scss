@@ -16,21 +16,16 @@
   }
 
   &__title {
-    font-size: 24px;
-    font-weight: 400;
+    @include font(('Inter', sans-serif), 24px, 32px, 400, var(--black));
     margin: 0;
 
     @media screen and (min-width: $breakpoint-desktop) {
-      font-size: 38px;
-      line-height: 48px;
-      font-weight: 500;
+      @include font(('Inter', sans-serif), 38px, 48px, 500, var(--black));
     }
   }
 
   &__description {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
+    @include font(('Inter', sans-serif), 16px, 24px, 400, var(--black));
     margin: 32px 0 0 0;
   }
 

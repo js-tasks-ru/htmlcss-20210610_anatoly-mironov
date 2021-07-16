@@ -1,74 +1,75 @@
 @import "../../config/_mixins";
 
 .checkbox {
-    @include font(('Inter', sans-serif), 16px, 24px, 400, var(--grey-4));
-    display: inline-block;
+  @include font(('Inter', sans-serif), 16px, 24px, 400, var(--grey-4));
+  display: inline-block;
 
-    &__content {
-        display: flex;
-        gap: 12px;
-        cursor: pointer;
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  &__input {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    pointer-events: none;
+    position: absolute;
+
+    &:checked ~ .checkbox__content {
+      .checkbox__control {
+        background: var(--blue);
+      }
+
+      .checkbox__tick-icon {
+        display: block;
+        width: 15px;
+        height: 13px;
+      }
     }
 
-    &__input {
-        opacity: 0;
-        width: 1px;
-        height: 1px;
-        pointer-events: none;
-        position: absolute;
+    &:disabled ~ .checkbox__content {
+      pointer-events: none;
 
-        &:checked ~ .checkbox__content {
-            .checkbox__control {
-                background: var(--blue);
-            }
+      .checkbox__control {
+        background: var(--grey-2);
+      }
 
-            .checkbox__tick-icon {
-                display: block;
-                width: 15px;
-                height: 13px;
-            }
-        }
-
-        &:disabled ~ .checkbox__content {
-            pointer-events: none;
-
-            .checkbox__control {
-                background: var(--grey-2);
-            }
-
-            .checkbox__label {
-                color: var(--grey-2);
-            }
-        }
-
-        &:focus-visible ~ .checkbox__content {
-            .checkbox__label {
-                text-decoration: underline;
-            }
-
-            .checkbox__control {
-                border: 1px solid var(--black);
-            }
-        }
+      .checkbox__label {
+        color: var(--grey-2);
+      }
     }
 
-    &__label {
-        margin: 0;
-    }
+    &:focus-visible ~ .checkbox__content {
+      .checkbox__label {
+        text-decoration: underline;
+      }
 
-    &__control {
-        height: 28px;
-        width: 28px;
-        background: var(--white);
-        box-sizing: border-box;
-        border-radius: 4px;
-        border: 1px solid var(--grey-2);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      .checkbox__control {
+        border: 1px solid var(--black);
+      }
     }
+  }
 
-    &__tick-icon {
-        display: none;
-    }
+  &__label {
+    margin: 0;
+  }
+
+  &__control {
+    height: 28px;
+    width: 28px;
+    background: var(--white);
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid var(--grey-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__tick-icon {
+    display: none;
+  }
 }

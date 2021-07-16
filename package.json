@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Course Materials",
   "scripts": {
+    "build": "postcss assets/css/main.css -o build/index.css",
     "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js"
   },
   "husky": {
@@ -20,9 +21,17 @@
   "author": "Sergey Zelenov",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.3.1",
     "chai": "^4.2.0",
     "cross-env": "^7.0.2",
+    "cssnano": "^5.0.6",
     "mocha": "^7.1.2",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.5",
+    "postcss-scss": "^4.0.0",
+    "precss": "^4.0.0",
     "sass": "^1.35.2"
   },
   "dependencies": {
