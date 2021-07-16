@@ -285,6 +285,11 @@
 .modal__close-button--card {
   pointer-events: none;
 }
+.modal__close-icon {
+  height: 24px;
+  width: 24px;
+  color: var(--black);
+}
 .modal__header {
   display: flex;
   justify-content: flex-end;
@@ -690,6 +695,7 @@
 .menu-control-button__icon {
   width: 24px;
   height: 24px;
+  transform: translate(-1.5px);
   color: var(--black);
 }
 @media screen and (min-width: 1280px) {

@@ -52,6 +52,12 @@
         }
     }
 
+    &__close-icon {
+        height: 24px;
+        width: 24px;
+        color: var(--black);
+    }
+
     &__header {
         display: flex;
         justify-content: flex-end;

@@ -123,7 +123,9 @@
         </svg>
       </button>
       <button id='burger-menu-close' class='menu-control-button menu-control-button--close'>
-        <img class='menu-control-button__icon' src='assets/images/x-icon.svg' alt='Close menu'>
+        <svg class='menu-control-button__icon'>
+          <use href='assets/images/sprites.svg#x'></use>
+        </svg>
       </button>
     </aside>
     <div class='cards-container' data-type='all'>
@@ -275,7 +277,9 @@
           <div class='modal modal--card'>
             <div class='modal__window modal__window--card'>
               <div class='modal__header'>
-                <img src='assets/images/x-icon.svg' alt='Close'>
+                <svg class='modal__close-icon'>
+                  <use href='assets/images/sprites.svg#x'></use>
+                </svg>
               </div>
               <div class='modal__body modal__body--card'>
                 <h4 class='modal__title'>Modal title</h4>

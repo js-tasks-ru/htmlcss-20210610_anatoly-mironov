@@ -42,6 +42,11 @@
 .modal__close-button {
   text-align: right;
 }
+.modal__close-icon {
+  height: 24px;
+  width: 24px;
+  color: var(--black);
+}
 .modal__close-button--card {
   pointer-events: none;
 }
