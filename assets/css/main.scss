@@ -1,30 +1,30 @@
 @import '../fonts/fonts.css';
 @import './normalize.css';
 @import './reset.css';
-@import "../../03-lection1/01-button/button.scss";
-@import "../../03-lection1/02-accordion/accordion.scss";
-@import "../../04-lection2/01-histogram/histogram.scss";
-@import "../../04-lection2/02-skeleton/skeleton.scss";
-@import "../../05-lection3/01-tooltip/tooltip.scss";
-@import "../../05-lection3/02-modal/modal.scss";
-@import "../../05-lection3/03-calendar/calendar.scss";
-@import "../../06-lection4/01-avatar/avatar.scss";
-@import "../../07-lection5/01-checkbox/checkbox.scss";
-@import "../../07-lection5/02-radio/radio.scss";
-@import "../../07-lection5/03-toggler/toggler.scss";
-@import "../../07-lection5/04-input/input.scss";
-@import "../../09-lection7/01-burger-menu/burger-menu.scss";
+@import '../../03-lection1/01-button/button.scss';
+@import '../../03-lection1/02-accordion/accordion.scss';
+@import '../../04-lection2/01-histogram/histogram.scss';
+@import '../../04-lection2/02-skeleton/skeleton.scss';
+@import '../../05-lection3/01-tooltip/tooltip.scss';
+@import '../../05-lection3/02-modal/modal.scss';
+@import '../../05-lection3/03-calendar/calendar.scss';
+@import '../../06-lection4/01-avatar/avatar.scss';
+@import '../../07-lection5/01-checkbox/checkbox.scss';
+@import '../../07-lection5/02-radio/radio.scss';
+@import '../../07-lection5/03-toggler/toggler.scss';
+@import '../../07-lection5/04-input/input.scss';
+@import '../../09-lection7/01-burger-menu/burger-menu.scss';
 
-@import "../../components/cards-container.scss";
-@import "../../components/card.scss";
-@import "../../components/footer.scss";
-@import "../../components/tab.scss";
-@import "../../components/main.scss";
-@import "../../components/header.scss";
+@import '../../components/cards-container.scss';
+@import '../../components/card.scss';
+@import '../../components/footer.scss';
+@import '../../components/tab.scss';
+@import '../../components/main.scss';
+@import '../../components/header.scss';
 
-@import "../../pages/page.scss";
-@import "../../components/html.scss";
-@import "../../pages/component-template.scss";
+@import '../../pages/page.scss';
+@import '../../components/html.scss';
+@import '../../pages/component-template.scss';
 
 :root {
     --white: #ffffff;
@@ -44,7 +44,7 @@
     --grey-3: #ACB5BD;
     --grey-4: #495057;
     --grey-5: #90A0B7;
-    --grey-6: rgba(196, 196, 196, 0.5);
+    --grey-6: rgba(196, 196, 196, .5);
 
     --error: var(--red);
     --success: var(--blue-3);
