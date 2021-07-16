@@ -1032,6 +1032,10 @@
     align-items: center;
     gap: 16px;
   }
+  .header__top-section .header__theme-switch-moon-icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .page__box {
