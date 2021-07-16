@@ -55,6 +55,8 @@
 }
 .checkbox__tick-icon {
   display: none;
+  width: 15px;
+  height: 13px;
 }
 
 /*# sourceMappingURL=checkbox.css.map */

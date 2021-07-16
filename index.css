@@ -410,6 +410,8 @@
 }
 .checkbox__input:checked ~ .checkbox__content .checkbox__tick-icon {
   display: block;
+  width: 15px;
+  height: 13px;
 }
 .checkbox__input:disabled ~ .checkbox__content {
   pointer-events: none;
