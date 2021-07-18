@@ -21,6 +21,17 @@
         &:checked ~ .checkbox__content {
             .checkbox__control {
                 background: var(--blue);
+                animation-name: tick;
+                animation-duration: .5s;
+
+                @keyframes tick {
+                    0% {
+                        box-shadow: 0 0 0 0 var(--grey-2);
+                    }
+                    100% {
+                        box-shadow: 0 0 0 1rem rgba(189, 195, 199, 0);
+                    }
+                }
             }
 
             .checkbox__tick-icon {
