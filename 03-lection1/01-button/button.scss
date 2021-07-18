@@ -1,7 +1,7 @@
 @import '../../config/_mixins';
 
 .button {
-    @include font(('Roboto', sans-serif), 16px, 19px, 500, var(--white));
+    @include font(('Roboto', sans-serif), 16px, 19px, 500, white);
     display: inline-block;
     font-style: normal;
     padding: 0 8px;
