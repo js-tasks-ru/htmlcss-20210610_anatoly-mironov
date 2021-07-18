@@ -6,8 +6,9 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' href='../build/index.css'>
   <script defer src='../09-lection7/01-burger-menu/burger-menu.js'></script>
-  <script defer src='../assets/js/navigation.js'></script>
   <script defer src='../10-lection8/01-theme-changer/theme-changer.js'></script>
+  <script defer src='../assets/js/navigation.js'></script>
+  <script defer src="../assets/js/rainbow-custom.min.js"></script>
 </head>
 <body class='page page--component'>
 <header class='header header__top-section header__top-section--component page__box'>
@@ -119,7 +120,7 @@
           </ul>
         </nav>
         <pre class='tab__content' data-tab='html' active='true'>
-          <code class='component__code'>
+          <code data-language="html" class='component__code'>
 &ltbutton class='button button-primary'&gtPrimary&lt/button&gt
 &ltbutton class='button button-primary' disabled&gtPrimary disabled&lt/button&gt
 &ltbutton class='button button-secondary'&gtSecondary&lt/button&gt
@@ -129,7 +130,7 @@
           </code>
         </pre>
         <pre class='tab__content' data-tab='css'>
-          <code class='component__code'>
+          <code data-language="css" class='component__code'>
 @mixin font($font-family, $font-size, $line-height, $font-weight, $color) {
   font-family: $font-family;
   font-size: $font-size;
