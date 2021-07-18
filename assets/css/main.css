@@ -150,6 +150,24 @@
   flex-grow: 1;
 }
 
+.skeleton__row, .skeleton__avatar {
+  background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+  background-size: 200%;
+  animation-name: backgroundMovement;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@keyframes backgroundMovement {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
 .skeleton {
   width: 100%;
   border: 1px solid var(--grey-3);
@@ -168,7 +186,6 @@
 .skeleton__avatar {
   height: 64px;
   width: 64px;
-  background: var(--grey-2);
   border-radius: 50%;
 }
 .skeleton__short-rows {
@@ -180,7 +197,6 @@
 .skeleton__row {
   height: 20px;
   margin-top: 8px;
-  background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 .skeleton__row--small {
   width: 39%;
