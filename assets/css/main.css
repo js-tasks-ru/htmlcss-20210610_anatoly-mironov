@@ -144,6 +144,19 @@
   flex-direction: row;
   align-items: flex-end;
   gap: 1px;
+  animation-name: appear;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
+}
+@keyframes appear {
+  0% {
+    transform: scaleY(0);
+    transform-origin: bottom center;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: bottom center;
+  }
 }
 .histogram__column {
   background: var(--blue);
