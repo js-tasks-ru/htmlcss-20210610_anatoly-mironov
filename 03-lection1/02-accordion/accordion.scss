@@ -1,0 +1,38 @@
+%font-shared {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.accordion-item {
+  background: var(--white);
+  border: 1px solid var(--grey-3);
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 24px 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__summary {
+    list-style: none;
+    color: var(--black);
+    cursor: pointer;
+    @extend %font-shared;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  &__content {
+    color: var(--grey-4);
+    padding-top: 16px;
+    padding-bottom: 8px;
+    margin: 0;
+    @extend %font-shared;
+  }
+}

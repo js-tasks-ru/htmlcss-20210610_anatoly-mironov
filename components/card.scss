@@ -1,0 +1,57 @@
+@import "../config/_variables";
+@import "../config/_mixins";
+
+.card {
+  background: var(--white);
+  box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 12px;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+
+  &__body {
+    flex-grow: 1;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+      padding: 2rem;
+    }
+
+    &--checkbox-collection {
+      gap: 37px;
+    }
+  }
+
+  &__checkbox-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__footer {
+    padding-top: 12px;
+    border-top: 1px solid var(--grey-2);
+    padding-bottom: 2rem;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+      padding-top: 0;
+      border-top: none;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    @include font(('Roboto', sans-serif), 21px, 25px, 500, var(--black));
+    margin: 0;
+  }
+
+  &__description {
+    @include font(('Roboto', sans-serif), 16px, 19px, 400, var(--grey-4));
+    text-align: center;
+    margin: 6px 0 0 0;
+  }
+}
+

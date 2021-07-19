@@ -1,0 +1,50 @@
+@import "../../config/_mixins";
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+  &--card {
+    margin-top: 60px;
+    pointer-events: none;
+  }
+
+  &__text {
+    display: none;
+    width: 129px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: var(--blue);
+    @include font(('Inter', sans-serif), 16px, 24px, 400, var(--grey-2));
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin-bottom: 10px;
+
+    &--card {
+      display: flex;
+    }
+
+    &:after {
+      content: '';
+      border: 14px solid transparent;
+      position: absolute;
+      top: 100%;
+      border-top: 6px solid var(--blue);
+    }
+  }
+
+  &__icon:hover {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+
+    & + .tooltip__text {
+      display: flex;
+    }
+  }
+}

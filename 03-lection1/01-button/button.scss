@@ -1,0 +1,47 @@
+@import "../../config/_mixins";
+
+.button {
+  @include font(('Roboto', sans-serif), 16px, 19px, 500, var(--white));
+  display: inline-block;
+  font-style: normal;
+  padding: 15px 15px 14px 15px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  transition: all 200ms ease-in-out;
+
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &:hover:not([disabled]) {
+    cursor: pointer;
+  }
+
+  &-primary {
+    background: var(--primary);
+
+    &:hover:not([disabled]) {
+      background: var(--blue-2);
+    }
+  }
+
+  &-secondary {
+    background: var(--secondary);
+
+    &:hover:not([disabled]) {
+      background: var(--purple-2);
+    }
+  }
+
+  &-alternate {
+    background: var(--white);
+    color: var(--grey-4);
+    border: 1px solid var(--grey-3);
+
+    &:hover:not([disabled]) {
+      border-color: var(--black);
+    }
+  }
+}

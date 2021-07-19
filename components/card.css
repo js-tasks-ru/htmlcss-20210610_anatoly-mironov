@@ -1,68 +1,59 @@
 .card {
-    background: var(--white);
-    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
-    border-radius: 12px;
-    display: flex;
-    flex: 1 1;
-    flex-direction: column;
+  background: var(--white);
+  box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 12px;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
 }
-
 .card__body {
-    flex-grow: 1;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex-grow: 1;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 @media screen and (min-width: 1280px) {
-    .card__body {
-        padding: 2rem;
-    }
+  .card__body {
+    padding: 2rem;
+  }
 }
-
 .card__body--checkbox-collection {
-    gap: 37px;
+  gap: 37px;
 }
-
 .card__checkbox-container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
-
 .card__footer {
-    padding-top: 12px;
-    border-top: 1px solid var(--grey-2);
-    padding-bottom: 2rem;
+  padding-top: 12px;
+  border-top: 1px solid var(--grey-2);
+  padding-bottom: 2rem;
 }
-
 @media screen and (min-width: 1280px) {
-    .card__footer {
-        padding-top: 0;
-        border-top: none;
-    }
+  .card__footer {
+    padding-top: 0;
+    border-top: none;
+  }
 }
-
 .card__title {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 25px;
-    color: var(--black);
-    margin: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 25px;
+  margin: 0;
+}
+.card__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--grey-4);
+  line-height: 19px;
+  text-align: center;
+  margin: 6px 0 0 0;
 }
 
-.card__description {
-    margin: 6px 0 0 0;
-}
-
-.card__description {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--grey-4);
-    text-align: center;
-}
+/*# sourceMappingURL=card.css.map */

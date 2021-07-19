@@ -1,0 +1,7 @@
+@import '../../../config/mixins';
+
+.title {
+  text-transform: uppercase;
+  @include font(('Inter', sans-serif), 28px, 36px, 400, var(--grey-3));
+  padding: 10px 40px;
+}

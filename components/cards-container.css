@@ -1,22 +1,22 @@
 .cards-container {
-    display: grid;
-    padding: 24px 0;
-    grid-template-columns: 100%;
-    grid-row-gap: 16px;
+  display: grid;
+  padding: 24px 0;
+  grid-template-columns: 100%;
+  grid-row-gap: 16px;
 }
-
 @media screen and (min-width: 768px) {
-    .cards-container {
-        grid-template-columns: calc(50% - 12px) calc(50% - 12px);
-        grid-column-gap: 24px;
-        grid-row-gap: 16px;
-    }
+  .cards-container {
+    grid-template-columns: calc(50% - 12px) calc(50% - 12px);
+    grid-column-gap: 24px;
+    grid-row-gap: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cards-container {
+    padding: 68px 0;
+    grid-template-columns: calc(33.3% - 10px) calc(33.3% - 10px) calc(33.3% - 10px);
+    grid-gap: 30px;
+  }
 }
 
-@media screen and (min-width: 1280px) {
-    .cards-container {
-        padding: 68px 0;
-        grid-template-columns: calc(33.3% - 10px) calc(33.3% - 10px) calc(33.3% - 10px);
-        grid-gap: 30px;
-    }
-}
+/*# sourceMappingURL=cards-container.css.map */

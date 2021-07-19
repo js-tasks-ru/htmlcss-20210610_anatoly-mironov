@@ -1,66 +1,59 @@
 .histogram {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 39px;
-    color: var(--black);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  color: var(--black);
 }
-
 @media screen and (min-width: 1280px) {
-    .histogram {
-        border: 1px solid var(--grey-3);
-        border-radius: 8px;
-        box-sizing: border-box;
-        padding: 16px 24px 24px 24px;
-    }
+  .histogram {
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 16px 24px 24px 24px;
+  }
 }
-
 .histogram__header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 .histogram__total-orders-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
 }
-
 .histogram__total-orders-name {
-    margin: 0;
-    opacity: 0.8;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+  margin: 0;
+  opacity: 0.8;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
-
 .histogram__total-orders-value {
-    margin: 0;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
 }
-
 .histogram__view-all-link-container {
-    padding-top: 3px;
+  padding-top: 3px;
 }
-
 .histogram__view-all-link {
-    color: var(--blue);
-    font-weight: 400;
-    text-decoration: none;
+  color: var(--blue);
+  font-weight: 400;
+  text-decoration: none;
 }
-
 .histogram__body {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    gap: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1px;
+}
+.histogram__column {
+  background: var(--blue);
+  flex-grow: 1;
 }
 
-.histogram__column {
-    background: var(--blue);
-    flex-grow: 1;
-}
+/*# sourceMappingURL=histogram.css.map */

@@ -1,71 +1,60 @@
 .checkbox {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color: var(--grey-4);
-    display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--grey-4);
+  line-height: 24px;
+  display: inline-block;
 }
-
 .checkbox__content {
-    display: flex;
-    gap: 12px;
-    cursor: pointer;
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
 }
-
 .checkbox__input {
-    opacity: 0;
-    width: 1px;
-    height: 1px;
-    pointer-events: none;
-    position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+  position: absolute;
 }
-
-.checkbox__label {
-    margin: 0;
-}
-
-.checkbox__control {
-    height: 28px;
-    width: 28px;
-    background: var(--white);
-    box-sizing: border-box;
-    border-radius: 4px;
-    border: 1px solid var(--grey-2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.checkbox__tick-icon {
-    display: none;
-}
-
 .checkbox__input:checked ~ .checkbox__content .checkbox__control {
-    background: var(--blue);
+  background: var(--blue);
 }
-
 .checkbox__input:checked ~ .checkbox__content .checkbox__tick-icon {
-    display: block;
+  display: block;
 }
-
 .checkbox__input:disabled ~ .checkbox__content {
-    pointer-events: none;
+  pointer-events: none;
 }
-
 .checkbox__input:disabled ~ .checkbox__content .checkbox__control {
-    background: var(--grey-2);
+  background: var(--grey-2);
 }
-
 .checkbox__input:disabled ~ .checkbox__content .checkbox__label {
-    color: var(--grey-2);
+  color: var(--grey-2);
 }
-
 .checkbox__input:focus-visible ~ .checkbox__content .checkbox__label {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 .checkbox__input:focus-visible ~ .checkbox__content .checkbox__control {
-    border: 1px solid var(--black);
+  border: 1px solid var(--black);
+}
+.checkbox__label {
+  margin: 0;
+}
+.checkbox__control {
+  height: 28px;
+  width: 28px;
+  background: var(--white);
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid var(--grey-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox__tick-icon {
+  display: none;
 }
 
+/*# sourceMappingURL=checkbox.css.map */

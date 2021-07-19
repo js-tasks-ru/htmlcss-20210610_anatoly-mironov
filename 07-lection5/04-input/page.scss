@@ -1,0 +1,9 @@
+@import "../../assets/css/fragments/_base-homework";
+
+.container {
+    padding-left: 40px;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-column-gap: 30px;
+    grid-row-gap: 16px;
+}

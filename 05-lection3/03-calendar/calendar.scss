@@ -1,0 +1,59 @@
+@import "../../config/_mixins";
+@import "../../config/_variables";
+
+%calendar-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  width: 100%;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 16px 24px 24px 24px;
+  }
+
+  &__header {
+    @include font(('Inter', sans-serif), 20px, 24px, 600, var(--black-2));
+    text-align: center;
+  }
+
+  &__body-wrapper {
+    position: relative;
+    padding-bottom: 100%;
+  }
+
+  &__body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  &__day {
+    @extend %calendar-item;
+    @include font(('Inter', sans-serif), 14px, 20px, 400, var(--grey-5));
+    padding: 16px 0 8px 0;
+  }
+
+  &__date {
+    @extend %calendar-item;
+    @include font(('Source Sans Pro', sans-serif), 16px, 20px, 400, var(--black-2));
+
+    &--active {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    &--between-active {
+      background: var(--purple-3);
+    }
+  }
+}
