@@ -1,0 +1,29 @@
+@import '../config/_variables';
+
+.cards-container {
+    display: grid;
+    padding: 24px 0;
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+
+    &[data-type=all] .card,
+    &[data-type=atom] .card[data-type=atom],
+    &[data-type=molecule] .card[data-type=molecule],
+    &[data-type=organism] .card[data-type=organism] {
+        display: flex;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 24px;
+        grid-row-gap: 16px;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        padding: 68px 0;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+}
+
+

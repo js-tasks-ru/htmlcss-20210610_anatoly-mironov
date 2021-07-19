@@ -1,72 +1,63 @@
 .textbox {
-    font-family: 'Inter', sans-serif;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--grey-3);
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--grey-3);
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-
 .textbox__content {
-    position: relative;
+  position: relative;
 }
-
 .textbox__input {
-    width: 350px;
-    height: 56px;
-    border-radius: 8px;
-    box-sizing: border-box;
-    border: 1px solid var(--grey-2);
-    background-color: var(--white);
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: var(--grey-4);
-    padding: 15px 16px 15px 24px;
-    outline: none;
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid var(--grey-2);
+  background-color: var(--white);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--grey-4);
+  line-height: 26px;
+  padding: 15px 16px 15px 24px;
+  outline: none;
 }
-
 .textbox__input:disabled {
-    background-color: var(--grey-2);
-    opacity: 0.2;
-    color: var(--grey-4);
+  background-color: var(--grey-2);
+  opacity: 0.2;
+  color: var(--grey-4);
 }
-
 .textbox__input:focus:not(.textbox__input--error) {
-    box-shadow: 0 0 0 1px var(--blue);
+  box-shadow: 0 0 0 1px var(--blue);
 }
-
 .textbox__input::placeholder {
-    color: var(--grey-2);
-    opacity: 1; /* Firefox */
+  color: var(--grey-2);
+  opacity: 1;
+  /* Firefox */
 }
-
-.textbox__input--error,
-.textbox__input--success {
-    padding-right: 56px;
+.textbox__input--error, .textbox__input--success {
+  padding-right: 56px;
 }
-
 .textbox__input--error {
-    border: 1px solid var(--red);
+  border: 1px solid var(--red);
+}
+.textbox__input--success ~ .textbox__icon-success, .textbox__input--error ~ .textbox__icon-error {
+  display: block;
+}
+.textbox__icon-error, .textbox__icon-success {
+  display: none;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  pointer-events: none;
 }
 
-.textbox__input--success ~ .textbox__icon-success,
-.textbox__input--error ~ .textbox__icon-error {
-    display: block;
-}
-
-.textbox__icon-error,
-.textbox__icon-success {
-    display: none;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    right: 16px;
-    top: 16px;
-    pointer-events: none;
-}
+/*# sourceMappingURL=input.css.map */

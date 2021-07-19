@@ -12,7 +12,7 @@
 }
 
 .navigation__item {
-    display:inline;
+    display: inline;
     text-decoration: underline;
     padding-inline-end: 5px;
 }

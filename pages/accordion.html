@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+  <title>Accordion</title>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='../build/index.css'>
+  <script defer src='../09-lection7/01-burger-menu/burger-menu.js'></script>
+  <script defer src='../assets/js/navigation.js'></script>
+  <script defer src="../assets/js/rainbow-custom.min.js"></script>
+  <script defer src='../10-lection8/01-theme-changer/theme-changer.js'></script>
+</head>
+<body class='page page--component'>
+<header class='header header__top-section header__top-section--component page__box'>
+  <a class='header__logo' href='../index.html'>
+    <svg class='header__logo'>
+      <use href='../assets/images/sprites.svg#logo'></use>
+    </svg>
+  </a>
+  <div class='header__theme-switch'>
+    <svg class='header__theme-switch-sun-icon'>
+      <use href='../assets/images/sprites.svg#sun'></use>
+    </svg>
+    <label class='toggle'>
+      <input id="theme-changer" type='checkbox' class='toggle__input'>
+      <div class='toggle__content'>
+        <div class='toggle__control'>
+          <div class='toggle__control-tick'></div>
+        </div>
+      </div>
+    </label>
+    <svg class='header__theme-switch-moon-icon'>
+      <use href='../assets/images/sprites.svg#moon'></use>
+    </svg>
+  </div>
+</header>
+<main class='main main--component'>
+  <div class='page__box page__box--component'>
+    <aside class='page__menu--component'>
+      <div id='burger-menu' class='burger-menu burger-menu--template'>
+        <div class='burger-menu__container'>
+          <div class='burger-menu__content'>
+            <a class='burger-menu__header' href='index.html'>
+              <svg class='header__logo'>
+                <use href='../assets/images/sprites.svg#logo'></use>
+              </svg>
+            </a>
+            <div class='burger-menu__main'>
+              <div class='burger-menu__section burger-menu__color-switch'>
+                <label class='toggle'>
+                  <input id="theme-changer-mobile" type='checkbox' class='toggle__input'>
+                  <div class='toggle__content'>
+                    <div class='toggle__control'>
+                      <div class='toggle__control-tick'></div>
+                    </div>
+                    <p class='toggle__label'>Dark mode</p>
+                  </div>
+                </label>
+              </div>
+              <div class='burger-menu__section'>
+                <h4 class='burger-menu__section-title'>Components</h4>
+                <nav>
+                  <ul class='burger-menu__section-items'>
+                    <li><a class='burger-menu__item' href='tooltip.html'>Tooltip</a></li>
+                    <li><a class='burger-menu__item' href='elements.html'>Custom form elements</a></li>
+                    <li><a class='burger-menu__item' href='calendar.html'>Calendar</a></li>
+                    <li><a class='burger-menu__item' href='modal.html'>Modal dialog</a></li>
+                    <li><a class='burger-menu__item' href='histogram.html'>Histogram</a></li>
+                    <li><a class='burger-menu__item' href='avatar.html'>Avatar</a></li>
+                    <li><a class='burger-menu__item burger-menu__item--active' href='accordion.html'>Accordion</a></li>
+                    <li><a class='burger-menu__item' href='skeleton.html'>Skeleton</a></li>
+                    <li><a class='burger-menu__item' href='button.html'>Button</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id='burger-menu-open' class='menu-control-button'>
+        <svg class='menu-control-button__icon'>
+          <use href='../assets/images/sprites.svg#menu'></use>
+        </svg>
+      </button>
+      <button id='burger-menu-close' class='menu-control-button menu-control-button--close'>
+        <svg class='menu-control-button__icon'>
+          <use href='../assets/images/sprites.svg#x'></use>
+        </svg>
+      </button>
+    </aside>
+    <article class='component__content'>
+      <h2 class='component__title'>Accordion</h2>
+      <div class='component__example'>
+        <details class='accordion' open>
+          <summary class='accordion__summary'>Accordion item 1
+            <svg class='accordion__icon'>
+              <use href='../assets/images/sprites.svg#v'></use>
+            </svg>
+          </summary>
+          <p class='accordion__content'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </details>
+        <details class='accordion'>
+          <summary class='accordion__summary'>Accordion item 2
+            <svg class='accordion__icon'>
+              <use href='../assets/images/sprites.svg#v'></use>
+            </svg>
+          </summary>
+          <p class='accordion__content'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </details>
+        <details class='accordion'>
+          <summary class='accordion__summary'>Accordion item 3
+            <svg class='accordion__icon'>
+              <use href='../assets/images/sprites.svg#v'></use>
+            </svg>
+          </summary>
+          <p class='accordion__content'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+            consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </details>
+      </div>
+      <div class='tab'>
+        <nav>
+          <ul class='tab__navigation tab__navigation--component'>
+            <li>
+              <label class='radio'>
+                <input id='html' name='component-code' type='radio' class='radio__input' checked>
+                <div class='radio__content radio__content--component'>
+                  <p class='radio__label'>HTML</p>
+                </div>
+              </label>
+            </li>
+            <li>
+              <label class='radio'>
+                <input id='css' name='component-code' type='radio' class='radio__input'>
+                <div class='radio__content radio__content--component'>
+                  <p class='radio__label'>CSS (Sass)</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </nav>
+        <pre class='tab__content' data-tab='html' active='true'>
+          <code data-language="html" class='component__code'>
+  &ltdetails class='accordion' open&gt
+    &ltsummary class='accordion__summary'&gtAccordion item 1
+      &ltimg class='accordion__icon' src='../assets/images/v-icon.svg' alt='Show content'&gt
+    &lt/summary&gt
+    &ltp class='accordion__content'&gtAmet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.&lt/p&gt
+  &lt/details&gt
+  &ltdetails class='accordion'&gt
+    &ltsummary class='accordion__summary'&gtAccordion item 2
+      &ltimg class='accordion__icon' src='../assets/images/v-icon.svg' alt='Show content'&gt
+    &lt/summary&gt
+    &ltp class='accordion__content'&gtAmet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.&lt/p&gt
+  &lt/details&gt
+  &ltdetails class='accordion'&gt
+    &ltsummary class='accordion__summary'&gtAccordion item 3
+      &ltimg class='accordion__icon' src='../assets/images/v-icon.svg' alt='Show content'&gt
+    &lt/summary&gt
+    &ltp class='accordion__content'&gtAmet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.&lt/p&gt
+  &lt/details&gt
+          </code>
+        </pre>
+        <pre class='tab__content' data-tab='css'>
+          <code data-language="css" class='component__code'>
+%font-shared {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.accordion {
+  background: var(--white);
+  border: 1px solid var(--grey-3);
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 24px 32px;
+  width: 100%;
+
+  &[open] .accordion__icon {
+    transform: rotate(180deg);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    color: var(--black);
+    cursor: pointer;
+    @extend %font-shared;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  &__content {
+    color: var(--grey-4);
+    padding-top: 16px;
+    padding-bottom: 8px;
+    margin: 0;
+    @extend %font-shared;
+  }
+}
+          </code>
+        </pre>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class='footer footer--component'>
+  <h3 class='footer__title'>Reusable component library</h3>
+</footer>
+</body>
+</html>

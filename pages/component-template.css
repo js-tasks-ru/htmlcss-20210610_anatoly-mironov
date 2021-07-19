@@ -1,0 +1,69 @@
+.component__content {
+  display: block;
+  padding: 16px;
+  width: calc(100% - 16px * 2);
+  background: var(--white);
+  flex-grow: 1;
+}
+@media screen and (min-width: 1280px) {
+  .component__content {
+    padding: 32px 48px;
+    width: calc(var(--container-width) - 285px - 48px * 2);
+  }
+}
+.component__title {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--grey-4);
+  line-height: 38px;
+  margin: 0;
+}
+.component__example {
+  padding: 64px 0;
+}
+.component__example--tooltip {
+  padding: 64px 56px;
+}
+.component__example--button {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  .component__example--calendar {
+    padding-right: 60%;
+  }
+}
+.component__example--elements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "a b" "c c" "d d";
+  row-gap: 32px;
+}
+@media screen and (min-width: 768px) {
+  .component__example--elements {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "a b c" "d d d";
+  }
+}
+.component__example-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.component__example-section--input {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-area: d;
+}
+@media screen and (min-width: 768px) {
+  .component__example-section--input {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.component__code {
+  overflow-x: auto;
+}
+
+/*# sourceMappingURL=component-template.css.map */

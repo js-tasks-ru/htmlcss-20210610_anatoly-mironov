@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+  <title>Histogram</title>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='../build/index.css'>
+  <script defer src='../09-lection7/01-burger-menu/burger-menu.js'></script>
+  <script defer src='../assets/js/navigation.js'></script>
+  <script defer src="../assets/js/rainbow-custom.min.js"></script>
+  <script defer src='../10-lection8/01-theme-changer/theme-changer.js'></script>
+</head>
+<body class='page page--component'>
+<header class='header header__top-section header__top-section--component page__box'>
+  <a class='header__logo' href='../index.html'>
+    <svg class='header__logo'>
+      <use href='../assets/images/sprites.svg#logo'></use>
+    </svg>
+  </a>
+  <div class='header__theme-switch'>
+    <svg class='header__theme-switch-sun-icon'>
+      <use href='../assets/images/sprites.svg#sun'></use>
+    </svg>
+    <label class='toggle'>
+      <input id="theme-changer" type='checkbox' class='toggle__input'>
+      <div class='toggle__content'>
+        <div class='toggle__control'>
+          <div class='toggle__control-tick'></div>
+        </div>
+      </div>
+    </label>
+    <svg class='header__theme-switch-moon-icon'>
+      <use href='../assets/images/sprites.svg#moon'></use>
+    </svg>
+  </div>
+</header>
+<main class='main main--component'>
+  <div class='page__box page__box--component'>
+    <aside class='page__menu--component'>
+      <div id='burger-menu' class='burger-menu burger-menu--template'>
+        <div class='burger-menu__container'>
+          <div class='burger-menu__content'>
+            <a class='burger-menu__header' href='index.html'>
+              <svg class='header__logo'>
+                <use href='../assets/images/sprites.svg#logo'></use>
+              </svg>
+            </a>
+            <div class='burger-menu__main'>
+              <div class='burger-menu__section burger-menu__color-switch'>
+                <label class='toggle'>
+                  <input id="theme-changer-mobile" type='checkbox' class='toggle__input'>
+                  <div class='toggle__content'>
+                    <div class='toggle__control'>
+                      <div class='toggle__control-tick'></div>
+                    </div>
+                    <p class='toggle__label'>Dark mode</p>
+                  </div>
+                </label>
+              </div>
+              <div class='burger-menu__section'>
+                <h4 class='burger-menu__section-title'>Components</h4>
+                <nav>
+                  <ul class='burger-menu__section-items'>
+                    <li><a class='burger-menu__item' href='tooltip.html'>Tooltip</a></li>
+                    <li><a class='burger-menu__item' href='elements.html'>Custom form elements</a></li>
+                    <li><a class='burger-menu__item' href='calendar.html'>Calendar</a></li>
+                    <li><a class='burger-menu__item' href='modal.html'>Modal dialog</a></li>
+                    <li><a class='burger-menu__item burger-menu__item--active' href='histogram.html'>Histogram</a></li>
+                    <li><a class='burger-menu__item' href='avatar.html'>Avatar</a></li>
+                    <li><a class='burger-menu__item' href='accordion.html'>Accordion</a></li>
+                    <li><a class='burger-menu__item' href='skeleton.html'>Skeleton</a></li>
+                    <li><a class='burger-menu__item' href='button.html'>Button</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id='burger-menu-open' class='menu-control-button'>
+        <svg class='menu-control-button__icon'>
+          <use href='../assets/images/sprites.svg#menu'></use>
+        </svg>
+      </button>
+      <button id='burger-menu-close' class='menu-control-button menu-control-button--close'>
+        <svg class='menu-control-button__icon'>
+          <use href='../assets/images/sprites.svg#x'></use>
+        </svg>
+      </button>
+    </aside>
+    <article class='component__content'>
+      <h2 class='component__title'>Histogram</h2>
+      <div class='component__example'>
+        <div class='histogram'>
+          <div class='histogram__header'>
+            <div class='histogram__total-orders-container'>
+              <p class='histogram__total-orders-name'>Total orders</p>
+              <h4 class='histogram__total-orders-value'>50254</h4>
+            </div>
+            <div class='histogram__view-all-link-container'>
+              <a href='#' target='_self' class='histogram__view-all-link'>View all</a>
+            </div>
+          </div>
+          <div class='histogram__body'>
+            <div class='histogram__column' style='height: 50px'></div>
+            <div class='histogram__column' style='height: 35px'></div>
+            <div class='histogram__column' style='height: 22px'></div>
+            <div class='histogram__column' style='height: 39px'></div>
+            <div class='histogram__column' style='height: 22px'></div>
+            <div class='histogram__column' style='height: 30px'></div>
+            <div class='histogram__column' style='height: 39px'></div>
+            <div class='histogram__column' style='height: 50px'></div>
+            <div class='histogram__column' style='height: 11px'></div>
+            <div class='histogram__column' style='height: 22px'></div>
+            <div class='histogram__column' style='height: 30px'></div>
+            <div class='histogram__column' style='height: 35px'></div>
+            <div class='histogram__column' style='height: 11px'></div>
+            <div class='histogram__column' style='height: 50px'></div>
+            <div class='histogram__column' style='height: 11px'></div>
+            <div class='histogram__column' style='height: 39px'></div>
+            <div class='histogram__column' style='height: 30px'></div>
+            <div class='histogram__column' style='height: 22px'></div>
+            <div class='histogram__column' style='height: 35px'></div>
+            <div class='histogram__column' style='height: 30px'></div>
+            <div class='histogram__column' style='height: 11px'></div>
+            <div class='histogram__column' style='height: 39px'></div>
+            <div class='histogram__column' style='height: 35px'></div>
+            <div class='histogram__column' style='height: 45px'></div>
+            <div class='histogram__column' style='height: 30px'></div>
+            <div class='histogram__column' style='height: 11px'></div>
+            <div class='histogram__column' style='height: 30px'></div>
+            <div class='histogram__column' style='height: 11px'></div>
+            <div class='histogram__column' style='height: 35px'></div>
+            <div class='histogram__column' style='height: 17px'></div>
+          </div>
+        </div>
+      </div>
+      <div class='tab'>
+        <nav>
+          <ul class='tab__navigation tab__navigation--component'>
+            <li>
+              <label class='radio'>
+                <input id='html' name='component-code' type='radio' class='radio__input' checked>
+                <div class='radio__content radio__content--component'>
+                  <p class='radio__label'>HTML</p>
+                </div>
+              </label>
+            </li>
+            <li>
+              <label class='radio'>
+                <input id='css' name='component-code' type='radio' class='radio__input'>
+                <div class='radio__content radio__content--component'>
+                  <p class='radio__label'>CSS (Sass)</p>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </nav>
+        <pre class='tab__content' data-tab='html' active='true'>
+          <code data-language="html" class='component__code'>
+&ltdiv class='histogram'&gt
+  &ltdiv class='histogram__header'&gt
+    &ltdiv class='histogram__total-orders-container'&gt
+      &ltp class='histogram__total-orders-name'&gtTotal orders&lt/p&gt
+      &lth4 class='histogram__total-orders-value'&gt50254&lt/h4&gt
+    &lt/div&gt
+    &ltdiv class='histogram__view-all-link-container'&gt
+      &lta href='#' target='_self' class='histogram__view-all-link'&gtAll&lt/a&gt
+    &lt/div&gt
+  &lt/div&gt
+  &ltdiv class='histogram__body'&gt
+    &ltdiv class='histogram__column' style='height: 50px'&gt&lt/div&gt
+    &ltdiv class='histogram__column' style='height: 35px'&gt&lt/div&gt
+    &ltdiv class='histogram__column' style='height: 22px'&gt&lt/div&gt
+    &ltdiv class='histogram__column' style='height: 39px'&gt&lt/div&gt
+    &ltdiv class='histogram__column' style='height: 22px'&gt&lt/div&gt
+  &lt/div&gt
+&lt/div&gt
+          </code>
+        </pre>
+        <pre class='tab__content' data-tab='css'>
+          <code data-language="css" class='component__code'>
+.histogram {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  color: var(--black);
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 16px 24px 24px 24px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__total-orders-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6px;
+  }
+
+  &__total-orders-name {
+    margin: 0;
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__total-orders-value {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  &__view-all-link-container {
+    padding-top: 3px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__view-all-link {
+    color: var(--blue);
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1px;
+  }
+
+  &__column {
+    background: var(--blue);
+    flex-grow: 1;
+  }
+}
+          </code>
+        </pre>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class='footer footer--component'>
+  <h3 class='footer__title'>Reusable component library</h3>
+</footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+@import '../../config/_mixins';
+
+.toggle {
+    @include font(('Inter', sans-serif), 16px, 24px, 400, var(--grey-4));
+    display: inline-block;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+    }
+
+    &__input {
+        opacity: 0;
+        width: 1px;
+        height: 1px;
+        pointer-events: none;
+        position: absolute;
+
+        &:checked ~ .toggle__content {
+            .toggle__control {
+                background: var(--blue);
+                border: 1px solid var(--blue);
+                justify-content: flex-end;
+            }
+
+            .toggle__control-tick {
+                background: var(--white);
+            }
+        }
+
+        &:disabled ~ .toggle__content {
+            pointer-events: none;
+            transition: background-color 200ms ease-in-out;
+
+            .toggle__control {
+                background: var(--grey-2);
+                border: 1px solid var(--grey-2);
+            }
+
+            .toggle__control-tick {
+                background: var(--grey-3);
+                opacity: .25;
+            }
+
+            .toggle__label {
+                color: var(--grey-2);
+            }
+        }
+
+        &:focus-visible ~ .toggle__content {
+            .toggle__label {
+                text-decoration: underline;
+            }
+
+            .toggle__control {
+                border: 1px solid var(--black);
+            }
+        }
+    }
+
+    &__label {
+        margin: 0;
+    }
+
+    &__control {
+        height: 28px;
+        width: 52px;
+        background: var(--white);
+        box-sizing: border-box;
+        border-radius: 16px;
+        border: 1px solid var(--grey-2);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 2px;
+    }
+
+    &__control-tick {
+        width: 24px;
+        height: 24px;
+        background: var(--grey-2);
+        border-radius: 50%;
+    }
+}
